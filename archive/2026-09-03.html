@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>배터리 마스터 데일리 브리핑 | 2026.09.03</title>
+  <style>
+    :root {
+      --ink: #17221d;
+      --muted: #607069;
+      --line: #d8e3dd;
+      --paper: #ffffff;
+      --wash: #f3f8f5;
+      --green: #0b6b46;
+      --green-dark: #074b34;
+      --lime: #c8ef72;
+      --amber: #a85f00;
+    }
+    * { box-sizing: border-box; }
+    html { background: #e8eeea; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e8eeea;
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.48;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a { color: var(--green); text-underline-offset: 2px; }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 18px auto;
+      padding: 10mm 11mm 8mm;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(17, 47, 33, .13);
+    }
+    .masthead {
+      position: relative;
+      padding: 8mm 8mm 7mm;
+      border-radius: 18px;
+      color: #fff;
+      background: linear-gradient(130deg, var(--green-dark), var(--green));
+    }
+    .masthead::after {
+      content: "BM";
+      position: absolute;
+      right: 8mm;
+      top: 5mm;
+      color: rgba(255,255,255,.10);
+      font-size: 54px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -.08em;
+    }
+    .eyebrow {
+      margin: 0 0 4px;
+      color: var(--lime);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .13em;
+    }
+    h1 { margin: 0; font-size: 27px; line-height: 1.15; letter-spacing: -.045em; }
+    .deck { max-width: 590px; margin: 7px 0 0; color: #e6f5ec; font-size: 12px; }
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 14px;
+      margin-top: 12px;
+      font-size: 9.5px;
+      color: #d8eee2;
+    }
+    .meta-row strong { color: #fff; }
+    section { margin-top: 15px; }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 7px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--ink);
+    }
+    h2 { margin: 0; font-size: 15px; letter-spacing: -.03em; }
+    .section-kicker { color: var(--muted); font-size: 9px; text-align: right; }
+    .trend {
+      display: grid;
+      grid-template-columns: 35mm 1fr;
+      gap: 12px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--green);
+      border-radius: 10px;
+      background: var(--wash);
+    }
+    .trend-label { color: var(--green-dark); font-size: 10px; font-weight: 800; }
+    .trend p { margin: 0; font-size: 10.5px; }
+    .trend small { display: block; margin-top: 3px; color: var(--muted); font-size: 8.7px; }
+    .jobs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .job-card {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 11px;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+      background: #fff;
+    }
+    .job-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+    .job-card:last-child:nth-child(odd) .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .job-top { display: flex; align-items: start; justify-content: space-between; gap: 8px; }
+    .rank {
+      flex: 0 0 auto;
+      min-width: 24px;
+      padding: 3px 6px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--green);
+      font-size: 8.5px;
+      font-weight: 800;
+      text-align: center;
+    }
+    h3 { margin: 0; font-size: 12px; line-height: 1.32; letter-spacing: -.025em; }
+    .company { margin: 3px 0 6px; color: var(--green-dark); font-size: 9px; font-weight: 700; }
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
+    .tag { padding: 2px 5px; border-radius: 4px; color: #28523f; background: #e5f3eb; font-size: 7.9px; font-weight: 700; }
+    .facts { display: grid; gap: 3px; margin: 0; }
+    .facts div { display: grid; grid-template-columns: 48px 1fr; gap: 4px; font-size: 8.8px; }
+    .facts dt { color: var(--muted); font-weight: 700; }
+    .facts dd { margin: 0; }
+    .deadline { color: var(--amber); font-weight: 800; }
+    .source {
+      display: inline-block;
+      margin-top: auto;
+      padding-top: 7px;
+      font-size: 8.7px;
+      font-weight: 800;
+    }
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.22fr .78fr;
+      gap: 8px;
+      margin-top: 15px;
+    }
+    .panel {
+      padding: 10px 12px;
+      border-radius: 11px;
+      border: 1px solid var(--line);
+      background: var(--wash);
+    }
+    .panel h2 { margin-bottom: 7px; font-size: 13px; }
+    .points { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; counter-reset: point; }
+    .points li { position: relative; padding-left: 18px; font-size: 9.2px; }
+    .points li::before {
+      counter-increment: point;
+      content: counter(point);
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green);
+      font-size: 8px;
+      line-height: 14px;
+      text-align: center;
+      font-weight: 800;
+    }
+    .resource p { margin: 0 0 5px; font-size: 9.2px; }
+    .resource strong { display: block; margin-bottom: 3px; color: var(--green-dark); font-size: 10px; }
+    .resource a { font-size: 8.6px; font-weight: 800; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 12px;
+      padding-top: 7px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 8.3px;
+    }
+    footer strong { color: var(--green-dark); }
+    @page { size: A4 portrait; margin: 0; }
+    @media print {
+      html, body { width: 210mm; height: 297mm; background: #fff; }
+      .sheet { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; box-shadow: none; }
+      a { color: var(--green); }
+    }
+    @media (max-width: 720px) {
+      html, body { background: #fff; }
+      .sheet { width: 100%; min-height: 0; margin: 0; padding: 14px; box-shadow: none; }
+      .masthead { padding: 24px 20px 21px; border-radius: 14px; }
+      h1 { font-size: 25px; }
+      .deck { font-size: 12px; }
+      .trend, .jobs, .bottom-grid { grid-template-columns: 1fr; }
+      .job-card:last-child:nth-child(odd) { grid-column: auto; }
+      .job-card:last-child:nth-child(odd) .facts { grid-template-columns: 1fr; }
+      .trend { gap: 3px; }
+      .section-head { align-items: start; }
+      .section-kicker { max-width: 140px; }
+      footer { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="masthead">
+      <p class="eyebrow">BATTERY MASTER · DAILY BRIEFING</p>
+      <h1>오늘의 배터리 산업·채용 뉴스레터</h1>
+      <p class="deck">전국 배터리 밸류체인의 현재 지원 가능한 신입 중심 공고를 원문까지 확인해 정리했어요.</p>
+      <div class="meta-row">
+        <span><strong>발행</strong> 2026.09.03 목요일</span>
+        <span><strong>검증 기준</strong> 2026.09.03 14:01 KST</span>
+        <span><strong>오늘의 결과</strong> 신규 신입 공고 3건 확인</span>
+      </div>
+    </header>
+
+    <section aria-labelledby="trend-title">
+      <div class="section-head">
+        <h2 id="trend-title">오늘의 산업·기업동향</h2>
+        <span class="section-kicker">최근 24시간 · 구체적 기업 사건 기준</span>
+      </div>
+      <div class="trend">
+        <div class="trend-label">검증 결과</div>
+        <p>최근 24시간 이내 확인 가능한 구체적 기업동향이 없습니다.<small>재게시 기사와 기준시각 이전 24시간을 벗어난 소식은 제외했어요.</small></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="jobs-title">
+      <div class="section-head">
+        <h2 id="jobs-title">오늘의 신규 채용</h2>
+        <span class="section-kicker">신입·경력무관 우선 · 공고별 원문 확인</span>
+      </div>
+      <div class="jobs">
+        <article class="job-card">
+          <div class="job-top">
+            <div>
+              <h3>2026년 신입/경력사원 채용<br>R&amp;D·공정·품질·설비 등</h3>
+              <p class="company">포스코퓨처엠 · 대기업/코스피 · 양극재·음극재</p>
+            </div>
+            <span class="rank">우선</span>
+          </div>
+          <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">대졸 이상</span></div>
+          <dl class="facts">
+            <div><dt>주요 업무</dt><dd>R&amp;D, 공정엔지니어, 품질, 설비, 생산관리, 안전환경 등 직무별 모집</dd></div>
+            <div><dt>지원 요건</dt><dd>4년제 대학 졸업(예정) 이상, 세부 전공·자격은 직무별 확인</dd></div>
+            <div><dt>우대</dt><dd>관련 전공·자격증·외국어 역량 등 직무별 상이</dd></div>
+            <div><dt>근무지</dt><dd>포항·서울·세종·광양</dd></div>
+            <div><dt>마감</dt><dd class="deadline">2026.09.14 23:59</dd></div>
+            <div><dt>공고 ID</dt><dd>JobKorea 49902326</dd></div>
+          </dl>
+          <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
+        </article>
+
+        <article class="job-card">
+          <div class="job-top">
+            <div>
+              <h3>이차전지/기능성 고분자<br>R&amp;D 연구원 채용</h3>
+              <p class="company">힐머에너지 · 기술창업기업 · 실리콘 음극 바인더</p>
+            </div>
+            <span class="rank">R&amp;D</span>
+          </div>
+          <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
+          <dl class="facts">
+            <div><dt>주요 업무</dt><dd>바인더 설계·평가, 슬러리/코팅 최적화, 코인셀 평가, GO 합성·분석</dd></div>
+            <div><dt>지원 요건</dt><dd>신입 또는 경력 1~6년, 화학·화공·고분자·재료·에너지 관련 학사 이상</dd></div>
+            <div><dt>우대</dt><dd>석·박사, 전극 제조·코인셀·분석장비 경험</dd></div>
+            <div><dt>근무지</dt><dd>서울 성북구, 필요 시 청주 연구공간</dd></div>
+            <div><dt>마감</dt><dd class="deadline">2026.09.14 24:00</dd></div>
+            <div><dt>공고 ID</dt><dd>사람인 54758787</dd></div>
+          </dl>
+          <a class="source" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
+        </article>
+
+        <article class="job-card">
+          <div class="job-top">
+            <div>
+              <h3>(인천) 이차전지 소재 파트 신입 및 경력 채용</h3>
+              <p class="company">에이비알 · 중소 소재기업 · 이차전지/연료전지/수처리</p>
+            </div>
+            <span class="rank">소재</span>
+          </div>
+          <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
+          <dl class="facts">
+            <div><dt>주요 업무</dt><dd>이차전지 소재 관련 연구개발</dd></div>
+            <div><dt>지원 요건</dt><dd>신입 또는 경력 3년 이상 트랙, 졸업예정자 지원 가능</dd></div>
+            <div><dt>우대</dt><dd>관련 전공, 인근 거주, 차량 보유, 즉시 출근·장기근무 가능자</dd></div>
+            <div><dt>근무지</dt><dd>인천 서구 정서진로 410</dd></div>
+            <div><dt>마감</dt><dd class="deadline">2026.09.18 예정 · 채용 시 조기마감</dd></div>
+            <div><dt>공고 ID</dt><dd>JobKorea 49612507</dd></div>
+          </dl>
+          <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="bottom-grid">
+      <section class="panel" aria-labelledby="points-title">
+        <h2 id="points-title">배터리 마스터의 지원 포인트</h2>
+        <ol class="points">
+          <li><strong>R&amp;D 우선 추천:</strong> 포스코퓨처엠과 힐머에너지는 전공·실험 경험을 직무 언어로 연결해 보세요.</li>
+          <li><strong>자소서 적용:</strong> “소재–공정–성능” 흐름으로 본인 프로젝트의 변수, 분석법, 개선 수치를 3문장에 담아요.</li>
+          <li><strong>주의:</strong> 통합공고는 직무별 근무지·전공·필수자격이 다르니 지원 직전 원문을 다시 확인하세요.</li>
+        </ol>
+      </section>
+
+      <section class="panel resource" aria-labelledby="resource-title">
+        <h2 id="resource-title">신청 가능한 취업·산업 자료</h2>
+        <strong>BATTERY KOREA 2026</strong>
+        <p>9월 21일 코엑스에서 소재·부품·장비·리사이클링 실무 세션이 열려요. 온라인 사전등록은 무료예요.</p>
+        <a href="https://www.batterykorea.org/2026/kor/intro01.html" target="_blank" rel="noopener noreferrer">공식 행사·사전등록 안내</a>
+      </section>
+    </div>
+
+    <footer>
+      <span><strong>검증 원칙</strong> 공식·원문 상세페이지, 접수 상태, 마감일, 배터리 연관성을 교차 확인했어요.</span>
+      <span>처음 오신 분도 전공·희망직무를 편하게 남겨 주세요. 함께 공고를 좁혀드릴게요.</span>
+    </footer>
+  </main>
+</body>
+</html>
