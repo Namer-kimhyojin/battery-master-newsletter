@@ -119,14 +119,16 @@
     .job-card:nth-child(2) { border-top-color: var(--secondary); }
     .job-card:last-child:nth-child(odd) { grid-column: 1 / 13; }
     .job-card:last-child:nth-child(odd) .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 13px; }
-    .job-top { display: grid; grid-template-columns: minmax(0, 1fr) 76px; align-items: start; gap: 12px; }
+    .job-top { display: grid; grid-template-columns: minmax(0, 1fr) 84px; align-items: start; gap: 12px; }
     .job-heading { min-width: 0; }
     .company-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; margin-bottom: 5px; }
     .company-name { color: var(--primary); font-size: 15px; font-weight: 850; line-height: 1.2; }
     .company-meta { color: var(--gray-700); font-size: 8.9px; font-weight: 700; }
-    .deadline-badge { min-width: 0; padding: 6px; border: 1px solid var(--accent); color: #ffffff; background: var(--accent); text-align: center; }
+    .deadline-badge { display: block; min-width: 0; padding: 7px 6px 6px; border: 1px solid var(--accent); color: #ffffff; background: var(--accent); text-align: center; text-decoration: none; transition: filter .18s ease, transform .18s ease; }
+    .deadline-badge:hover { color: #ffffff; filter: brightness(.88); transform: translateY(-1px); }
     .deadline-badge small { display: block; color: #ffffff; font-size: 7.8px; font-weight: 800; line-height: 1; }
     .deadline-badge strong { display: block; margin-top: 3px; font-size: 9.2px; font-weight: 900; line-height: 1.15; }
+    .deadline-badge span { display: block; margin-top: 5px; padding-top: 5px; border-top: 1px solid rgba(255, 255, 255, .62); font-size: 7.8px; font-weight: 800; line-height: 1.1; }
     .tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
     .tag { padding: 3px 7px; border: 0; color: var(--gray-900); background: var(--gray-200); font-size: 8.3px; font-weight: 700; }
     .facts { display: grid; gap: 2px; margin: 0; }
@@ -150,6 +152,7 @@
     .keyword-card h3 { color: #fff; font-size: 11.5px; }
     .keyword-card p { margin: 5px 0 0; color: var(--gray-200); font-size: 9px; }
     .keyword-card small { display: block; margin-top: 6px; color: var(--gray-300); font-size: 8.2px; }
+    .keyword-card a { display: inline-block; margin-top: 7px; color: #ffffff; font-size: 8.2px; font-weight: 800; text-underline-offset: 3px; }
     .keyword-source { color: #ffffff; border-color: var(--secondary); background: var(--secondary); }
     .bottom-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
     .panel { grid-column: span 8; padding: 13px 0 11px; border-top: 3px solid var(--primary); border-bottom: 1px solid var(--gray-300); background: var(--background); }
@@ -214,10 +217,11 @@
       .trend a, .source, .resource a, .keyword-source { display: flex; min-height: 44px; justify-content: center; font-size: 14px; }
       .company-name { font-size: 18px; }
       .company-meta { font-size: 12px; }
-      .job-top { grid-template-columns: minmax(0, 1fr) 90px; }
+      .job-top { grid-template-columns: minmax(0, 1fr) 100px; }
       .deadline-badge { min-width: 0; padding: 8px; }
       .deadline-badge small { font-size: 10px; }
       .deadline-badge strong { font-size: 12px; }
+      .deadline-badge span { font-size: 11px; }
       .tag { padding: 3px 8px; font-size: 11px; }
       .facts { gap: 5px; }
       .facts div { grid-template-columns: 64px minmax(0, 1fr); gap: 8px; font-size: 14px; }
@@ -231,6 +235,7 @@
       .keyword-card h3 { font-size: 16px; }
       .keyword-card p { font-size: 14px; }
       .keyword-card small { font-size: 12px; }
+      .keyword-card a { display: flex; min-height: 44px; align-items: center; font-size: 13px; }
       .points li, .resource p { font-size: 14px; }
       .resource strong { font-size: 16px; }
       footer { grid-template-columns: 1fr; gap: 5px; padding-top: 12px; font-size: 12.5px; }
@@ -285,7 +290,7 @@
               <div class="company-line"><strong class="company-name">포스코퓨처엠</strong><span class="company-meta">대기업·코스피 · 양극재·음극재</span></div>
               <h3>2026년 신입/경력사원 채용<br>R&amp;D·공정·품질·설비 등</h3>
             </div>
-            <span class="deadline-badge"><small>마감</small><strong>9.14 23:59</strong></span>
+            <a class="deadline-badge" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer" aria-label="포스코퓨처엠 상세 공고 원문 보기, 마감 9월 14일 23시 59분"><small>마감</small><strong>9.14 23:59</strong><span>원문 보기</span></a>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">대졸 이상</span></div>
           <dl class="facts">
@@ -294,7 +299,6 @@
             <div><dt>우대</dt><dd>관련 전공·자격증·외국어 역량 등 직무별 상이</dd></div>
             <div><dt>근무지</dt><dd>포항·서울·세종·광양</dd></div>
           </dl>
-          <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
 
         <article class="job-card" data-job-id="Saramin-54758787">
@@ -303,7 +307,7 @@
               <div class="company-line"><strong class="company-name">힐머에너지</strong><span class="company-meta">기술창업기업 · 실리콘 음극 바인더</span></div>
               <h3>이차전지/기능성 고분자<br>R&amp;D 연구원 채용</h3>
             </div>
-            <span class="deadline-badge"><small>마감</small><strong>9.14 23:59</strong></span>
+            <a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer" aria-label="힐머에너지 상세 공고 원문 보기, 마감 9월 14일 23시 59분"><small>마감</small><strong>9.14 23:59</strong><span>원문 보기</span></a>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
           <dl class="facts">
@@ -312,7 +316,6 @@
             <div><dt>우대</dt><dd>석·박사, 전극 제조·코인셀·분석장비 경험</dd></div>
             <div><dt>근무지</dt><dd>서울 성북구, 필요 시 청주 연구공간</dd></div>
           </dl>
-          <a class="source" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
 
         <article class="job-card" data-job-id="JobKorea-49612507">
@@ -321,7 +324,7 @@
               <div class="company-line"><strong class="company-name">에이비알</strong><span class="company-meta">중소 소재기업 · 이차전지·연료전지·수처리</span></div>
               <h3>(인천) 이차전지 소재 파트 신입 및 경력 채용</h3>
             </div>
-            <span class="deadline-badge"><small>마감 예정</small><strong>9.18<br>채용 시</strong></span>
+            <a class="deadline-badge" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer" aria-label="에이비알 상세 공고 원문 보기, 9월 18일 마감 예정 또는 채용 시 조기마감"><small>마감 예정</small><strong>9.18<br>채용 시</strong><span>원문 보기</span></a>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
           <dl class="facts">
@@ -330,42 +333,43 @@
             <div><dt>우대</dt><dd>관련 전공, 인근 거주, 차량 보유, 즉시 출근·장기근무 가능자</dd></div>
             <div><dt>근무지</dt><dd>인천 서구 정서진로 410</dd></div>
           </dl>
-          <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
       </div>
     </section>
 
     <section aria-labelledby="keyword-title">
       <div class="section-head">
-        <h2 id="keyword-title">오늘의 직무 키워드</h2>
-        <span class="section-kicker">7일 내 마감 공고 없음 · 검증 공고 요구역량으로 대체</span>
+        <h2 id="keyword-title">오늘의 공고 해석</h2>
+        <span class="section-kicker">7일 내 마감 공고 없음 · 지원 판단에 필요한 문장만 해석</span>
       </div>
       <div class="keyword-shell">
         <div class="keyword-intro">
-          <strong>R&amp;D 공고에서 바로 읽어야 할 세 가지</strong>
-          <span>힐머에너지 채용 원문 기준</span>
+          <strong>지원전략 한눈에: 놓치기 쉬운 세 가지 판단 기준</strong>
+          <span>오늘의 검증 공고 기준</span>
         </div>
         <div class="keyword-grid">
           <article class="keyword-card">
-            <span class="keyword-no">KEYWORD 01</span>
-            <h3>슬러리·코팅 최적화</h3>
-            <p>배합비·점도·코팅 조건과 전극 성능의 변화를 연결하는 업무예요.</p>
-            <small><strong>배터리 마스터의 제안:</strong> 변수–관찰–개선 결과를 수치로 정리하세요.</small>
+            <span class="keyword-no">READ 01</span>
+            <h3>통합공고는 직무를 먼저 좁혀야 해요</h3>
+            <p>포스코퓨처엠은 R&amp;D·공정·품질·설비 등 직무별 전공·자격과 근무지가 달라요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 지원 직무 하나를 정한 뒤 전공·프로젝트·근무지를 원문과 대조하세요.</small>
+            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">근거 공고 확인</a>
           </article>
           <article class="keyword-card">
-            <span class="keyword-no">KEYWORD 02</span>
-            <h3>Coin Cell 평가</h3>
-            <p>셀 제작 조건과 충·방전 결과를 바탕으로 소재 성능을 비교해요.</p>
-            <small><strong>배터리 마스터의 제안:</strong> 제작 조건–평가지표–결과 순으로 경험을 설명하세요.</small>
+            <span class="keyword-no">READ 02</span>
+            <h3>R&amp;D는 경험의 연결 방식이 핵심이에요</h3>
+            <p>힐머에너지는 바인더, 슬러리·코팅, 코인셀, 분석장비 경험을 우대해요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 유사 실험의 변수–분석–결과를 직무 언어로 연결하세요.</small>
+            <a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">근거 공고 확인</a>
           </article>
           <article class="keyword-card">
-            <span class="keyword-no">KEYWORD 03</span>
-            <h3>소재분석 XRD·SEM</h3>
-            <p>결정구조와 표면·형상을 분석해 소재와 공정의 문제를 확인해요.</p>
-            <small><strong>배터리 마스터의 제안:</strong> 분석 목적–시료–해석–개선 연결을 준비하세요.</small>
+            <span class="keyword-no">READ 03</span>
+            <h3>조기마감은 제출 시점도 조건이에요</h3>
+            <p>에이비알은 9월 18일 마감 예정이지만 채용 시 조기마감될 수 있어요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 필수요건을 확인했다면 마감일까지 기다리지 말고 먼저 지원하세요.</small>
+            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">근거 공고 확인</a>
           </article>
         </div>
-        <a class="keyword-source" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">키워드가 나온 채용 원문 확인</a>
       </div>
     </section>
 
