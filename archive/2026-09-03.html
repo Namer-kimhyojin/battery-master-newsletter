@@ -60,18 +60,18 @@
     .eyebrow {
       margin: 0 0 4px;
       color: var(--lime);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: 800;
       letter-spacing: .13em;
     }
-    h1 { margin: 0; font-size: 27px; line-height: 1.15; letter-spacing: -.045em; }
-    .deck { max-width: 590px; margin: 7px 0 0; color: #e6f5ec; font-size: 12px; }
+    h1 { margin: 0; font-size: 29px; line-height: 1.15; letter-spacing: -.045em; }
+    .deck { max-width: 610px; margin: 7px 0 0; color: #e6f5ec; font-size: 13px; }
     .meta-row {
       display: flex;
       flex-wrap: wrap;
       gap: 7px 14px;
       margin-top: 12px;
-      font-size: 9.5px;
+      font-size: 10.5px;
       color: #d8eee2;
     }
     .meta-row strong { color: #fff; }
@@ -85,21 +85,25 @@
       padding-bottom: 5px;
       border-bottom: 2px solid var(--ink);
     }
-    h2 { margin: 0; font-size: 15px; letter-spacing: -.03em; }
-    .section-kicker { color: var(--muted); font-size: 9px; text-align: right; }
-    .trend {
+    h2 { margin: 0; font-size: 17px; letter-spacing: -.03em; }
+    .section-kicker { color: var(--muted); font-size: 10px; text-align: right; }
+    .trend-list {
       display: grid;
-      grid-template-columns: 35mm 1fr;
-      gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .trend {
       padding: 10px 12px;
       border: 1px solid var(--line);
       border-left: 5px solid var(--green);
       border-radius: 10px;
       background: var(--wash);
     }
-    .trend-label { color: var(--green-dark); font-size: 10px; font-weight: 800; }
-    .trend p { margin: 0; font-size: 10.5px; }
-    .trend small { display: block; margin-top: 3px; color: var(--muted); font-size: 8.7px; }
+    .trend-label { display: inline-block; margin-bottom: 5px; padding: 2px 6px; border-radius: 999px; color: var(--green-dark); background: #dff0e7; font-size: 9.5px; font-weight: 800; }
+    .trend h3 { margin-bottom: 5px; font-size: 12.5px; }
+    .trend p { margin: 0 0 4px; font-size: 10.8px; }
+    .trend small { display: block; margin-top: 3px; color: var(--muted); font-size: 9.2px; }
+    .trend a { display: inline-block; margin-top: 4px; font-size: 9.5px; font-weight: 800; }
     .jobs {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -123,16 +127,16 @@
       border-radius: 999px;
       color: #fff;
       background: var(--green);
-      font-size: 8.5px;
+      font-size: 9.2px;
       font-weight: 800;
       text-align: center;
     }
-    h3 { margin: 0; font-size: 12px; line-height: 1.32; letter-spacing: -.025em; }
-    .company { margin: 3px 0 6px; color: var(--green-dark); font-size: 9px; font-weight: 700; }
+    h3 { margin: 0; font-size: 13.2px; line-height: 1.36; letter-spacing: -.025em; }
+    .company { margin: 3px 0 6px; color: var(--green-dark); font-size: 9.8px; font-weight: 700; }
     .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
-    .tag { padding: 2px 5px; border-radius: 4px; color: #28523f; background: #e5f3eb; font-size: 7.9px; font-weight: 700; }
+    .tag { padding: 2px 5px; border-radius: 4px; color: #28523f; background: #e5f3eb; font-size: 8.7px; font-weight: 700; }
     .facts { display: grid; gap: 3px; margin: 0; }
-    .facts div { display: grid; grid-template-columns: 48px 1fr; gap: 4px; font-size: 8.8px; }
+    .facts div { display: grid; grid-template-columns: 51px 1fr; gap: 5px; font-size: 9.5px; }
     .facts dt { color: var(--muted); font-weight: 700; }
     .facts dd { margin: 0; }
     .deadline { color: var(--amber); font-weight: 800; }
@@ -140,7 +144,7 @@
       display: inline-block;
       margin-top: auto;
       padding-top: 7px;
-      font-size: 8.7px;
+      font-size: 9.5px;
       font-weight: 800;
     }
     .bottom-grid {
@@ -155,9 +159,9 @@
       border: 1px solid var(--line);
       background: var(--wash);
     }
-    .panel h2 { margin-bottom: 7px; font-size: 13px; }
+    .panel h2 { margin-bottom: 7px; font-size: 14px; }
     .points { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; counter-reset: point; }
-    .points li { position: relative; padding-left: 18px; font-size: 9.2px; }
+    .points li { position: relative; padding-left: 18px; font-size: 10px; }
     .points li::before {
       counter-increment: point;
       content: counter(point);
@@ -169,14 +173,14 @@
       border-radius: 50%;
       color: #fff;
       background: var(--green);
-      font-size: 8px;
+      font-size: 8.5px;
       line-height: 14px;
       text-align: center;
       font-weight: 800;
     }
-    .resource p { margin: 0 0 5px; font-size: 9.2px; }
-    .resource strong { display: block; margin-bottom: 3px; color: var(--green-dark); font-size: 10px; }
-    .resource a { font-size: 8.6px; font-weight: 800; }
+    .resource p { margin: 0 0 5px; font-size: 10px; }
+    .resource strong { display: block; margin-bottom: 3px; color: var(--green-dark); font-size: 11px; }
+    .resource a { font-size: 9.5px; font-weight: 800; }
     footer {
       display: flex;
       justify-content: space-between;
@@ -185,7 +189,7 @@
       padding-top: 7px;
       border-top: 1px solid var(--line);
       color: var(--muted);
-      font-size: 8.3px;
+      font-size: 9px;
     }
     footer strong { color: var(--green-dark); }
     @page { size: A4 portrait; margin: 0; }
@@ -195,18 +199,30 @@
       a { color: var(--green); }
     }
     @media (max-width: 720px) {
-      html, body { background: #fff; }
-      .sheet { width: 100%; min-height: 0; margin: 0; padding: 14px; box-shadow: none; }
+      html, body { background: #fff; font-size: 16px; line-height: 1.65; }
+      .sheet { width: 100%; min-height: 0; margin: 0; padding: 16px; box-shadow: none; }
       .masthead { padding: 24px 20px 21px; border-radius: 14px; }
-      h1 { font-size: 25px; }
-      .deck { font-size: 12px; }
-      .trend, .jobs, .bottom-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 28px; }
+      .deck { font-size: 14px; }
+      .meta-row { font-size: 11px; }
+      h2 { font-size: 19px; }
+      h3, .trend h3 { font-size: 16px; }
+      .section-kicker { font-size: 11px; }
+      .trend-list, .jobs, .bottom-grid { grid-template-columns: 1fr; }
       .job-card:last-child:nth-child(odd) { grid-column: auto; }
       .job-card:last-child:nth-child(odd) .facts { grid-template-columns: 1fr; }
-      .trend { gap: 3px; }
+      .job-card, .trend, .panel { padding: 14px; }
+      .trend p { font-size: 14px; }
+      .trend small, .trend-label { font-size: 12px; }
+      .trend a, .source, .resource a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
+      .company { font-size: 13px; }
+      .tag { font-size: 11px; }
+      .facts div { grid-template-columns: 62px 1fr; font-size: 13.5px; gap: 7px; }
+      .points li, .resource p { font-size: 14px; }
+      .resource strong { font-size: 15px; }
       .section-head { align-items: start; }
       .section-kicker { max-width: 140px; }
-      footer { flex-direction: column; gap: 4px; }
+      footer { flex-direction: column; gap: 4px; font-size: 12.5px; }
     }
   </style>
 </head>
@@ -215,22 +231,34 @@
     <header class="masthead">
       <p class="eyebrow">BATTERY MASTER · DAILY BRIEFING</p>
       <h1>오늘의 배터리 산업·채용 뉴스레터</h1>
-      <p class="deck">전국 배터리 밸류체인의 현재 지원 가능한 신입 중심 공고를 원문까지 확인해 정리했어요.</p>
+      <p class="deck">최근 7일의 핵심 산업동향과 전국 배터리 밸류체인의 신입 중심 공고를 원문까지 확인해 정리했어요.</p>
       <div class="meta-row">
         <span><strong>발행</strong> 2026.09.03 목요일</span>
-        <span><strong>검증 기준</strong> 2026.09.03 14:01 KST</span>
-        <span><strong>오늘의 결과</strong> 신규 신입 공고 3건 확인</span>
+        <span><strong>검증 기준</strong> 2026.09.03 18:38 KST</span>
+        <span><strong>오늘의 결과</strong> 신규 동향 2건 · 신입 공고 3건</span>
       </div>
     </header>
 
     <section aria-labelledby="trend-title">
       <div class="section-head">
         <h2 id="trend-title">오늘의 산업·기업동향</h2>
-        <span class="section-kicker">최근 24시간 · 구체적 기업 사건 기준</span>
+        <span class="section-kicker">최근 7일(8.28~9.3) · 기존 발행 중복 제외</span>
       </div>
-      <div class="trend">
-        <div class="trend-label">검증 결과</div>
-        <p>최근 24시간 이내 확인 가능한 구체적 기업동향이 없습니다.<small>재게시 기사와 기준시각 이전 24시간을 벗어난 소식은 제외했어요.</small></p>
+      <div class="trend-list">
+        <article class="trend" data-trend-id="LGES|US lithium supply|2026-09-01">
+          <span class="trend-label">09.01 · 공급망</span>
+          <h3>LG에너지솔루션 — 미국산 탄산리튬 10년 장기 공급계약</h3>
+          <p><strong>확인된 사실:</strong> 스맥오버 리튬에서 2029년부터 10년간 총 8만 톤을 공급받아요. 아칸소 프로젝트에는 직접리튬추출(DLE)이 적용됩니다.</p>
+          <small><strong>취업 준비 관점:</strong> 구매·SCM, DLE, LFP 원료, IRA·ESG 공급망을 직무 키워드로 살펴보세요.</small>
+          <a href="https://lg.co.kr/media/release/30518" target="_blank" rel="noopener noreferrer">LG 공식 발표 보기</a>
+        </article>
+        <article class="trend" data-trend-id="MOTIE|battery triangle belt|2026-09-01">
+          <span class="trend-label">09.01 · 정책·인프라</span>
+          <h3>산업부 — 충청·영남·호남 ‘배터리 삼각벨트’ 가동</h3>
+          <p><strong>확인된 사실:</strong> 충청 셀, 영남 핵심소재, 호남 원료 제조 거점을 연결해요. 전고체 평가, 나트륨전지 실증, 재활용 배터리 안전성 인프라도 검토합니다.</p>
+          <small><strong>취업 준비 관점:</strong> 셀 제조·소재·재활용·안전평가 직무를 지역 거점과 함께 비교해 보세요.</small>
+          <a href="https://admin.korea.kr/briefing/pressReleaseView.do?newsId=156776369&amp;pWise=mSub&amp;pWiseSub=C4" target="_blank" rel="noopener noreferrer">산업부 공식 발표 보기</a>
+        </article>
       </div>
     </section>
 
@@ -321,7 +349,7 @@
     </div>
 
     <footer>
-      <span><strong>검증 원칙</strong> 공식·원문 상세페이지, 접수 상태, 마감일, 배터리 연관성을 교차 확인했어요.</span>
+      <span><strong>검증 원칙</strong> 최근 7일 공식 발표와 과거 발행본, 공고 원문·접수 상태를 교차 확인했어요.</span>
       <span>처음 오신 분도 전공·희망직무를 편하게 남겨 주세요. 함께 공고를 좁혀드릴게요.</span>
     </footer>
   </main>
