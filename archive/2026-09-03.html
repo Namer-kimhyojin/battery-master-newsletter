@@ -119,20 +119,25 @@
     }
     .job-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
     .job-card:last-child:nth-child(odd) .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .job-top { display: flex; align-items: start; justify-content: space-between; gap: 8px; }
-    .rank {
+    .job-top { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+    .job-heading { min-width: 0; }
+    .company-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 7px; margin-bottom: 4px; }
+    .company-name { color: var(--green-dark); font-size: 14px; line-height: 1.2; }
+    .company-meta { color: var(--muted); font-size: 9.2px; font-weight: 700; }
+    .deadline-badge {
       flex: 0 0 auto;
-      min-width: 24px;
-      padding: 3px 6px;
-      border-radius: 999px;
-      color: #fff;
-      background: var(--green);
-      font-size: 9.2px;
+      min-width: 67px;
+      padding: 5px 7px;
+      border: 1px solid #e4bd78;
+      border-radius: 8px;
+      color: #744100;
+      background: #fff5df;
       font-weight: 800;
       text-align: center;
     }
+    .deadline-badge small { display: block; color: #8a6630; font-size: 8px; line-height: 1; }
+    .deadline-badge strong { display: block; margin-top: 3px; font-size: 9.4px; line-height: 1.15; }
     h3 { margin: 0; font-size: 13.2px; line-height: 1.36; letter-spacing: -.025em; }
-    .company { margin: 3px 0 6px; color: var(--green-dark); font-size: 9.8px; font-weight: 700; }
     .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
     .tag { padding: 2px 5px; border-radius: 4px; color: #28523f; background: #e5f3eb; font-size: 8.7px; font-weight: 700; }
     .facts { display: grid; gap: 3px; margin: 0; }
@@ -148,19 +153,21 @@
       font-weight: 800;
     }
     .deadline-panel {
-      display: grid;
-      grid-template-columns: 34mm 1fr;
-      gap: 10px;
-      align-items: center;
       padding: 9px 12px;
       border: 1px solid #ead8b6;
       border-left: 5px solid var(--amber);
       border-radius: 10px;
       background: #fff9ed;
     }
-    .deadline-panel strong { color: #744100; }
-    .deadline-panel p { margin: 0; font-size: 10.2px; }
-    .deadline-panel small { display: block; margin-top: 2px; color: var(--muted); font-size: 9.2px; }
+    .deadline-summary { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
+    .deadline-summary strong { color: #744100; font-size: 11px; }
+    .deadline-summary span { color: var(--muted); font-size: 9.3px; }
+    .deadline-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+    .deadline-item { min-width: 0; padding: 7px 8px; border: 1px solid #ead8b6; border-radius: 7px; background: #fff; }
+    .deadline-item time { display: block; color: var(--amber); font-size: 9.6px; font-weight: 900; }
+    .deadline-item strong { display: block; margin-top: 2px; color: var(--ink); font-size: 10.3px; }
+    .deadline-item span { display: block; margin-top: 2px; color: var(--muted); font-size: 8.8px; }
+    .deadline-item a { display: inline-block; margin-top: 4px; font-size: 9px; font-weight: 800; }
     .bottom-grid {
       display: grid;
       grid-template-columns: 1.22fr .78fr;
@@ -240,12 +247,22 @@
       .trend p { font-size: 14px; }
       .trend small, .trend-label { font-size: 12px; }
       .trend a, .source, .resource a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
-      .company { font-size: 13px; }
+      .company-name { font-size: 17px; }
+      .company-meta { font-size: 12px; }
+      .deadline-badge { min-width: 88px; padding: 7px 8px; }
+      .deadline-badge small { font-size: 10px; }
+      .deadline-badge strong { font-size: 12px; }
       .tag { font-size: 11px; }
       .facts div { grid-template-columns: 62px 1fr; font-size: 13.5px; gap: 7px; }
-      .deadline-panel { grid-template-columns: 1fr; gap: 4px; }
-      .deadline-panel p { font-size: 14px; }
-      .deadline-panel small { font-size: 12.5px; }
+      .deadline-summary { align-items: start; flex-direction: column; gap: 2px; }
+      .deadline-summary strong { font-size: 15px; }
+      .deadline-summary span { font-size: 13px; }
+      .deadline-list { grid-template-columns: 1fr; }
+      .deadline-item { padding: 12px; }
+      .deadline-item time { font-size: 14px; }
+      .deadline-item strong { font-size: 15px; }
+      .deadline-item span { font-size: 13px; }
+      .deadline-item a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
       .points li, .resource p { font-size: 14px; }
       .resource strong { font-size: 15px; }
       .section-head { align-items: start; }
@@ -262,7 +279,7 @@
       <p class="deck">최근 7일의 핵심 산업동향과 전국 배터리 밸류체인의 신입 중심 공고를 원문까지 확인해 정리했어요.</p>
       <div class="meta-row">
         <span><strong>발행</strong> 2026.09.03 목요일</span>
-        <span><strong>검증 기준</strong> 2026.09.03 19:05 KST</span>
+        <span><strong>검증 기준</strong> 2026.09.03 19:11 KST</span>
         <span><strong>오늘의 결과</strong> 신규 동향 2건 · 신입 공고 3건 · 신청 일정 1건</span>
       </div>
     </header>
@@ -296,13 +313,13 @@
         <span class="section-kicker">신입·경력무관 우선 · 공고별 원문 확인</span>
       </div>
       <div class="jobs">
-        <article class="job-card">
+        <article class="job-card" data-job-id="JobKorea-49902326">
           <div class="job-top">
-            <div>
+            <div class="job-heading">
+              <div class="company-line"><strong class="company-name">포스코퓨처엠</strong><span class="company-meta">대기업·코스피 · 양극재·음극재</span></div>
               <h3>2026년 신입/경력사원 채용<br>R&amp;D·공정·품질·설비 등</h3>
-              <p class="company">포스코퓨처엠 · 대기업/코스피 · 양극재·음극재</p>
             </div>
-            <span class="rank">우선</span>
+            <span class="deadline-badge"><small>마감</small><strong>9.14 23:59</strong></span>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">대졸 이상</span></div>
           <dl class="facts">
@@ -310,19 +327,17 @@
             <div><dt>지원 요건</dt><dd>4년제 대학 졸업(예정) 이상, 세부 전공·자격은 직무별 확인</dd></div>
             <div><dt>우대</dt><dd>관련 전공·자격증·외국어 역량 등 직무별 상이</dd></div>
             <div><dt>근무지</dt><dd>포항·서울·세종·광양</dd></div>
-            <div><dt>마감</dt><dd class="deadline">2026.09.14 23:59</dd></div>
-            <div><dt>공고 ID</dt><dd>JobKorea 49902326</dd></div>
           </dl>
           <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
 
-        <article class="job-card">
+        <article class="job-card" data-job-id="Saramin-54758787">
           <div class="job-top">
-            <div>
+            <div class="job-heading">
+              <div class="company-line"><strong class="company-name">힐머에너지</strong><span class="company-meta">기술창업기업 · 실리콘 음극 바인더</span></div>
               <h3>이차전지/기능성 고분자<br>R&amp;D 연구원 채용</h3>
-              <p class="company">힐머에너지 · 기술창업기업 · 실리콘 음극 바인더</p>
             </div>
-            <span class="rank">R&amp;D</span>
+            <span class="deadline-badge"><small>마감</small><strong>9.14 23:59</strong></span>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
           <dl class="facts">
@@ -330,19 +345,17 @@
             <div><dt>지원 요건</dt><dd>신입 또는 경력 1~6년, 화학·화공·고분자·재료·에너지 관련 학사 이상</dd></div>
             <div><dt>우대</dt><dd>석·박사, 전극 제조·코인셀·분석장비 경험</dd></div>
             <div><dt>근무지</dt><dd>서울 성북구, 필요 시 청주 연구공간</dd></div>
-            <div><dt>마감</dt><dd class="deadline">2026.09.14 23:59</dd></div>
-            <div><dt>공고 ID</dt><dd>사람인 54758787</dd></div>
           </dl>
           <a class="source" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
 
-        <article class="job-card">
+        <article class="job-card" data-job-id="JobKorea-49612507">
           <div class="job-top">
-            <div>
+            <div class="job-heading">
+              <div class="company-line"><strong class="company-name">에이비알</strong><span class="company-meta">중소 소재기업 · 이차전지·연료전지·수처리</span></div>
               <h3>(인천) 이차전지 소재 파트 신입 및 경력 채용</h3>
-              <p class="company">에이비알 · 중소 소재기업 · 이차전지/연료전지/수처리</p>
             </div>
-            <span class="rank">소재</span>
+            <span class="deadline-badge"><small>마감 예정</small><strong>9.18<br>채용 시</strong></span>
           </div>
           <div class="tags"><span class="tag">신입 가능</span><span class="tag">정규직</span><span class="tag">졸업예정 가능</span></div>
           <dl class="facts">
@@ -350,8 +363,6 @@
             <div><dt>지원 요건</dt><dd>신입 또는 경력 3년 이상 트랙, 졸업예정자 지원 가능</dd></div>
             <div><dt>우대</dt><dd>관련 전공, 인근 거주, 차량 보유, 즉시 출근·장기근무 가능자</dd></div>
             <div><dt>근무지</dt><dd>인천 서구 정서진로 410</dd></div>
-            <div><dt>마감</dt><dd class="deadline">2026.09.18 예정 · 채용 시 조기마감</dd></div>
-            <div><dt>공고 ID</dt><dd>JobKorea 49612507</dd></div>
           </dl>
           <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
@@ -361,11 +372,33 @@
     <section aria-labelledby="deadline-title">
       <div class="section-head">
         <h2 id="deadline-title">마감 임박 공고</h2>
-        <span class="section-kicker">9.4~9.10 · 현재 지원 가능 기준</span>
+        <span class="section-kicker">9.4~9.10 · 다음 마감 일정까지 안내</span>
       </div>
       <div class="deadline-panel">
-        <strong>7일 이내 마감 공고 없음</strong>
-        <p>가장 가까운 다음 마감은 9월 14일이에요.<small>포스코퓨처엠 23:59 · 힐머에너지 23:59 — 위 상세 공고에서 지원 조건을 확인하세요.</small></p>
+        <div class="deadline-summary">
+          <strong>7일 이내 마감 공고 없음</strong>
+          <span>현재 확인된 가장 가까운 다음 마감 공고를 정확한 원문 링크와 함께 안내해요.</span>
+        </div>
+        <div class="deadline-list">
+          <article class="deadline-item">
+            <time datetime="2026-09-14T23:59:00+09:00">2026.09.14 23:59</time>
+            <strong>포스코퓨처엠</strong>
+            <span>신입/경력사원 · R&amp;D·공정·품질·설비 등</span>
+            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+          </article>
+          <article class="deadline-item">
+            <time datetime="2026-09-14T23:59:00+09:00">2026.09.14 23:59</time>
+            <strong>힐머에너지</strong>
+            <span>이차전지·기능성 고분자 R&amp;D 연구원</span>
+            <a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+          </article>
+          <article class="deadline-item">
+            <time datetime="2026-09-18">2026.09.18 예정</time>
+            <strong>에이비알</strong>
+            <span>이차전지 소재 연구개발 · 채용 시 조기마감</span>
+            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -389,7 +422,7 @@
     </div>
 
     <footer>
-      <span><strong>검증 원칙</strong> 최근 7일 공식 발표, 공고 원문·접수 상태, 신청 가능 일정을 19:05 KST에 다시 확인했어요.</span>
+      <span><strong>검증 원칙</strong> 최근 7일 공식 발표, 공고 원문·접수 상태, 신청 가능 일정을 19:11 KST에 다시 확인했어요.</span>
       <span>처음 오신 분도 전공·희망직무를 편하게 남겨 주세요. 함께 공고를 좁혀드릴게요.</span>
     </footer>
   </main>
