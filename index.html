@@ -7,22 +7,27 @@
   <title>배터리 마스터 데일리 브리핑 | 2026.09.03</title>
   <style>
     :root {
-      --ink: #17221d;
-      --muted: #607069;
-      --line: #d8e3dd;
+      --ink: #111827;
+      --muted: #64748b;
+      --line: #dfe6e9;
       --paper: #ffffff;
-      --wash: #f3f8f5;
-      --green: #0b6b46;
-      --green-dark: #074b34;
-      --lime: #c8ef72;
-      --amber: #a85f00;
+      --canvas: #edf2f1;
+      --night: #081a17;
+      --green: #087a5b;
+      --mint: #8ff2cf;
+      --mint-soft: #eafaf4;
+      --blue-soft: #edf4ff;
+      --amber: #a85508;
+      --amber-soft: #fff4df;
     }
     * { box-sizing: border-box; }
-    html { background: #e8eeea; }
+    html { background: var(--canvas); -webkit-text-size-adjust: 100%; }
     body {
       margin: 0;
       color: var(--ink);
-      background: #e8eeea;
+      background:
+        radial-gradient(circle at 10% 6%, rgba(143, 242, 207, .28), transparent 22rem),
+        var(--canvas);
       font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
       line-height: 1.48;
       word-break: keep-all;
@@ -30,242 +35,185 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-    a { color: var(--green); text-underline-offset: 2px; }
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
     .sheet {
       width: 210mm;
       min-height: 297mm;
       margin: 18px auto;
-      padding: 10mm 11mm 8mm;
+      padding: 9mm 10mm 7mm;
       background: var(--paper);
-      box-shadow: 0 18px 50px rgba(17, 47, 33, .13);
+      box-shadow: 0 24px 70px rgba(15, 23, 42, .13);
     }
     .masthead {
       position: relative;
-      padding: 5.5mm 8mm 5mm;
-      border-radius: 18px;
+      padding: 5mm 7mm 4.5mm;
+      border-radius: 21px;
       color: #fff;
-      background: linear-gradient(130deg, var(--green-dark), var(--green));
+      background:
+        radial-gradient(circle at 92% -20%, rgba(143, 242, 207, .28) 0 18%, transparent 19%),
+        radial-gradient(circle at 72% 145%, rgba(78, 139, 255, .20) 0 16%, transparent 17%),
+        linear-gradient(125deg, #061714 0%, #0a3d31 58%, #0c6950 100%);
+      box-shadow: 0 12px 28px rgba(6, 40, 32, .18);
     }
-    .masthead::after {
-      content: "BM";
-      position: absolute;
-      right: 8mm;
-      top: 5mm;
-      color: rgba(255,255,255,.10);
-      font-size: 54px;
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -.08em;
-    }
-    .eyebrow {
-      margin: 0 0 4px;
-      color: var(--lime);
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: .04em;
-    }
-    h1 { margin: 0; font-size: 29px; line-height: 1.15; letter-spacing: -.045em; }
-    .meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px 14px;
-      margin-top: 8px;
-      font-size: 10.5px;
-      color: #d8eee2;
-    }
+    .eyebrow { margin: 0 0 4px; color: var(--mint); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+    h1 { margin: 0; max-width: 150mm; font-size: 27px; line-height: 1.12; letter-spacing: -.045em; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 7px; color: #c8dfd8; font-size: 9.6px; }
     .meta-row strong { color: #fff; }
-    section { margin-top: 15px; }
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 7px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid var(--ink);
-    }
-    h2 { margin: 0; font-size: 17px; letter-spacing: -.03em; }
-    .section-kicker { color: var(--muted); font-size: 10px; text-align: right; }
-    .trend-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-    }
+    section { margin-top: 13px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin-bottom: 7px; }
+    .section-head h2 { display: flex; align-items: center; gap: 7px; }
+    .section-head h2::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px var(--mint-soft); }
+    h2 { margin: 0; color: var(--night); font-size: 16px; letter-spacing: -.035em; }
+    h3 { margin: 0; font-size: 12.8px; line-height: 1.35; letter-spacing: -.025em; }
+    .section-kicker { color: var(--muted); font-size: 9.2px; text-align: right; }
+    .trend-list,
+    .jobs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
     .trend {
-      padding: 10px 12px;
-      border: 1px solid var(--line);
-      border-left: 5px solid var(--green);
-      border-radius: 10px;
-      background: var(--wash);
+      position: relative;
+      padding: 10px 11px;
+      border: 1px solid #d8ece5;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #f6fffb, #edf8f4);
+      box-shadow: 0 5px 14px rgba(15, 72, 55, .055);
     }
-    .trend-label { display: inline-block; margin-bottom: 5px; padding: 2px 6px; border-radius: 999px; color: var(--green-dark); background: #dff0e7; font-size: 9.5px; font-weight: 800; }
-    .trend h3 { margin-bottom: 5px; font-size: 12.5px; }
-    .trend p { margin: 0 0 4px; font-size: 10.8px; }
-    .trend small { display: block; margin-top: 3px; color: var(--muted); font-size: 9.2px; }
-    .trend a { display: inline-block; margin-top: 4px; font-size: 9.5px; font-weight: 800; }
-    .jobs {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
+    .trend:nth-child(2) { border-color: #dce7f8; background: linear-gradient(145deg, #f8fbff, var(--blue-soft)); }
+    .trend-label { display: inline-block; margin-bottom: 5px; padding: 3px 7px; border-radius: 999px; color: #086148; background: #d9f6eb; font-size: 8.8px; font-weight: 850; }
+    .trend:nth-child(2) .trend-label { color: #245494; background: #dfeaff; }
+    .trend h3 { margin-bottom: 4px; font-size: 12.2px; }
+    .trend p { margin: 0 0 3px; font-size: 10.3px; }
+    .trend small { display: block; margin-top: 3px; color: var(--muted); font-size: 8.8px; }
+    .trend a,
+    .source,
+    .resource a,
+    .keyword-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: #075f47;
+      background: #e5f7f0;
+      font-size: 8.9px;
+      font-weight: 850;
+      text-decoration: none;
     }
+    .trend a::after,
+    .source::after,
+    .resource a::after,
+    .keyword-source::after { content: "→"; }
     .job-card {
+      position: relative;
       display: flex;
       flex-direction: column;
+      min-width: 0;
       padding: 10px 11px;
       border: 1px solid var(--line);
-      border-radius: 11px;
+      border-radius: 16px;
       background: #fff;
+      box-shadow: 0 7px 18px rgba(15, 23, 42, .055);
     }
+    .job-card::before { content: ""; position: absolute; top: 0; left: 16px; right: 16px; height: 3px; border-radius: 0 0 5px 5px; background: linear-gradient(90deg, var(--green), var(--mint)); }
     .job-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
-    .job-card:last-child:nth-child(odd) .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .job-top { display: flex; align-items: start; justify-content: space-between; gap: 10px; }
+    .job-card:last-child:nth-child(odd) .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 13px; }
+    .job-top { display: flex; align-items: start; justify-content: space-between; gap: 10px; padding-top: 2px; }
     .job-heading { min-width: 0; }
-    .company-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 7px; margin-bottom: 4px; }
-    .company-name { color: var(--green-dark); font-size: 14px; line-height: 1.2; }
-    .company-meta { color: var(--muted); font-size: 9.2px; font-weight: 700; }
-    .deadline-badge {
-      flex: 0 0 auto;
-      min-width: 67px;
-      padding: 5px 7px;
-      border: 1px solid #e4bd78;
-      border-radius: 8px;
-      color: #744100;
-      background: #fff5df;
-      font-weight: 800;
-      text-align: center;
+    .company-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 7px; margin-bottom: 4px; }
+    .company-name { color: #064f3d; font-size: 13.8px; line-height: 1.2; }
+    .company-meta { color: var(--muted); font-size: 8.8px; font-weight: 700; }
+    .deadline-badge { flex: 0 0 auto; min-width: 66px; padding: 5px 7px; border: 1px solid #f0d1a1; border-radius: 10px; color: #8d4705; background: var(--amber-soft); text-align: center; }
+    .deadline-badge small { display: block; color: #a25e1b; font-size: 7.7px; font-weight: 800; line-height: 1; }
+    .deadline-badge strong { display: block; margin-top: 3px; font-size: 9px; font-weight: 900; line-height: 1.15; }
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0; }
+    .tag { padding: 2px 6px; border-radius: 999px; color: #2f4b42; background: #eff5f2; font-size: 8.2px; font-weight: 750; }
+    .facts { display: grid; gap: 2px; margin: 0; }
+    .facts div { display: grid; grid-template-columns: 49px minmax(0, 1fr); gap: 5px; font-size: 9.15px; }
+    .facts dt { color: var(--muted); font-weight: 750; }
+    .facts dd { min-width: 0; margin: 0; }
+    .source { align-self: flex-start; margin-top: auto; padding-top: 4px; }
+    .keyword-shell {
+      padding: 10px 11px;
+      border-radius: 17px;
+      color: #eefbf7;
+      background: linear-gradient(125deg, #0b1d2b, #103f3d);
+      box-shadow: 0 10px 26px rgba(11, 29, 43, .14);
     }
-    .deadline-badge small { display: block; color: #8a6630; font-size: 8px; line-height: 1; }
-    .deadline-badge strong { display: block; margin-top: 3px; font-size: 9.4px; line-height: 1.15; }
-    h3 { margin: 0; font-size: 13.2px; line-height: 1.36; letter-spacing: -.025em; }
-    .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 6px; }
-    .tag { padding: 2px 5px; border-radius: 4px; color: #28523f; background: #e5f3eb; font-size: 8.7px; font-weight: 700; }
-    .facts { display: grid; gap: 3px; margin: 0; }
-    .facts div { display: grid; grid-template-columns: 51px 1fr; gap: 5px; font-size: 9.5px; }
-    .facts dt { color: var(--muted); font-weight: 700; }
-    .facts dd { margin: 0; }
-    .deadline { color: var(--amber); font-weight: 800; }
-    .source {
-      display: inline-block;
-      margin-top: auto;
-      padding-top: 7px;
-      font-size: 9.5px;
-      font-weight: 800;
-    }
-    .deadline-panel {
-      padding: 9px 12px;
-      border: 1px solid #ead8b6;
-      border-left: 5px solid var(--amber);
-      border-radius: 10px;
-      background: #fff9ed;
-    }
-    .deadline-summary { display: flex; align-items: center; gap: 10px; margin-bottom: 7px; }
-    .deadline-summary strong { color: #744100; font-size: 11px; }
-    .deadline-summary span { color: var(--muted); font-size: 9.3px; }
-    .deadline-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
-    .deadline-item { min-width: 0; padding: 7px 8px; border: 1px solid #ead8b6; border-radius: 7px; background: #fff; }
-    .deadline-item time { display: block; color: var(--amber); font-size: 9.6px; font-weight: 900; }
-    .deadline-item strong { display: block; margin-top: 2px; color: var(--ink); font-size: 10.3px; }
-    .deadline-item span { display: block; margin-top: 2px; color: var(--muted); font-size: 8.8px; }
-    .deadline-item a { display: inline-block; margin-top: 4px; font-size: 9px; font-weight: 800; }
-    .bottom-grid {
-      display: grid;
-      grid-template-columns: 1.22fr .78fr;
-      gap: 8px;
-      margin-top: 15px;
-    }
-    .panel {
-      padding: 10px 12px;
-      border-radius: 11px;
-      border: 1px solid var(--line);
-      background: var(--wash);
-    }
-    .panel h2 { margin-bottom: 7px; font-size: 14px; }
+    .keyword-intro { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 7px; }
+    .keyword-intro strong { color: var(--mint); font-size: 10.5px; }
+    .keyword-intro span { color: #b8cdc8; font-size: 8.8px; }
+    .keyword-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+    .keyword-card { min-width: 0; padding: 8px 9px; border: 1px solid rgba(255,255,255,.13); border-radius: 12px; background: rgba(255,255,255,.07); }
+    .keyword-no { display: block; margin-bottom: 3px; color: var(--mint); font-size: 8px; font-weight: 900; letter-spacing: .08em; }
+    .keyword-card h3 { color: #fff; font-size: 11px; }
+    .keyword-card p { margin: 3px 0 0; color: #d3e5e0; font-size: 8.8px; }
+    .keyword-card small { display: block; margin-top: 4px; color: #a9c6bd; font-size: 8px; }
+    .keyword-source { color: #0a4938; background: var(--mint); }
+    .bottom-grid { display: grid; grid-template-columns: 1.18fr .82fr; gap: 8px; margin-top: 13px; }
+    .panel { padding: 10px 11px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(145deg, #fff, #f7faf9); box-shadow: 0 6px 16px rgba(15, 23, 42, .045); }
+    .panel h2 { margin-bottom: 7px; font-size: 13.5px; }
     .points { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; counter-reset: point; }
-    .points li { position: relative; padding-left: 18px; font-size: 10px; }
-    .points li::before {
-      counter-increment: point;
-      content: counter(point);
-      position: absolute;
-      left: 0;
-      top: 1px;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      color: #fff;
-      background: var(--green);
-      font-size: 8.5px;
-      line-height: 14px;
-      text-align: center;
-      font-weight: 800;
-    }
-    .resource p { margin: 0 0 5px; font-size: 10px; }
-    .resource strong { display: block; margin-bottom: 3px; color: var(--green-dark); font-size: 11px; }
-    .resource a { font-size: 9.5px; font-weight: 800; }
-    footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      margin-top: 12px;
-      padding-top: 7px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 9px;
-    }
-    footer strong { color: var(--green-dark); }
+    .points li { position: relative; padding-left: 19px; font-size: 9.5px; }
+    .points li::before { counter-increment: point; content: counter(point); position: absolute; left: 0; top: 0; width: 14px; height: 14px; border-radius: 5px; color: #fff; background: #0a7256; font-size: 8px; line-height: 14px; text-align: center; font-weight: 900; }
+    .resource { background: linear-gradient(145deg, #f4f8ff, #eef5ff); }
+    .resource p { margin: 0 0 4px; font-size: 9.3px; }
+    .resource strong { display: block; margin-bottom: 3px; color: #234d8f; font-size: 10.5px; }
+    footer { display: grid; grid-template-columns: 1.25fr .75fr; gap: 12px; margin-top: 10px; padding: 8px 10px; border-radius: 12px; color: #607069; background: #f2f6f4; font-size: 8.6px; }
+    footer strong { color: #07533f; }
     @page { size: A4 portrait; margin: 0; }
     @media print {
       html, body { width: 210mm; height: 297mm; background: #fff; }
+      body { font-size: 9.7pt; }
       .sheet { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; padding: 7mm 9mm 5mm; box-shadow: none; }
-      .masthead { padding: 3.5mm 6mm 3mm; }
-      .meta-row { margin-top: 6px; }
-      section { margin-top: 10px; }
-      .section-head { margin-bottom: 5px; padding-bottom: 3px; }
+      .masthead { padding: 3.5mm 6mm 3mm; box-shadow: none; }
+      section { margin-top: 9px; }
+      .section-head { margin-bottom: 5px; }
       .trend-list, .jobs, .bottom-grid { gap: 6px; }
-      .trend, .job-card, .panel, .deadline-panel { padding: 7px 9px; }
-      .tags { margin-bottom: 4px; }
-      .facts { gap: 2px; }
-      .source { padding-top: 4px; }
-      .bottom-grid { margin-top: 10px; }
-      footer { margin-top: 7px; padding-top: 5px; }
-      a { color: var(--green); }
+      .trend, .job-card, .panel, .keyword-shell { padding: 7px 8px; box-shadow: none; }
+      .tags { margin: 4px 0; }
+      .source { margin-top: 3px; }
+      .bottom-grid { margin-top: 9px; }
+      footer { margin-top: 6px; padding: 5px 7px; }
     }
     @media (max-width: 720px) {
       html, body { background: #fff; font-size: 16px; line-height: 1.65; }
-      .sheet { width: 100%; min-height: 0; margin: 0; padding: 16px; box-shadow: none; }
-      .masthead { padding: 18px 20px 16px; border-radius: 14px; }
+      .sheet { width: 100%; min-height: 0; margin: 0; padding: 14px 14px 24px; box-shadow: none; }
+      .masthead { padding: 20px 18px 18px; border-radius: 20px; }
+      .eyebrow { font-size: 11px; }
       h1 { font-size: 28px; }
-      .meta-row { font-size: 11px; }
-      h2 { font-size: 19px; }
+      .meta-row { display: grid; gap: 2px; font-size: 11px; }
+      section { margin-top: 22px; }
+      h2 { font-size: 20px; }
       h3, .trend h3 { font-size: 16px; }
-      .section-kicker { font-size: 11px; }
-      .trend-list, .jobs, .bottom-grid { grid-template-columns: 1fr; }
+      .section-head { align-items: start; }
+      .section-kicker { max-width: 140px; font-size: 11px; }
+      .trend-list, .jobs, .keyword-grid, .bottom-grid { grid-template-columns: 1fr; }
       .job-card:last-child:nth-child(odd) { grid-column: auto; }
       .job-card:last-child:nth-child(odd) .facts { grid-template-columns: 1fr; }
-      .job-card, .trend, .panel, .deadline-panel { padding: 14px; }
+      .job-card, .trend, .panel, .keyword-shell { padding: 16px; border-radius: 18px; }
       .trend p { font-size: 14px; }
       .trend small, .trend-label { font-size: 12px; }
-      .trend a, .source, .resource a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
-      .company-name { font-size: 17px; }
+      .trend a, .source, .resource a, .keyword-source { display: flex; min-height: 44px; justify-content: center; font-size: 14px; }
+      .company-name { font-size: 18px; }
       .company-meta { font-size: 12px; }
-      .deadline-badge { min-width: 88px; padding: 7px 8px; }
+      .deadline-badge { min-width: 88px; padding: 8px; border-radius: 12px; }
       .deadline-badge small { font-size: 10px; }
       .deadline-badge strong { font-size: 12px; }
-      .tag { font-size: 11px; }
-      .facts div { grid-template-columns: 62px 1fr; font-size: 13.5px; gap: 7px; }
-      .deadline-summary { align-items: start; flex-direction: column; gap: 2px; }
-      .deadline-summary strong { font-size: 15px; }
-      .deadline-summary span { font-size: 13px; }
-      .deadline-list { grid-template-columns: 1fr; }
-      .deadline-item { padding: 12px; }
-      .deadline-item time { font-size: 14px; }
-      .deadline-item strong { font-size: 15px; }
-      .deadline-item span { font-size: 13px; }
-      .deadline-item a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
+      .tag { padding: 3px 8px; font-size: 11px; }
+      .facts { gap: 5px; }
+      .facts div { grid-template-columns: 64px minmax(0, 1fr); gap: 8px; font-size: 14px; }
+      .keyword-intro { align-items: start; flex-direction: column; gap: 2px; }
+      .keyword-intro strong { font-size: 15px; }
+      .keyword-intro span { font-size: 13px; }
+      .keyword-grid { gap: 8px; }
+      .keyword-card { padding: 14px; }
+      .keyword-no { font-size: 10px; }
+      .keyword-card h3 { font-size: 16px; }
+      .keyword-card p { font-size: 14px; }
+      .keyword-card small { font-size: 12px; }
       .points li, .resource p { font-size: 14px; }
-      .resource strong { font-size: 15px; }
-      .section-head { align-items: start; }
-      .section-kicker { max-width: 140px; }
-      footer { flex-direction: column; gap: 4px; font-size: 12.5px; }
+      .resource strong { font-size: 16px; }
+      footer { grid-template-columns: 1fr; gap: 5px; padding: 14px; font-size: 12.5px; }
     }
   </style>
 </head>
@@ -366,36 +314,37 @@
       </div>
     </section>
 
-    <section aria-labelledby="deadline-title">
+    <section aria-labelledby="keyword-title">
       <div class="section-head">
-        <h2 id="deadline-title">마감 임박 공고</h2>
-        <span class="section-kicker">9.4~9.10 · 다음 마감 일정까지 안내</span>
+        <h2 id="keyword-title">오늘의 직무 키워드</h2>
+        <span class="section-kicker">7일 내 마감 공고 없음 · 검증 공고 요구역량으로 대체</span>
       </div>
-      <div class="deadline-panel">
-        <div class="deadline-summary">
-          <strong>7일 이내 마감 공고 없음</strong>
-          <span>현재 확인된 가장 가까운 다음 마감 공고를 정확한 원문 링크와 함께 안내해요.</span>
+      <div class="keyword-shell">
+        <div class="keyword-intro">
+          <strong>R&amp;D 공고에서 바로 읽어야 할 세 가지</strong>
+          <span>힐머에너지 채용 원문 기준</span>
         </div>
-        <div class="deadline-list">
-          <article class="deadline-item">
-            <time datetime="2026-09-14T23:59:00+09:00">2026.09.14 23:59</time>
-            <strong>포스코퓨처엠</strong>
-            <span>신입/경력사원 · R&amp;D·공정·품질·설비 등</span>
-            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49902326?sc=542" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+        <div class="keyword-grid">
+          <article class="keyword-card">
+            <span class="keyword-no">KEYWORD 01</span>
+            <h3>슬러리·코팅 최적화</h3>
+            <p>배합비·점도·코팅 조건과 전극 성능의 변화를 연결하는 업무예요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 변수–관찰–개선 결과를 수치로 정리하세요.</small>
           </article>
-          <article class="deadline-item">
-            <time datetime="2026-09-14T23:59:00+09:00">2026.09.14 23:59</time>
-            <strong>힐머에너지</strong>
-            <span>이차전지·기능성 고분자 R&amp;D 연구원</span>
-            <a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+          <article class="keyword-card">
+            <span class="keyword-no">KEYWORD 02</span>
+            <h3>Coin Cell 평가</h3>
+            <p>셀 제작 조건과 충·방전 결과를 바탕으로 소재 성능을 비교해요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 제작 조건–평가지표–결과 순으로 경험을 설명하세요.</small>
           </article>
-          <article class="deadline-item">
-            <time datetime="2026-09-18">2026.09.18 예정</time>
-            <strong>에이비알</strong>
-            <span>이차전지 소재 연구개발 · 채용 시 조기마감</span>
-            <a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 바로가기</a>
+          <article class="keyword-card">
+            <span class="keyword-no">KEYWORD 03</span>
+            <h3>소재분석 XRD·SEM</h3>
+            <p>결정구조와 표면·형상을 분석해 소재와 공정의 문제를 확인해요.</p>
+            <small><strong>배터리 마스터의 제안:</strong> 분석 목적–시료–해석–개선 연결을 준비하세요.</small>
           </article>
         </div>
+        <a class="keyword-source" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54758787" target="_blank" rel="noopener noreferrer">키워드가 나온 채용 원문 확인</a>
       </div>
     </section>
 
