@@ -147,6 +147,20 @@
       font-size: 9.5px;
       font-weight: 800;
     }
+    .deadline-panel {
+      display: grid;
+      grid-template-columns: 34mm 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 9px 12px;
+      border: 1px solid #ead8b6;
+      border-left: 5px solid var(--amber);
+      border-radius: 10px;
+      background: #fff9ed;
+    }
+    .deadline-panel strong { color: #744100; }
+    .deadline-panel p { margin: 0; font-size: 10.2px; }
+    .deadline-panel small { display: block; margin-top: 2px; color: var(--muted); font-size: 9.2px; }
     .bottom-grid {
       display: grid;
       grid-template-columns: 1.22fr .78fr;
@@ -195,7 +209,18 @@
     @page { size: A4 portrait; margin: 0; }
     @media print {
       html, body { width: 210mm; height: 297mm; background: #fff; }
-      .sheet { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; box-shadow: none; }
+      .sheet { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; padding: 7mm 9mm 5mm; box-shadow: none; }
+      .masthead { padding: 5mm 6mm 4mm; }
+      .meta-row { margin-top: 8px; }
+      section { margin-top: 10px; }
+      .section-head { margin-bottom: 5px; padding-bottom: 3px; }
+      .trend-list, .jobs, .bottom-grid { gap: 6px; }
+      .trend, .job-card, .panel, .deadline-panel { padding: 7px 9px; }
+      .tags { margin-bottom: 4px; }
+      .facts { gap: 2px; }
+      .source { padding-top: 4px; }
+      .bottom-grid { margin-top: 10px; }
+      footer { margin-top: 7px; padding-top: 5px; }
       a { color: var(--green); }
     }
     @media (max-width: 720px) {
@@ -211,13 +236,16 @@
       .trend-list, .jobs, .bottom-grid { grid-template-columns: 1fr; }
       .job-card:last-child:nth-child(odd) { grid-column: auto; }
       .job-card:last-child:nth-child(odd) .facts { grid-template-columns: 1fr; }
-      .job-card, .trend, .panel { padding: 14px; }
+      .job-card, .trend, .panel, .deadline-panel { padding: 14px; }
       .trend p { font-size: 14px; }
       .trend small, .trend-label { font-size: 12px; }
       .trend a, .source, .resource a { display: flex; min-height: 44px; align-items: center; font-size: 14px; }
       .company { font-size: 13px; }
       .tag { font-size: 11px; }
       .facts div { grid-template-columns: 62px 1fr; font-size: 13.5px; gap: 7px; }
+      .deadline-panel { grid-template-columns: 1fr; gap: 4px; }
+      .deadline-panel p { font-size: 14px; }
+      .deadline-panel small { font-size: 12.5px; }
       .points li, .resource p { font-size: 14px; }
       .resource strong { font-size: 15px; }
       .section-head { align-items: start; }
@@ -234,14 +262,14 @@
       <p class="deck">최근 7일의 핵심 산업동향과 전국 배터리 밸류체인의 신입 중심 공고를 원문까지 확인해 정리했어요.</p>
       <div class="meta-row">
         <span><strong>발행</strong> 2026.09.03 목요일</span>
-        <span><strong>검증 기준</strong> 2026.09.03 18:38 KST</span>
+        <span><strong>검증 기준</strong> 2026.09.03 18:52 KST</span>
         <span><strong>오늘의 결과</strong> 신규 동향 2건 · 신입 공고 3건</span>
       </div>
     </header>
 
     <section aria-labelledby="trend-title">
       <div class="section-head">
-        <h2 id="trend-title">오늘의 산업·기업동향</h2>
+        <h2 id="trend-title">주요 산업·기업동향</h2>
         <span class="section-kicker">최근 7일(8.28~9.3) · 기존 발행 중복 제외</span>
       </div>
       <div class="trend-list">
@@ -327,6 +355,17 @@
           </dl>
           <a class="source" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49612507?sc=640" target="_blank" rel="noopener noreferrer">상세 공고 원문 보기</a>
         </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="deadline-title">
+      <div class="section-head">
+        <h2 id="deadline-title">마감 임박 공고</h2>
+        <span class="section-kicker">9.4~9.10 · 현재 지원 가능 기준</span>
+      </div>
+      <div class="deadline-panel">
+        <strong>7일 이내 마감 공고 없음</strong>
+        <p>가장 가까운 다음 마감은 9월 14일이에요.<small>포스코퓨처엠 23:59 · 힐머에너지 24:00 — 위 상세 공고에서 지원 조건을 확인하세요.</small></p>
       </div>
     </section>
 
