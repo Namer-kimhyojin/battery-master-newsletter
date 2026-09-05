@@ -4,7 +4,10 @@ param(
 
     [Parameter(Mandatory = $true)]
     [ValidatePattern('^\d{4}-\d{2}-\d{2}$')]
-    [string]$IssueDate
+    [string]$IssueDate,
+
+    [Parameter(Mandatory = $false)]
+    [string]$PdfSourceFile
 )
 
 $ErrorActionPreference = 'Stop'
@@ -16,10 +19,19 @@ $archiveFile = Join-Path $archiveDirectory "$IssueDate.html"
 $archiveIndexFile = Join-Path $archiveDirectory 'index.html'
 $latestFile = Join-Path $repositoryRoot 'index.html'
 $resolvedSource = (Resolve-Path -LiteralPath $SourceFile).Path
+$pdfDirectory = Join-Path $repositoryRoot 'pdf'
+$pdfArchiveFile = Join-Path $pdfDirectory "$IssueDate.pdf"
+$pdfLatestFile = Join-Path $pdfDirectory 'latest.pdf'
 
 New-Item -ItemType Directory -Path $archiveDirectory -Force | Out-Null
 Copy-Item -LiteralPath $resolvedSource -Destination $archiveFile -Force
 Copy-Item -LiteralPath $resolvedSource -Destination $latestFile -Force
+if ($PdfSourceFile) {
+    $resolvedPdfSource = (Resolve-Path -LiteralPath $PdfSourceFile).Path
+    New-Item -ItemType Directory -Path $pdfDirectory -Force | Out-Null
+    Copy-Item -LiteralPath $resolvedPdfSource -Destination $pdfArchiveFile -Force
+    Copy-Item -LiteralPath $resolvedPdfSource -Destination $pdfLatestFile -Force
+}
 
 $dayNames = @('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일')
 $archiveItems = Get-ChildItem -LiteralPath $archiveDirectory -File -Filter '*.html' |
@@ -60,8 +72,12 @@ $($archiveLinks -join "`n")
 
 Push-Location $repositoryRoot
 try {
-    git add -- 'index.html' "archive/$IssueDate.html" 'archive/index.html' 'publish-newsletter.ps1'
-    $pendingChanges = git status --porcelain -- 'index.html' "archive/$IssueDate.html" 'archive/index.html' 'publish-newsletter.ps1'
+    $gitPaths = @('index.html', "archive/$IssueDate.html", 'archive/index.html', 'publish-newsletter.ps1')
+    if ($PdfSourceFile) {
+        $gitPaths += @("pdf/$IssueDate.pdf", 'pdf/latest.pdf')
+    }
+    git add -- $gitPaths
+    $pendingChanges = git status --porcelain -- $gitPaths
     if ($pendingChanges) {
         git commit -m "Publish battery newsletter $IssueDate"
         git push origin main
@@ -72,9 +88,14 @@ try {
 
     $deploymentDirectory = Join-Path $repositoryRoot '.pages-output'
     $deploymentArchive = Join-Path $deploymentDirectory 'archive'
+    $deploymentPdf = Join-Path $deploymentDirectory 'pdf'
     New-Item -ItemType Directory -Path $deploymentArchive -Force | Out-Null
+    New-Item -ItemType Directory -Path $deploymentPdf -Force | Out-Null
     Copy-Item -LiteralPath $latestFile -Destination (Join-Path $deploymentDirectory 'index.html') -Force
     Copy-Item -Path (Join-Path $archiveDirectory '*') -Destination $deploymentArchive -Force
+    if (Test-Path -LiteralPath $pdfDirectory) {
+        Copy-Item -Path (Join-Path $pdfDirectory '*') -Destination $deploymentPdf -Force
+    }
 
     $npxCommand = (Get-Command npx -ErrorAction Stop).Source
     $commitHash = git rev-parse HEAD
