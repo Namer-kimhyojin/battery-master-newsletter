@@ -46,7 +46,7 @@ footer{display:grid;grid-template-columns:5fr 7fr;gap:18px;align-items:center;bo
 .job-top{grid-template-columns:1fr;gap:9px}.deadline-badge{width:100%;min-height:52px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px;padding:7px 10px;text-align:left}.deadline-badge small{font-size:12px}.deadline-badge strong{font-size:17px}.deadline-badge span{width:auto;margin:0;padding:0 0 0 10px;border-top:0;border-left:1px solid #fff9;font-size:13px}.tags{margin-bottom:7px}
 .job-details{border-top:1px solid var(--line);padding-top:7px}.job-details summary{display:flex;align-items:center;justify-content:space-between;min-height:44px;color:var(--blue);font-size:14px;font-weight:800;cursor:pointer;list-style:none}.job-details summary::-webkit-details-marker{display:none}.job-details summary::after{content:"펼치기";padding:3px 7px;border:1px solid var(--blue);font-size:12px}.job-details[open] summary::after{content:"접기"}.job-details:not([open])>.facts{display:none}.job-details[open]>.facts{display:grid;padding:7px 0 3px}
 }
-@media print{.quick-nav,.priority-mobile,.share-status{display:none}.job-details:not([open])>.facts{display:grid}.job-details summary{display:none}}
+@media print{.archive-nav,.quick-nav,.priority-mobile,.share-status{display:none!important}.job-details:not([open])>.facts{display:grid}.job-details summary{display:none}}
 </style>
 </head>
 <body>
