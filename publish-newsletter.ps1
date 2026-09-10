@@ -72,7 +72,7 @@ $($archiveLinks -join "`n")
 
 Push-Location $repositoryRoot
 try {
-    $gitPaths = @('index.html', "archive/$IssueDate.html", 'archive/index.html', 'publish-newsletter.ps1')
+    $gitPaths = @('index.html', "archive/$IssueDate.html", 'archive/index.html', 'publish-newsletter.ps1', 'README.md')
     if ($PdfSourceFile) {
         $gitPaths += @("pdf/$IssueDate.pdf", 'pdf/latest.pdf')
     }

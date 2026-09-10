@@ -3,7 +3,7 @@
 국내 이차전지 산업동향과 현재 지원 가능한 신입 중심 채용정보를 검증해 발행하는 HTML 뉴스레터입니다.
 
 - 최신 뉴스레터: <https://namer-kimhyojin.github.io/battery-master-newsletter/>
-- 발행 시각: 매일 오전 8시(KST)
+- 발행 시각: 평일 오후 12시(KST, 공휴일 제외)
 - `index.html`: 최신 발행본
 - `archive/YYYY-MM-DD.html`: 날짜별 발행 기록
 
