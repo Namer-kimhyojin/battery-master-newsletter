@@ -7,7 +7,13 @@ param(
     [string]$IssueDate,
 
     [Parameter(Mandatory = $false)]
-    [string]$PdfSourceFile
+    [string]$PdfSourceFile,
+
+    [Parameter(Mandatory = $false)]
+    [string]$JobBoardHtml,
+
+    [Parameter(Mandatory = $false)]
+    [string]$JobBoardJson
 )
 
 $ErrorActionPreference = 'Stop'
@@ -22,6 +28,9 @@ $resolvedSource = (Resolve-Path -LiteralPath $SourceFile).Path
 $pdfDirectory = Join-Path $repositoryRoot 'pdf'
 $pdfArchiveFile = Join-Path $pdfDirectory "$IssueDate.pdf"
 $pdfLatestFile = Join-Path $pdfDirectory 'latest.pdf'
+$jobsDirectory = Join-Path $repositoryRoot 'jobs'
+$jobsIndexFile = Join-Path $jobsDirectory 'index.html'
+$jobsJsonFile = Join-Path $jobsDirectory 'jobs.json'
 
 New-Item -ItemType Directory -Path $archiveDirectory -Force | Out-Null
 Copy-Item -LiteralPath $resolvedSource -Destination $archiveFile -Force
@@ -31,6 +40,16 @@ if ($PdfSourceFile) {
     New-Item -ItemType Directory -Path $pdfDirectory -Force | Out-Null
     Copy-Item -LiteralPath $resolvedPdfSource -Destination $pdfArchiveFile -Force
     Copy-Item -LiteralPath $resolvedPdfSource -Destination $pdfLatestFile -Force
+}
+if ([bool]$JobBoardHtml -xor [bool]$JobBoardJson) {
+    throw 'JobBoardHtml과 JobBoardJson은 함께 지정해야 합니다.'
+}
+if ($JobBoardHtml -and $JobBoardJson) {
+    $resolvedJobBoardHtml = (Resolve-Path -LiteralPath $JobBoardHtml).Path
+    $resolvedJobBoardJson = (Resolve-Path -LiteralPath $JobBoardJson).Path
+    New-Item -ItemType Directory -Path $jobsDirectory -Force | Out-Null
+    Copy-Item -LiteralPath $resolvedJobBoardHtml -Destination $jobsIndexFile -Force
+    Copy-Item -LiteralPath $resolvedJobBoardJson -Destination $jobsJsonFile -Force
 }
 
 $dayNames = @('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일')
@@ -51,7 +70,7 @@ $archiveIndex = @"
 <meta name="color-scheme" content="light">
 <title>배터리 마스터 | 지난 뉴스레터</title>
 <style>
-:root{--ink:#111;--blue:#2563eb;--line:#d4d4d4;--soft:#f5f5f5}*{box-sizing:border-box}html{background:var(--soft);-webkit-text-size-adjust:100%}body{margin:0;color:var(--ink);font-family:Pretendard,Arial,"Noto Sans KR","Malgun Gothic",sans-serif;font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}.wrap{width:min(calc(100% - 32px),920px);margin:24px auto;padding:32px 38px;background:#fff;border-top:7px solid var(--ink)}.eyebrow{margin:0 0 8px;color:var(--blue);font-size:13px;font-weight:800}h1{margin:0;font-size:clamp(30px,5vw,48px);letter-spacing:-.06em;line-height:1.15}.intro{margin:12px 0 26px;color:#555}.latest{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:var(--blue);color:#fff;font-weight:800;text-decoration:none}ul{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid var(--ink)}li{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}time{font-size:18px;font-weight:800}li a{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--blue);color:var(--blue);font-size:14px;font-weight:750;text-decoration:none}footer{margin-top:28px;padding-top:12px;border-top:4px solid var(--ink);font-size:13px;color:#555}@media(max-width:720px){html,body{background:#fff}.wrap{width:100%;margin:0;padding:20px 16px 28px}li{grid-template-columns:1fr}li a{width:100%}}@page{size:A4 portrait;margin:12mm}@media print{html{background:#fff}.wrap{width:auto;margin:0;padding:0;border-top-width:4px}li{break-inside:avoid}.latest{border:1px solid var(--blue);color:var(--blue);background:#fff}}
+:root{--ink:#111;--blue:#2563eb;--line:#d4d4d4;--soft:#f5f5f5}*{box-sizing:border-box}html{background:var(--soft);-webkit-text-size-adjust:100%}body{margin:0;color:var(--ink);font-family:Pretendard,Arial,"Noto Sans KR","Malgun Gothic",sans-serif;font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}.wrap{width:min(calc(100% - 32px),920px);margin:24px auto;padding:32px 38px;background:#fff;border-top:7px solid var(--ink)}.eyebrow{margin:0 0 8px;color:var(--blue);font-size:13px;font-weight:800}h1{margin:0;font-size:clamp(30px,5vw,48px);letter-spacing:-.06em;line-height:1.15}.intro{margin:12px 0 26px;color:#555}.latest{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;background:var(--blue);color:#fff;font-weight:800;text-align:center;text-decoration:none}.latest+.latest{margin-left:8px}ul{list-style:none;margin:28px 0 0;padding:0;border-top:2px solid var(--ink)}li{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line)}time{font-size:18px;font-weight:800}li a{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--blue);color:var(--blue);font-size:14px;font-weight:750;text-align:center;text-decoration:none}footer{margin-top:28px;padding-top:12px;border-top:4px solid var(--ink);font-size:13px;color:#555}@media(max-width:720px){html,body{background:#fff}.wrap{width:100%;margin:0;padding:20px 16px 28px}.latest{width:100%}.latest+.latest{margin:8px 0 0}li{grid-template-columns:1fr}li a{width:100%}}@page{size:A4 portrait;margin:12mm}@media print{html{background:#fff}.wrap{width:auto;margin:0;padding:0;border-top-width:4px}li{break-inside:avoid}.latest{border:1px solid var(--blue);color:var(--blue);background:#fff}}
 </style>
 </head>
 <body>
@@ -60,6 +79,7 @@ $archiveIndex = @"
 <h1>지난 뉴스레터</h1>
 <p class="intro">날짜별 배터리 산업·채용 뉴스레터를 최신순으로 확인할 수 있어요.</p>
 <a class="latest" href="../" target="_blank" rel="noopener noreferrer">최신 뉴스레터 보기</a>
+<a class="latest" href="../jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a>
 <ul>
 $($archiveLinks -join "`n")
 </ul>
@@ -68,6 +88,12 @@ $($archiveLinks -join "`n")
 </body>
 </html>
 "@
+$requiredArchiveNavigation = @('href="../"', 'href="../jobs/"')
+foreach ($requiredLink in $requiredArchiveNavigation) {
+    if (-not $archiveIndex.Contains($requiredLink)) {
+        throw "Archive navigation link missing: $requiredLink"
+    }
+}
 [IO.File]::WriteAllText($archiveIndexFile, $archiveIndex, [Text.UTF8Encoding]::new($false))
 
 Push-Location $repositoryRoot
@@ -75,6 +101,9 @@ try {
     $gitPaths = @('index.html', "archive/$IssueDate.html", 'archive/index.html', 'publish-newsletter.ps1', 'README.md')
     if ($PdfSourceFile) {
         $gitPaths += @("pdf/$IssueDate.pdf", 'pdf/latest.pdf')
+    }
+    if ($JobBoardHtml -and $JobBoardJson) {
+        $gitPaths += @('jobs/index.html', 'jobs/jobs.json')
     }
     git add -- $gitPaths
     $pendingChanges = git status --porcelain -- $gitPaths
@@ -89,12 +118,17 @@ try {
     $deploymentDirectory = Join-Path $repositoryRoot '.pages-output'
     $deploymentArchive = Join-Path $deploymentDirectory 'archive'
     $deploymentPdf = Join-Path $deploymentDirectory 'pdf'
+    $deploymentJobs = Join-Path $deploymentDirectory 'jobs'
     New-Item -ItemType Directory -Path $deploymentArchive -Force | Out-Null
     New-Item -ItemType Directory -Path $deploymentPdf -Force | Out-Null
+    New-Item -ItemType Directory -Path $deploymentJobs -Force | Out-Null
     Copy-Item -LiteralPath $latestFile -Destination (Join-Path $deploymentDirectory 'index.html') -Force
     Copy-Item -Path (Join-Path $archiveDirectory '*') -Destination $deploymentArchive -Force
     if (Test-Path -LiteralPath $pdfDirectory) {
         Copy-Item -Path (Join-Path $pdfDirectory '*') -Destination $deploymentPdf -Force
+    }
+    if (Test-Path -LiteralPath $jobsDirectory) {
+        Copy-Item -Path (Join-Path $jobsDirectory '*') -Destination $deploymentJobs -Force
     }
 
     $npxCommand = (Get-Command npx -ErrorAction Stop).Source

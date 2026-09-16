@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="최신 이차전지 산업동향과 현재 지원 가능한 채용정보를 정리한 배터리 마스터 뉴스레터">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="오늘의 배터리 산업·채용 브리핑 · 2026-09-16">
+  <meta property="og:description" content="검증된 배터리 산업동향, 신입·경력무관 및 경력직 채용, 교육·행사 정보를 한 번에 확인하세요.">
+  <meta property="og:url" content="https://batterybrief.pages.dev/archive/2026-09-16.html">
   <title>오늘의 배터리 산업·채용 브리핑</title>
   <style>
     :root {
@@ -16,6 +20,8 @@
       --canvas: #f5f5f5;
       --soft: #f5f5f5;
       --accent: #E53935;
+      --mobile-body-size: 16px;
+      --mobile-meta-size: 14px;
     }
 
     @page { size: A4 portrait; margin: 10mm; }
@@ -54,6 +60,7 @@
     h2 { margin: 20px 0 10px; color: var(--navy); font-size: 1.15rem; letter-spacing: -.025em; }
     h2 { padding-bottom: 8px; border-bottom: 1px solid var(--line); }
     h3 { margin: 0 0 8px; font-size: 1.08rem; line-height: 1.4; }
+    [id] { scroll-margin-top: 12px; }
     p { margin: 6px 0; }
 
     .content-grid, .jobs-grid {
@@ -73,6 +80,7 @@
 
     .trend-card, .day-card { background: var(--soft); }
     .badge { display: inline-block; margin: 0 0 7px; padding: 4px 8px; background: var(--soft); color: var(--navy); font-size: 0.8rem; font-weight: 800; }
+    .trend-card > .badge { padding: 0; background: transparent; color: var(--teal); }
     .job-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
     .job-card { border-top: 3px solid var(--ink); background: #fafafa; }
     .job-card:nth-child(2n) { border-top-color: var(--teal); }
@@ -91,7 +99,7 @@
     dt { color: var(--muted); font-weight: 700; }
     dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
     ul { margin: 8px 0 0; padding-left: 20px; }
-    li + li { margin-top: 5px; }
+    .card > ul li + li { margin-top: 5px; }
 
     a { color: var(--teal); overflow-wrap: anywhere; }
     .source-link {
@@ -99,26 +107,33 @@
       min-height: 44px;
       margin-top: 9px;
       align-items: center;
+      justify-content: center;
       padding: 8px 12px;
       border: 1px solid currentColor;
       background: var(--paper);
       font-weight: 800;
+      text-align: center;
       text-decoration: none;
     }
 
     a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
-    .utility-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+    .utility-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 10px; }
     .utility-actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--teal); background: #FFFFFF; color: var(--teal); font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; }
     .utility-actions .pdf-download { background: var(--teal); color: #FFFFFF; }
-    .schedule-list { display: grid; gap: 9px; }
-    .schedule-item { padding: 10px 11px 8px; border-top: 2px solid var(--teal); background: var(--soft); break-inside: avoid; }
-    .schedule-item + .schedule-item { margin-top: 3px; }
+    .schedule-list { display: grid; gap: 12px; }
+    .schedule-item { padding: 13px 14px 12px; border: 1px solid var(--line); border-left: 5px solid var(--teal); background: var(--paper); break-inside: avoid; }
+    .schedule-item + .schedule-item { margin-top: 0; }
+    .schedule-item > .badge { margin-bottom: 9px; background: var(--ink); color: #FFFFFF; }
     .deadline-list, .analysis-list { margin: 0; padding: 0; list-style: none; }
     .deadline-list li, .analysis-list li { display: grid; grid-template-columns: 150px minmax(0, 1fr) 100px; gap: 10px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); }
-    .deadline-list a, .analysis-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 7px 9px; border: 1px solid var(--teal); font-weight: 800; text-decoration: none; }
+    .deadline-list a, .analysis-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 7px 9px; border: 1px solid var(--teal); font-weight: 800; line-height: 1.35; text-align: center; text-decoration: none; }
     .quick-nav { display: flex; gap: 6px; margin: 12px 0 0; padding: 0; list-style: none; }
-    .quick-nav a { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 7px 10px; border: 1px solid var(--line); color: var(--ink); font-weight: 750; text-align: center; text-decoration: none; }
+    .quick-nav li { display: flex; align-self: stretch; margin-top: 0; }
+    .quick-nav li + li { margin-top: 0; }
+    .quick-nav a { display: flex; height: 100%; align-items: center; justify-content: center; min-height: 44px; padding: 7px 10px; border: 1px solid var(--line); color: var(--ink); font-weight: 750; line-height: 1.35; text-align: center; text-decoration: none; }
     .mobile-priority { display: none; }
+    .mobile-priority small { display: block; color: var(--muted); }
+    .section-count { margin-left: 6px; color: var(--muted); font-size: .78em; font-weight: 700; }
     footer { display: grid; grid-template-columns: 5fr 7fr; gap: 18px; margin-top: 16px; padding-top: 12px; border-top: 5px solid var(--ink); color: var(--muted); font-size: 0.84rem; }
     .community-link { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 9px 12px; background: var(--teal); color: #fff; font-size: 1rem; font-weight: 800; text-align: center; text-decoration: none; }
     .community-url { display: block; margin-top: 6px; overflow-wrap: anywhere; }
@@ -130,18 +145,20 @@
       h1 { font-size: 1.62rem; letter-spacing: -.045em; }
       .content-grid, .jobs-grid { grid-template-columns: 1fr; }
       .content-grid > *, .jobs-grid > * { grid-column: 1; }
-      .card { padding: 16px; font-size: 15px; line-height: 1.62; }
+      .card { padding: 16px; font-size: var(--mobile-body-size); line-height: 1.62; }
       h2 { font-size: 1.28rem; }
       h3 { font-size: 1.12rem; }
+      .badge, .company-meta, .status-note, .job-note, .tag, .deadline-badge small, .deadline-badge span, .mobile-priority small { font-size: var(--mobile-meta-size); }
       .source-link { width: 100%; min-height: 44px; justify-content: center; }
       .utility-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
       .utility-actions > * { width: 100%; }
-      .quick-nav { display: grid; grid-template-columns: 1fr 1fr; }
-      .quick-nav li:last-child { grid-column: 1 / -1; }
+      .quick-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 5px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+      .quick-nav li { flex: 0 0 auto; scroll-snap-align: start; }
+      .quick-nav a { white-space: nowrap; }
       .mobile-priority { display: block; margin-top: 24px; border-top: 4px solid var(--teal); }
       .mobile-priority ol { margin: 0; padding: 0; list-style: none; }
       .mobile-priority li { border-bottom: 1px solid var(--line); }
-      .mobile-priority a { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px; min-height: 58px; padding: 10px 0; color: var(--ink); text-decoration: none; }
+      .mobile-priority a { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 8px; min-height: 58px; padding: 10px 0; color: var(--ink); text-decoration: none; }
       .job-top { grid-template-columns: 1fr; }
       .deadline-badge { width: 100%; min-height: 52px; flex-direction: row; align-items: center; justify-content: space-between; }
       .deadline-list li, .analysis-list li { grid-template-columns: minmax(0, 1fr) 98px; }
@@ -178,12 +195,12 @@
       <p class="eyebrow">한국배터리아카데미 남부권캠퍼스 · (재)포항테크노파크</p>
       <h1>오늘의 배터리 산업·채용 브리핑</h1>
       <p class="meta"><time datetime="2026-09-16">2026년 9월 16일 수요일</time> · WEDNESDAY BRIEF · 최종 검증 2026.09.16. 12:10 KST</p>
-      <nav class="utility-actions" aria-label="뉴스레터 도구"><a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터</a><a class="pdf-download" href="https://batterybrief.pages.dev/pdf/2026-09-16.pdf" download="battery_master_newsletter_2026-09-16.pdf" aria-label="오늘자 뉴스레터 PDF 저장">PDF 저장</a></nav>
+      <nav class="utility-actions" aria-label="뉴스레터와 채용정보 이동"><a href="https://batterybrief.pages.dev/" target="_blank" rel="noopener noreferrer">최신 뉴스레터</a><a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터</a><a href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a><a class="pdf-download" href="https://batterybrief.pages.dev/pdf/2026-09-16.pdf" download="battery_master_newsletter_2026-09-16.pdf" aria-label="오늘자 뉴스레터 PDF 저장">PDF 저장</a></nav>
     </header>
 
-    <nav aria-label="본문 빠른 이동"><ul class="quick-nav"><li><a href="#trend-title">산업·기업동향</a></li><li><a href="#entry-jobs">신입·경력무관</a></li><li><a href="#career-jobs">경력직</a></li><li><a href="#deadline-title">마감 임박</a></li><li><a href="#resource-title">교육·행사</a></li></ul></nav>
+    <nav aria-label="본문 빠른 이동"><ul class="quick-nav"><li><a href="#trend-title">산업·기업동향</a></li><li><a href="#entry-jobs">신입·경력무관</a></li><li><a href="#career-jobs">경력직</a></li><li><a href="#deadline-title">오늘의 공고 해석</a></li><li><a href="#resource-title">교육·행사</a></li></ul></nav>
 
-    <section class="mobile-priority" aria-labelledby="mobile-priority-title"><h2 id="mobile-priority-title">오늘 먼저 볼 공고 3건</h2><ol><li><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54930612" target="_blank" rel="noopener noreferrer"><strong>우선 1</strong><span>그룹포틴테크놀로지스코리아 · 2026년 각 부문별 채용 — QC 분석·생산 오퍼레이터<small>9.27 23:59 · 접수 중·재안내</small></span></a></li><li><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1" target="_blank" rel="noopener noreferrer"><strong>우선 2</strong><span>코엠 · 2차전지 FA설비 전자셋업·전자설계 EPLAN<small>9.30 · 접수 중·재안내</small></span></a></li><li><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49889988" target="_blank" rel="noopener noreferrer"><strong>우선 3</strong><span>코엠 · 2차전지 자동화설비 SETUP·기구조립 경력신입<small>9.30 · 접수 중·재안내</small></span></a></li></ol></section>
+    <section class="mobile-priority" aria-labelledby="mobile-priority-title"><h2 id="mobile-priority-title">오늘 먼저 볼 공고 3건</h2><ol><li><a href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54930612" target="_blank" rel="noopener noreferrer"><strong>우선 1</strong><span>그룹포틴테크놀로지스코리아 · 2026년 각 부문별 채용 — QC 분석·생산 오퍼레이터<small>9.27 23:59 · 신입·경력무관 우선</small></span></a></li><li><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1" target="_blank" rel="noopener noreferrer"><strong>우선 2</strong><span>코엠 · 2차전지 FA설비 전자셋업·전자설계 EPLAN<small>9.30 · 신입·경력무관 우선</small></span></a></li><li><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/49889988" target="_blank" rel="noopener noreferrer"><strong>우선 3</strong><span>코엠 · 2차전지 자동화설비 SETUP·기구조립 경력신입<small>9.30 · 신입·경력무관 우선</small></span></a></li></ol></section>
 
     <section aria-labelledby="trend-title">
       <h2 id="trend-title">주요 산업·기업동향</h2>
@@ -194,16 +211,16 @@
 
     <section aria-labelledby="jobs-title">
       <h2 id="jobs-title">오늘의 채용정보</h2>
-      <h3 id="entry-jobs">신입·경력무관</h3>
+      <h3 id="entry-jobs">신입·경력무관 <span class="section-count">4건</span></h3>
       <div class="jobs-grid">
         <!-- Each job card: company name first; .job-top contains one linked .deadline-badge with the exact deadline and 원문 보기. No duplicate bottom link. -->
         <article class="card job-card" data-job-id="SARAMIN-54930612"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 사람인 입사지원·마감일 재확인</span><strong class="company">그룹포틴테크놀로지스코리아</strong><span class="company-meta">외국인 투자기업 · 실리콘-탄소 음극재 SCC55® 생산</span><h3 class="job-title">2026년 각 부문별 채용 — QC 분석·생산 오퍼레이터</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54930612" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.27 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·정규직 전환형 계약직</span><span class="tag">신입 가능</span><span class="tag">경력무관</span><span class="tag">고졸·전문대</span></div><dl><div><dt>업무</dt><dd>QC는 원재료·공정·제품 품질분석과 분석장비·시약 관리, 생산은 공정 운전·순찰·트러블 조치·포장</dd></div><div><dt>자격</dt><dd>QC는 전문학사·재료/화공/화학/이차전지/신재생에너지 계열·경력무관, 생산은 고졸~전문대·신입 가능·교대근무 가능</dd></div><div><dt>우대</dt><dd>배터리 소재 분석 또는 생산 경험, 관련 자격, 인근 거주, 영어 능력</dd></div><div><dt>근무지</dt><dd>경북 상주시 마공공단로 80-16 · 자차 출퇴근 가능자 공통 필수</dd></div><div><dt>전공연결</dt><dd>화학·신소재·화공 전공자는 기기분석 실습과 원재료→공정→제품 품질 판정 경험을 QC 지원서에 연결하기 좋아요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-49889996"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 잡코리아 상세 원문·신입 지원·마감일 재확인</span><strong class="company">코엠</strong><span class="company-meta">설립 21년·51~300명 · 자동화설비 기업</span><h3 class="job-title">2차전지 FA설비 전자셋업·전자설계 EPLAN</h3></div><a class="deadline-badge" href="https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.30</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">신입·경력 2년 이상</span><span class="tag">고졸 이상</span><span class="tag">전장·제어</span></div><dl><div><dt>업무</dt><dd>2차전지 FA설비 전자셋업, 전자설계, EPLAN 업무</dd></div><div><dt>자격</dt><dd>고졸 이상, 신입 또는 경력 2년 이상 트랙 · 신입 지원 가능</dd></div><div><dt>우대</dt><dd>인근 거주, 컴퓨터 활용, 차량·운전, 관련 인턴·알바·경력, 공업고 전자·전기과</dd></div><div><dt>근무지</dt><dd>경기 평택시 모곡동 430-1 · 주 5일 09:00~18:00</dd></div><div><dt>전공연결</dt><dd>전기전자·제어 전공자는 회로·배선·EPLAN 결과를 장비 시운전과 오류 대응 흐름으로 연결하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 기업 게시 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-49889988"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 잡코리아 상세 원문·즉시지원·마감일 재확인</span><strong class="company">코엠</strong><span class="company-meta">설립 21년·51~300명 · 자동화설비 기업</span><h3 class="job-title">2차전지 자동화설비 SETUP·기구조립 경력신입</h3></div><a class="deadline-badge" href="https://m.jobkorea.co.kr/Recruit/GI_Read/49889988" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.30</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">신입·경력 2년 이상</span><span class="tag">기계조립</span><span class="tag">즉시지원</span></div><dl><div><dt>업무</dt><dd>2차전지 자동화 FA설비 기계조립과 현장 SETUP</dd></div><div><dt>자격</dt><dd>신입 또는 경력 2년 이상 트랙 · 공고 원문에서 신입 지원 가능 확인</dd></div><div><dt>우대</dt><dd>인근 거주, 유관업무 인턴·알바·근무경험, 해외근무 가능</dd></div><div><dt>근무지</dt><dd>경기 평택시 모곡동 430-1 · 주 5일 09:00~18:00</dd></div><div><dt>전공연결</dt><dd>기계·메카트로닉스 전공자는 조립 정밀도, 도면해독, 셋업 체크리스트와 트러블 조치 경험을 강조하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 기업 게시 원문</p></article><article class="card job-card" data-job-id="SARAMIN-55009928"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 사람인 입사지원·마감일 재확인</span><strong class="company">에코앤드림</strong><span class="company-meta">코스닥 기업 · 이차전지 전구체 소재</span><h3 class="job-title">이차전지 소재 생산 Operator</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55009928" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.30 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">신입·경력무관</span><span class="tag">고졸 이상</span><span class="tag">2교대</span></div><dl><div><dt>업무</dt><dd>이차전지 전구체 제품 생산과 포장 등 생산 오퍼레이터 업무</dd></div><div><dt>자격</dt><dd>고졸 이상, 신입·경력 연수무관, 2교대 가능</dd></div><div><dt>우대</dt><dd>화학공학·신소재/재료·공학계열, 지게차·에너지관리·보일러 자격, 관련 경험·인근 거주</dd></div><div><dt>근무지</dt><dd>전북 군산시 새만금산단2로 356</dd></div><div><dt>전공연결</dt><dd>고졸·전문대 지원자는 교대근무 적응력과 함께 설비점검, 안전수칙, 품질기록 경험을 구체적으로 적으세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 원문</p></article>
       </div>
-      <h3 id="career-jobs">경력직</h3>
+      <h3 id="career-jobs">경력직 <span class="section-count">3건</span></h3>
       <div class="jobs-grid"><article class="card job-card" data-job-id="SARAMIN-54842246"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 사람인 입사지원·D-38 재확인</span><strong class="company">이노메트리</strong><span class="company-meta">코스닥 기업 · 2차전지 X-ray/CT 검사장비</span><h3 class="job-title">2차전지 AI솔루션 자동화장비 전장설계 경력사원</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54842246" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>10.24 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력 3~20년</span><span class="tag">전문대 이상</span><span class="tag">전장설계</span></div><dl><div><dt>업무</dt><dd>2차전지 X-ray/CT 자동화장비·설비 전장설계, 외주업체 관리, 전장부품 발주</dd></div><div><dt>자격</dt><dd>전문대졸 이상, 관련 경력 3~20년, 운전 가능, 해외출장 결격사유 없음</dd></div><div><dt>우대</dt><dd>2차전지 또는 장비업종 경력</dd></div><div><dt>근무지</dt><dd>경기 화성시 효행구 정남면 정남산단1길 40</dd></div><div><dt>전공연결</dt><dd>전기전자·제어 전공 경력자는 배터리 검사장비의 전장설계·부품선정·현장 대응 성과를 수치로 정리하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 원문</p></article><article class="card job-card" data-job-id="SARAMIN-54998290"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 사람인 입사지원·D-14 재확인</span><strong class="company">에코앤드림</strong><span class="company-meta">코스닥 기업 · 이차전지 전구체 소재</span><h3 class="job-title">이차전지 소재 수처리시설 관리</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54998290" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.30 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력 5년 이상</span><span class="tag">학사 이상</span><span class="tag">환경·공정</span></div><dl><div><dt>업무</dt><dd>이차전지 소재 생산 수처리시설 공정과 전반적인 운영·관리</dd></div><div><dt>자격</dt><dd>학사 이상, 화학·화학공학·신소재/재료·에너지 등 이공계열, 관련 경력 5년 이상</dd></div><div><dt>우대</dt><dd>환경·안전 자격, MVR 증발농축 장치 운영, 즉시 출근, 인근 거주</dd></div><div><dt>근무지</dt><dd>전북 군산시 새만금산단2로 356 · 주 5일 08:30~17:30</dd></div><div><dt>전공연결</dt><dd>화공·환경 전공자는 수처리 단위공정, 물질수지, 법정관리와 MVR 운전 성과를 경력기술서에 연결하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 원문</p></article><article class="card job-card" data-job-id="SARAMIN-55009903"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 09.16 사람인 입사지원·D-14 재확인</span><strong class="company">에코앤드림</strong><span class="company-meta">코스닥 기업 · 이차전지 전구체 소재</span><h3 class="job-title">이차전지 소재 생산관리</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55009903" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>9.30 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력 5년 이상</span><span class="tag">학사 이상</span><span class="tag">생산관리</span></div><dl><div><dt>업무</dt><dd>이차전지 전구체 생산실적 관리, 공정관리·개선, 생산 인원관리</dd></div><div><dt>자격</dt><dd>학사 이상, 생산관리 관련 경력 5년 이상</dd></div><div><dt>우대</dt><dd>화학·화학공학·신소재/재료·에너지 전공, 화공기사·위험물산업기사·에너지관리기능사</dd></div><div><dt>근무지</dt><dd>전북 군산시 새만금산단2로 356 · 주 5일 08:30~17:30</dd></div><div><dt>전공연결</dt><dd>화학·신소재·화공 경력자는 생산실적보다 공정조건·수율·불량·안전 지표를 어떻게 개선했는지 보여주세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 원문</p></article></div>
     </section>
 
-    <section aria-labelledby="deadline-title"><h2 id="deadline-title">오늘의 공고 해석</h2><p class="company-meta">9.17~9.21 마감 공고 없음 · 지원전략 한눈에</p><ul class="analysis-list"><li><strong>그룹포틴은 QC와 생산의 준비 증거가 달라요.</strong><span>배터리 마스터의 제안 · 배터리 마스터의 제안: 기기분석·데이터 판정 경험이 강하면 QC, 설비운전·교대·안전 경험이 강하면 생산을 우선 비교하세요.</span><a class="" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54930612" target="_blank" rel="noopener noreferrer">직무 비교</a></li><li><strong>코엠의 ‘신입·경력 2년 이상’은 신입과 경력 트랙을 함께 적은 공고예요.</strong><span>배터리 마스터의 제안 · 배터리 마스터의 제안: 전기전자는 EPLAN·배선·시운전, 기계는 조립정밀도·도면해독·SETUP 경험으로 나누어 지원하세요.</span><a class="" href="https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1" target="_blank" rel="noopener noreferrer">전장 공고</a></li><li><strong>에코앤드림 생산은 고졸 이상·신입 지원이 가능하지만 2교대 조건이 있어요.</strong><span>배터리 마스터의 제안 · 배터리 마스터의 제안: 출퇴근·교대 가능 여부를 먼저 확인하고 안전수칙 준수와 설비점검 경험을 자기소개서 근거로 준비하세요.</span><a class="" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55009928" target="_blank" rel="noopener noreferrer">생산 공고</a></li></ul></section>
+    <section aria-labelledby="deadline-title"><h2 id="deadline-title">오늘의 공고 해석</h2><p class="company-meta">9.17~9.21 마감 공고 없음 · 지원전략 한눈에</p><ul class="analysis-list"><li><strong>그룹포틴은 QC와 생산의 준비 증거가 달라요.</strong><span>배터리 마스터의 제안 · 기기분석·데이터 판정 경험이 강하면 QC, 설비운전·교대·안전 경험이 강하면 생산을 우선 비교하세요.</span><a class="" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54930612" target="_blank" rel="noopener noreferrer">직무 비교</a></li><li><strong>코엠의 ‘신입·경력 2년 이상’은 신입과 경력 트랙을 함께 적은 공고예요.</strong><span>배터리 마스터의 제안 · 전기전자는 EPLAN·배선·시운전, 기계는 조립정밀도·도면해독·SETUP 경험으로 나누어 지원하세요.</span><a class="" href="https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1" target="_blank" rel="noopener noreferrer">전장 공고</a></li><li><strong>에코앤드림 생산은 고졸 이상·신입 지원이 가능하지만 2교대 조건이 있어요.</strong><span>배터리 마스터의 제안 · 출퇴근·교대 가능 여부를 먼저 확인하고 안전수칙 준수와 설비점검 경험을 자기소개서 근거로 준비하세요.</span><a class="" href="https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55009928" target="_blank" rel="noopener noreferrer">생산 공고</a></li></ul></section>
 
     <section aria-labelledby="weekday-section-title"><h2 id="weekday-section-title">직무·기업·취업자료</h2><p class="company-meta">수요일 공개자료 · NCS로 공고 문구를 경험 증거로 바꾸기</p><ul class="analysis-list"><li><strong>NCS는 직무 수행에 필요한 지식·기술·태도를 능력단위로 나눠 제시해요.</strong><span>공고의 업무 문장을 NCS 능력단위와 비교하면 자기소개서에서 무엇을 배웠는지보다 어떤 일을 수행할 수 있는지 구체화하기 쉬워요.</span><a class="" href="https://www.ncs.go.kr/th07/qna_faq.do?faqTypeCd=08&amp;searchCondition=&amp;searchKeyword=" target="_blank" rel="noopener noreferrer">NCS 공식 안내</a></li><li><strong>배터리 마스터의 제안: 공고 업무 1개를 ‘상황-행동-결과’로 다시 쓰세요.</strong><span>배터리 마스터의 제안 · 예: ‘분석장비 사용’ 대신 ‘시료 전처리→측정조건 설정→이상값 재측정→결과 판정’ 순서와 본인 결과를 적으면 직무 수행 증거가 선명해져요.</span><a class="" href="https://www.ncs.go.kr/th07/qna_faq.do?faqTypeCd=08&amp;searchCondition=&amp;searchKeyword=" target="_blank" rel="noopener noreferrer">적용 기준 보기</a></li></ul></section>
 
@@ -217,7 +234,7 @@
         </ul>
       </article>
       <article class="card">
-        <h2>교육·자격·행사 마감 일정</h2>
+        <h2 id="resource-title">교육·자격·행사 마감 일정</h2>
         <div class="schedule-list"><div class="schedule-item"><span class="badge">교육</span><h3>이차전지 소재·부품 분석 및 리사이클링 공정 고도화</h3><p><strong>운영기관</strong> 한국배터리아카데미</p><p><strong>대상</strong> 배터리 분야 취업을 준비하는 예비취업자</p><p><strong>방식·장소</strong> 공식 페이지 신청 · 교육 2026.10.21~11.04, 66시간</p><p><strong>비용</strong> 공식 모집안내 확인</p><p><strong>접수마감</strong> <time datetime="2026-10-12T23:59:00+09:00">10.12 신청 마감</time> · 신청 가능</p><a class="source-link" href="https://onkpc.or.kr/e-kpc/front/asp/index544.jsp?pAspCode=544" target="_blank" rel="noopener noreferrer">공식 신청·상세 안내</a></div><div class="schedule-item"><span class="badge">행사</span><h3>BATTERY KOREA 2026</h3><p><strong>운영기관</strong> BATTERY KOREA 조직위원회</p><p><strong>대상</strong> 배터리 소재·부품·장비·리사이클링 산업 관심자</p><p><strong>방식·장소</strong> 2026.09.21 09:00~17:00 · 서울 코엑스 그랜드볼룸</p><p><strong>비용</strong> 무료 사전등록</p><p><strong>접수마감</strong> 사전등록 접수 중 · 신청 가능</p><a class="source-link" href="https://www.batterykorea.org/2026/kor/index.html" target="_blank" rel="noopener noreferrer">공식 신청·상세 안내</a></div></div>
       </article>
     </section>
@@ -225,7 +242,7 @@
     
 
     <footer>
-      <div><p><strong>발행 안내</strong> 본 자료는 (재)포항테크노파크가 한국배터리아카데미 남부권캠퍼스 운영의 일환으로 작성했어요.</p><p>공고 상태와 마감 시각은 변동될 수 있으므로 지원 직전에 공식 페이지를 다시 확인해 주세요.</p><p><a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터 보기</a></p></div>
+      <div><p><strong>발행 안내</strong> 본 자료는 (재)포항테크노파크가 한국배터리아카데미 남부권캠퍼스 운영의 일환으로 작성했어요.</p><p>공고 상태와 마감 시각은 변동될 수 있으므로 지원 직전에 공식 페이지를 다시 확인해 주세요.</p><p><a href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a> · <a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터 보기</a></p></div>
       <div><a class="community-link" href="https://open.kakao.com/o/pVd3CfEi" target="_blank" rel="noopener noreferrer">이차전지 취업 정보공유 · 오픈채팅방 참여하기</a><p>주변 취준생에게 뉴스레터와 오픈채팅방을 소개해 주세요.</p><span class="community-url">https://open.kakao.com/o/pVd3CfEi</span></div>
     </footer>
   </main>
