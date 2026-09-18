@@ -1,6 +1,6 @@
 {
-  "latest_issue_date": "2026-09-17",
-  "unique_jobs": 26,
+  "latest_issue_date": "2026-09-18",
+  "unique_jobs": 29,
   "excluded_past_deadline": 7,
   "jobs": [
     {
@@ -15,17 +15,124 @@
         "경력무관",
         "고졸·전문대"
       ],
-      "status_note": "[접수 중·재안내] 09.17 사람인 입사지원·마감일 재확인",
+      "status_note": "[접수 중·재안내] 09.18 사람인 입사지원·마감일 재확인",
       "deadline_display": "9.27 23:59",
       "url": "https://m.saramin.co.kr/job-search/view?rec_idx=54930612",
       "duties": "QC는 원재료·공정·제품 품질분석과 분석장비·시약 관리, 생산은 공정 운전·순찰·트러블 조치·포장",
-      "qualifications": "QC는 전문학사·재료/화공/화학/이차전지/신재생에너지 계열·경력무관, 생산은 고졸~전문대·신입 가능·교대근무 가능",
+      "qualifications": "QC는 전문학사·재료/화공/화학/이차전지 계열·경력무관, 생산은 고졸~전문대·신입 가능·교대근무 가능",
       "preferences": "배터리 소재 분석 또는 생산 경험, 관련 자격, 인근 거주, 영어 능력",
       "location": "경북 상주시 마공공단로 80-16 · 자차 출퇴근 가능자 공통 필수",
       "major_connection": "화학·신소재·화공 전공자는 기기분석 실습과 원재료→공정→제품 품질 판정 경험을 QC 지원서에 연결하기 좋아요.",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-17",
+      "last_seen": "2026-09-18",
+      "appearances": 5,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-54671260",
+      "company": "신형에프에이",
+      "company_meta": "자동화설비 전문기업 · 전기차 배터리팩 생산라인",
+      "title": "2차전지 배터리팩 생산자동화설비 PLC제어",
+      "career_group": "career",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력 5~15년",
+        "고졸 이상",
+        "PLC·시운전",
+        "국내외 출장"
+      ],
+      "status_note": "[신규] 기존 발행본 미안내 · 09.18 사람인 입사지원·마감일 확인",
+      "deadline_display": "10.05 23:59",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54671260",
+      "duties": "전기차용 2차전지 조립라인 제어시스템 설계, PLC 로직 개발, 시운전·디버깅·인터페이스, 기술문서·고객 대응",
+      "qualifications": "경력 5~15년, 고졸 이상, 업무 특성상 국내외 출장 가능",
+      "preferences": "관련 업계 경험, 자기주도적 업무 수행, 인근 거주·출퇴근 가능",
+      "location": "경기 오산시 가장산업서북로 103-20·평택 2공장·고객사 지정 사이트",
+      "major_connection": "전기전자·제어 전공 경력자는 PLC 로직, 인터록, 시운전, 통신 인터페이스, 고객 SAT 성과를 연결하세요.",
+      "first_seen": "2026-09-18",
+      "last_seen": "2026-09-18",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-54797871",
+      "company": "재세능원",
+      "company_meta": "중견·외국인 투자기업 · 축전지 제조업",
+      "title": "2차전지 양극재 생산직",
+      "career_group": "entry",
+      "tags": [
+        "계약직 12개월·정규직 전환 가능",
+        "경력무관·신입",
+        "고졸 이상",
+        "교대·야간",
+        "마감 임박"
+      ],
+      "status_note": "[신규] 기존 발행본 미안내 · 09.18 사람인 입사지원·마감일 확인",
+      "deadline_display": "9.19 23:59",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54797871",
+      "duties": "2차전지 양극재 생산 오퍼레이터와 생산 전반 업무",
+      "qualifications": "경력무관·신입 지원 가능, 고졸 이상·졸업예정자 가능, 교대·야간근무 가능",
+      "preferences": "해당직무 근무경험, 지게차 자격증",
+      "location": "충북 충주시 대소원면 메가폴리스1로 115",
+      "major_connection": "화학·신소재 전공자는 분체·양극재 취급, 공정안전, 설비운전, 오염관리 경험을 생산 직무와 연결하기 좋아요.",
+      "first_seen": "2026-09-18",
+      "last_seen": "2026-09-18",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-49889996",
+      "company": "코엠",
+      "company_meta": "설립 21년·51~300명 · 자동화설비 기업",
+      "title": "2차전지 FA설비 전자셋업·전자설계 EPLAN",
+      "career_group": "entry",
+      "tags": [
+        "정규직",
+        "신입·경력 2년 이상",
+        "고졸 이상",
+        "전장·제어"
+      ],
+      "status_note": "[접수 중·재안내] 09.18 잡코리아 상세 원문·신입 지원·마감일 재확인",
+      "deadline_display": "9.30 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1",
+      "duties": "2차전지 FA설비 전자셋업, 전자설계, EPLAN 업무",
+      "qualifications": "고졸 이상, 신입 또는 경력 2년 이상 트랙 · 신입 지원 가능",
+      "preferences": "인근 거주, 컴퓨터 활용, 차량·운전, 관련 인턴·알바·경력, 공업고 전자·전기과",
+      "location": "경기 평택시 모곡동 430-1 · 주 5일 09:00~18:00",
+      "major_connection": "전기전자·제어 전공자는 회로·배선·EPLAN 결과를 장비 시운전과 오류 대응 흐름으로 연결하세요.",
+      "first_seen": "2026-09-15",
+      "last_seen": "2026-09-18",
       "appearances": 4,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-54503595",
+      "company": "파워링스",
+      "company_meta": "2차전지 배터리 제조기업 · 품질시스템 운영",
+      "title": "2차전지 배터리 제조 품질팀 경력직",
+      "career_group": "career",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력 5년 이상",
+        "대졸 이상",
+        "품질·ISO·SQ",
+        "오늘 마감"
+      ],
+      "status_note": "[신규] 기존 발행본 미안내 · 09.18 사람인 입사지원·오늘 마감 확인",
+      "deadline_display": "9.18 23:59",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54503595",
+      "duties": "수입·공정 품질관리, 출하검사·성적서, 품질기획, 고객품질 대응, ISO·SQ 등 품질시스템 운영",
+      "qualifications": "경력 5년 이상, 4년제 대졸 이상, 전기전자·산업공학·공학계열, 컴퓨터활용·운전 가능",
+      "preferences": "컴퓨터·시스템, 기계·자동차·조선 전공, 영어·중국어, 인근 거주, 문서작성·엑셀",
+      "location": "경기 의왕시 고천동 332-33 성우아파트형공장 A동 101호",
+      "major_connection": "품질 경력자는 수입→공정→출하→고객 대응과 ISO·SQ 운영 성과를 불량률·클레임·검사시간 수치로 정리하세요.",
+      "first_seen": "2026-09-18",
+      "last_seen": "2026-09-18",
+      "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
     },
@@ -53,8 +160,8 @@
       "first_seen": "2026-09-17",
       "last_seen": "2026-09-17",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-54780208",
@@ -80,8 +187,8 @@
       "first_seen": "2026-09-17",
       "last_seen": "2026-09-17",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-54891735-EPICAMTECH-PRODUCTION",
@@ -107,34 +214,8 @@
       "first_seen": "2026-09-17",
       "last_seen": "2026-09-17",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
-    },
-    {
-      "id": "JOBKOREA-49889996",
-      "company": "코엠",
-      "company_meta": "설립 21년·51~300명 · 자동화설비 기업",
-      "title": "2차전지 FA설비 전자셋업·전자설계 EPLAN",
-      "career_group": "entry",
-      "tags": [
-        "정규직",
-        "신입·경력 2년 이상",
-        "고졸 이상",
-        "전장·제어"
-      ],
-      "status_note": "[접수 중·재안내] 09.17 잡코리아 상세 원문·신입 지원·마감일 재확인",
-      "deadline_display": "9.30 23:59",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49889996?Oem_Code=C1",
-      "duties": "2차전지 FA설비 전자셋업, 전자설계, EPLAN 업무",
-      "qualifications": "고졸 이상, 신입 또는 경력 2년 이상 트랙 · 신입 지원 가능",
-      "preferences": "인근 거주, 컴퓨터 활용, 차량·운전, 관련 인턴·알바·경력, 공업고 전자·전기과",
-      "location": "경기 평택시 모곡동 430-1 · 주 5일 09:00~18:00",
-      "major_connection": "전기전자·제어 전공자는 회로·배선·EPLAN 결과를 장비 시운전과 오류 대응 흐름으로 연결하세요.",
-      "first_seen": "2026-09-15",
-      "last_seen": "2026-09-17",
-      "appearances": 3,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-49889988",
@@ -159,8 +240,8 @@
       "first_seen": "2026-09-15",
       "last_seen": "2026-09-17",
       "appearances": 3,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55009928",
