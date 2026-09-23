@@ -1,7 +1,7 @@
 {
-  "latest_issue_date": "2026-09-21",
+  "latest_issue_date": "2026-09-23",
   "unique_jobs": 28,
-  "excluded_past_deadline": 12,
+  "excluded_past_deadline": 15,
   "jobs": [
     {
       "id": "SARAMIN-54930612",
@@ -14,9 +14,9 @@
         "신입 가능",
         "경력무관",
         "고졸·전문대",
-        "이번 주 마감"
+        "5일 이내 마감"
       ],
-      "status_note": "[접수 중·재안내] 09.21 사람인 입사지원과 9월 27일 마감 재확인",
+      "status_note": "[접수 중·재안내] 09.23 사람인 입사지원과 9월 27일 마감 재확인",
       "deadline_display": "9.27 23:59",
       "url": "https://m.saramin.co.kr/job-search/view?rec_idx=54930612",
       "duties": "QC는 원재료·공정·제품 품질분석과 분석장비·시약 관리, 생산은 공정 운전·순찰·트러블 조치·포장",
@@ -25,8 +25,116 @@
       "location": "경북 상주시 마공공단로 80-16 · 자차 출퇴근 가능자 공통 필수",
       "major_connection": "화학·신소재·화공 전공자는 기기분석과 원재료→공정→제품 품질판정 경험을 QC 지원서에 연결하세요.",
       "first_seen": "2026-09-14",
-      "last_seen": "2026-09-21",
-      "appearances": 6,
+      "last_seen": "2026-09-23",
+      "appearances": 7,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-54997887",
+      "company": "비이아이",
+      "company_meta": "차세대 리튬이차전지 셀 개발·생산 기술기업",
+      "title": "생산실 자재 및 출하 관리",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력무관",
+        "고졸 이상",
+        "자재·출하",
+        "ERP·MES"
+      ],
+      "status_note": "[접수 중·재안내] 09.23 사람인 입사지원과 11월 9일 마감 재확인",
+      "deadline_display": "11.09 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=54997887",
+      "duties": "원·부자재 입고와 LOT 확인, FIFO 재고관리, 생산 자재 불출·공급, 완제품 포장·출하",
+      "qualifications": "고졸 이상·경력무관, 기본 PC·Excel 활용, 품목·수량·LOT 정확 확인, 현장·전산업무 병행",
+      "preferences": "제조업 자재·물류·창고·출하 경험, ERP·MES 경험, 지게차 운전",
+      "location": "경기 안산시 단원구",
+      "major_connection": "화학·신소재 전공자는 원부자재 식별, LOT 추적성, 보관조건과 생산 불출 관리를 품질관점으로 연결하세요.",
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-23",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "INCRUIT-2609180000086",
+      "company": "엠브레이스에이치알",
+      "company_meta": "헤드헌팅 공고 · 코스닥 그룹 계열 전해액 제조사 채용",
+      "title": "전기차 2차전지 전해액 QC 대리급",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력 4~7년",
+        "대졸 이상",
+        "화학 전공",
+        "채용 시까지"
+      ],
+      "status_note": "[신규] 09.23 고용24 민간연계 상세와 인크루트 온라인지원 경로 확인 · 기존 발행본 미안내",
+      "deadline_display": "채용 시까지",
+      "url": "https://www.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=CIN&infoTypeGroup=tb_workinfogubun&wantedAuthNo=2609180000086",
+      "duties": "GC·IC·ICP 장비 관리와 트러블슈팅, 원재료·제품 전처리·분석, 분석실·클린룸 관리, 데이터 신뢰성 검증",
+      "qualifications": "4년제 대졸 이상, 화학 또는 관련 전공 필수, 분석실 업무와 동종업계 경력 4~7년",
+      "preferences": "전해액 업무 경험, GC·IC·ICP 등 정밀분석기기 직접 운용·유지보수",
+      "location": "충남 공주시 공주사업장",
+      "major_connection": "화학·신소재 경력자는 분석기기별 검출대상, 전처리 조건, 데이터 신뢰성 확보와 이상원인 조치 사례를 수치로 제시하세요.",
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "WORK24-K120252609100010",
+      "company": "토탈파워콤",
+      "company_meta": "전원장치 전문기업 · UPS·배터리 기술지원",
+      "title": "UPS·배터리 기술영업",
+      "career_group": "career",
+      "tags": [
+        "정규직·기간의 정함이 없는 근로계약",
+        "경력 3년 이상 우대",
+        "학력무관",
+        "기술영업",
+        "채용 시까지"
+      ],
+      "status_note": "[신규] 09.23 고용24 입사지원과 채용 시까지 상태 확인 · 기존 발행본 미안내",
+      "deadline_display": "채용 시까지",
+      "url": "https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet&wantedAuthNo=K120252609100010",
+      "duties": "UPS 무정전전원장치 영업·기술지원과 국내외 영업 지원",
+      "qualifications": "학력무관, 관련 경력 3년 이상 우대, 자동차운전면허 필수",
+      "preferences": "전기·전자 전공, 전기공사산업기사, 영어 회화",
+      "location": "서울 성동구 광나루로6길 35 우림이비즈 802·803호",
+      "major_connection": "전기전자 경력자는 UPS·배터리 구성, 부하 산정, 장애 대응과 고객 기술지원 사례를 영업 성과와 함께 정리하세요.",
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "WORK24-K180412607150002",
+      "company": "티피엠에스",
+      "company_meta": "중소 전자부품 제조기업 · 배터리 검사장비·팩·ESS 기술지원",
+      "title": "배터리 검사장비·배터리팩·ESS 기술영업",
+      "career_group": "entry",
+      "tags": [
+        "정규직·기간의 정함이 없는 근로계약",
+        "경력무관",
+        "학력무관",
+        "기술영업",
+        "채용 시까지"
+      ],
+      "status_note": "[신규] 09.23 고용24 입사지원 경로와 채용 시까지 상태 확인 · 기존 발행본 미안내",
+      "deadline_display": "채용 시까지",
+      "url": "https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet&theWorkYn=Y&wantedAuthNo=K180412607150002",
+      "duties": "각종 검사장비, 배터리팩, ESS 기술영업과 개발지원, A/S 및 영업지원",
+      "qualifications": "경력·학력 무관, 자동차운전면허 필수",
+      "preferences": "전자·전기전자·제어계측 전공, 문서·스프레드시트·프레젠테이션 활용, 관련 경력",
+      "location": "경기 군포시 고산로 166 SK벤티움 104동 303호 · 주 5일 09:00~18:00",
+      "major_connection": "전기전자·제어 전공자는 장비 원리와 고객 요구를 연결한 설명, 문제진단, 현장 대응 경험을 기술영업 관점으로 정리하세요.",
+      "first_seen": "2026-09-23",
+      "last_seen": "2026-09-23",
+      "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
     },
@@ -54,8 +162,8 @@
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-21",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "WORK24-K160042609180030",
@@ -81,8 +189,8 @@
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-21",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-54998309",
@@ -108,35 +216,8 @@
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-21",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
-    },
-    {
-      "id": "SARAMIN-54997887",
-      "company": "비이아이",
-      "company_meta": "차세대 리튬이차전지 셀 개발·생산 기술기업",
-      "title": "생산실 자재 및 출하 관리",
-      "career_group": "entry",
-      "tags": [
-        "정규직·수습 3개월",
-        "경력무관",
-        "고졸 이상",
-        "자재·출하",
-        "ERP·MES"
-      ],
-      "status_note": "[신규] 09.10 시작 · 09.21 사람인 입사지원과 마감일 확인",
-      "deadline_display": "11.09 23:59",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54997887",
-      "duties": "원·부자재 입고와 LOT 확인, FIFO 재고관리, 생산 자재 불출·공급, 완제품 포장·출하",
-      "qualifications": "고졸 이상·경력무관, 기본 PC·Excel 활용, 품목·수량·LOT 정확 확인, 현장·전산업무 병행",
-      "preferences": "제조업 자재·물류·창고·출하 경험, ERP·MES 경험, 지게차 운전",
-      "location": "경기 안산시 단원구",
-      "major_connection": "화학·신소재 전공자는 배터리 원부자재 식별, LOT 추적성, 보관조건과 생산 불출 관리를 품질관점으로 연결하세요.",
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-54671260",
@@ -162,8 +243,8 @@
       "first_seen": "2026-09-18",
       "last_seen": "2026-09-21",
       "appearances": 2,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-49889996",
@@ -551,31 +632,6 @@
       "board_state_label": "이전호 기록·재확인 필요"
     },
     {
-      "id": "LOTTE-21936500-연구개발",
-      "company": "롯데에너지머티리얼즈",
-      "company_meta": "롯데그룹 · 이차전지 동박·소재",
-      "title": "연구개발 — 황화물고체전해질",
-      "career_group": "entry",
-      "tags": [
-        "신입",
-        "정규직·수습 3개월",
-        "석사 이상"
-      ],
-      "status_note": "[접수 중·재안내] 09.08 공식 원문 재확인",
-      "deadline_display": "9.21 18:00",
-      "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21936500",
-      "duties": "황화물계 고체전해질 공정·양산기술, 습식 제조, 입도 형상 제어와 물성평가·분석법 개발",
-      "qualifications": "석사 이상, 2027.1 입사 가능자. 졸업논문 또는 본인 연구소개 자료 첨부",
-      "preferences": "화학·화공·재료·전기공학, 전고체 연구·공정설계·분석장비 경험",
-      "location": "전북 익산",
-      "major_connection": "",
-      "first_seen": "2026-09-05",
-      "last_seen": "2026-09-08",
-      "appearances": 4,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
       "id": "WORK24-228409",
       "company": "성광엘에스",
       "company_meta": "중소기업 · 포스코필바라리튬솔루션 조업지원",
@@ -652,31 +708,6 @@
       "board_state_label": "이전호 기록·재확인 필요"
     },
     {
-      "id": "LOTTE-21936500-공정기술",
-      "company": "롯데에너지머티리얼즈",
-      "company_meta": "롯데그룹 · 이차전지 동박·소재",
-      "title": "공정기술 — 동박 제조·품질 개선",
-      "career_group": "entry",
-      "tags": [
-        "신입",
-        "정규직·수습 3개월",
-        "학사 이상"
-      ],
-      "status_note": "[접수 중·재안내] 동일 공고의 별도 직무",
-      "deadline_display": "9.21 18:00",
-      "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21936500",
-      "duties": "용해·첨가제 관리, 동박 물성·생산성·불량률 개선, 표면처리 문제 해결과 SOP 개정",
-      "qualifications": "학사 이상, 2027.1 입사 가능한 기졸업자·졸업예정자",
-      "preferences": "화학·화공·재료·금속·전기화학, 표면처리기능사, 도금·통계·Roll-to-Roll 지식",
-      "location": "전북 익산",
-      "major_connection": "",
-      "first_seen": "2026-09-05",
-      "last_seen": "2026-09-06",
-      "appearances": 2,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
       "id": "JOBKOREA-49925045",
       "company": "제이씨파워즈",
       "company_meta": "중소 인력운영기업 · 배터리 신규공장 현장",
@@ -697,31 +728,6 @@
       "major_connection": "",
       "first_seen": "2026-09-06",
       "last_seen": "2026-09-06",
-      "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "LOTTE-21936500-생산",
-      "company": "롯데에너지머티리얼즈",
-      "company_meta": "생산·공정관리 · 학사 지원",
-      "title": "생산 — 동박 공정 운영·수율관리",
-      "career_group": "entry",
-      "tags": [
-        "신입",
-        "정규직·수습 3개월",
-        "생산"
-      ],
-      "status_note": "[접수 중·재안내] 통합공고 직무 추가 안내",
-      "deadline_display": "9.21 18:00",
-      "url": "https://recruit.lotte.co.kr/apply/announcement/detail/21936500",
-      "duties": "동박 생산, 수율·재공 관리, 운전 현황 모니터링, 공정 트러블 원인분석과 자재·원가 관리",
-      "qualifications": "학사 이상, 2027.1 입사 가능한 기졸업자·졸업예정자",
-      "preferences": "기계·화공·신소재 전공, 생산 관련 경험, 공고 기준 영어 능통자",
-      "location": "전북 익산",
-      "major_connection": "",
-      "first_seen": "2026-09-05",
-      "last_seen": "2026-09-05",
       "appearances": 1,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
