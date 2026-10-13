@@ -1,6 +1,6 @@
 {
-  "latest_issue_date": "2026-10-12",
-  "unique_jobs": 32,
+  "latest_issue_date": "2026-10-13",
+  "unique_jobs": 34,
   "excluded_past_deadline": 35,
   "jobs": [
     {
@@ -16,7 +16,7 @@
         "환경안전",
         "10.18 마감"
       ],
-      "status_note": "[신규] 기존 발행본 미안내 · 10.12 상세 원문과 활성 지원경로 확인",
+      "status_note": "[접수 중·재안내] 10.13 상세 원문·신입·10.18 마감과 활성 지원경로 재확인",
       "deadline_display": "10.18 23:59",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50127600",
       "duties": "화성 사업장 환경안전팀 업무와 산업안전·환경관리 실무",
@@ -25,7 +25,88 @@
       "location": "경기 화성시 팔탄면 버들로 1337-11",
       "major_connection": "환경·안전·화공 전공자는 위험성평가, 화학물질 관리, 점검표 개선 경험을 발견→조치→재발방지 순서로 정리하세요.",
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-12",
+      "last_seen": "2026-10-13",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-49994532",
+      "company": "자비스",
+      "company_meta": "코스닥 상장사 · X-ray·AI 배터리 검사장비",
+      "title": "배터리검사장비 해외영업 경력직",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력 5년 이상",
+        "초대졸 이상",
+        "검사장비",
+        "10.15 마감"
+      ],
+      "status_note": "[접수 중·재안내] 10.13 상세 원문·10.15 마감과 활성 지원경로 재확인",
+      "deadline_display": "10.15 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49994532",
+      "duties": "이차전지 검사장비 해외영업, 고객관리, 기술미팅·제안·견적과 수출계약 지원",
+      "qualifications": "해외영업 경력 5년 이상, 전문대 졸업 이상",
+      "preferences": "차량 보유, 영어 능통, 해외근무 가능, 유관업무·대기업 근무 경험",
+      "location": "경기 화성시 동탄구 동탄산단9길 9-7",
+      "major_connection": "장비영업 경력자는 고객 요구→검사사양→기술협의→견적·계약→설치·클레임의 책임과 성과를 구분하세요.",
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-10-13",
+      "appearances": 8,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50116950",
+      "company": "제이앤엘테크",
+      "company_meta": "이차전지 소부장 · 제어계측·자동화 장비 기업",
+      "title": "[제이앤엘테크] 제어계측부 전장 설계 및 PLC·모션 제어 엔지니어",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력무관",
+        "학력무관",
+        "전장설계·PLC",
+        "11.05 마감"
+      ],
+      "status_note": "[신규] 기존 발행본 미안내 · 10.13 상세 원문과 활성 지원경로 확인",
+      "deadline_display": "11.05 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50116950",
+      "duties": "제어계측부 전장 설계, PLC·모션 제어 엔지니어링",
+      "qualifications": "경력무관, 학력무관",
+      "preferences": "상세 원문에 별도 우대사항 미표기",
+      "location": "경기 안산시 단원구 별망로 152",
+      "major_connection": "전기·전자·제어 전공자는 회로도 해독, I/O 맵, PLC 시퀀스, 서보 튜닝과 시운전 경험을 장비 동작 기준으로 정리하세요.",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50118474",
+      "company": "피케이씨",
+      "company_meta": "코스피 상장 중견기업 · 신소재·무기화학 소재",
+      "title": "화학·환경안전 분야 신입·경력사원",
+      "career_group": "entry",
+      "tags": [
+        "정규직·신입 수습 6개월",
+        "신입 포함",
+        "대졸 이상",
+        "화학·환경안전",
+        "10.14 마감"
+      ],
+      "status_note": "[접수 중·재안내] 10.13 상세 원문·신입 포함·10.14 23:00 마감과 활성 지원경로 재확인",
+      "deadline_display": "10.14 23:00",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50118474",
+      "duties": "화학 관련 및 환경안전 분야 직무별 모집",
+      "qualifications": "신입 또는 경력 4~8년, 대졸 이상, 화학·환경안전 관련 학과",
+      "preferences": "관련 자격증, 유관업무 경력, 장애인·보훈대상자",
+      "location": "전북 군산시 임해로 494-16 등 직무별 사업장",
+      "major_connection": "화학·신소재·환경 전공자는 공정물질 이해와 환경안전 법규, 자격증, 실험·현장 경험을 직무별 요구조건에 맞춰 분리해 적으세요.",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
       "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
@@ -54,8 +135,8 @@
       "first_seen": "2026-10-02",
       "last_seen": "2026-10-12",
       "appearances": 3,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50114269",
@@ -80,8 +161,8 @@
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-12",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50091122",
@@ -107,35 +188,8 @@
       "first_seen": "2026-10-12",
       "last_seen": "2026-10-12",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
-    },
-    {
-      "id": "JOBKOREA-49994532",
-      "company": "자비스",
-      "company_meta": "코스닥 상장사 · X-ray·AI 배터리 검사장비",
-      "title": "배터리검사장비 해외영업 경력직",
-      "career_group": "career",
-      "tags": [
-        "정규직",
-        "경력 5년 이상",
-        "초대졸 이상",
-        "검사장비",
-        "10.15 마감"
-      ],
-      "status_note": "[접수 중·재안내] 10.12 상세 원문·10.15 마감과 활성 지원경로 재확인",
-      "deadline_display": "10.15 23:59",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49994532",
-      "duties": "이차전지 검사장비 해외영업, 고객관리, 기술미팅·제안·견적과 수출계약 지원",
-      "qualifications": "해외영업 경력 5년 이상, 전문대 졸업 이상",
-      "preferences": "차량 보유, 영어 능통, 해외근무 가능, 유관업무·대기업 근무 경험",
-      "location": "경기 화성시 동탄구 동탄산단9길 9-7",
-      "major_connection": "장비영업 경력자는 고객 요구→검사사양→기술협의→견적·계약→설치·클레임의 책임과 성과를 구분하세요.",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-10-12",
-      "appearances": 7,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50094055",
