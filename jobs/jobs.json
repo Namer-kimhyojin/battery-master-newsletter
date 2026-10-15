@@ -1,8 +1,35 @@
 {
-  "latest_issue_date": "2026-10-14",
-  "unique_jobs": 39,
-  "excluded_past_deadline": 35,
+  "latest_issue_date": "2026-10-15",
+  "unique_jobs": 43,
+  "excluded_past_deadline": 36,
   "jobs": [
+    {
+      "id": "JOBKOREA-50168253",
+      "company": "KG그린텍",
+      "company_meta": "고려아연 계열 · 온산제련소 유틸리티 운영기업",
+      "title": "유틸리티 설비(산소공장) 운영·관리",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력직",
+        "고졸 이상",
+        "설비 운영·관리",
+        "10.20 마감"
+      ],
+      "status_note": "[신규] 10.15 상세 목록에서 경력·정규직·고졸 이상·10.20 마감 확인",
+      "deadline_display": "10.20 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50168253",
+      "duties": "온산제련소 유틸리티 산소공장 설비 운영·관리, 교대근무",
+      "qualifications": "경력자, 고등학교 졸업 이상. 세부 경력연수와 자격은 원문 확인",
+      "preferences": "가스·공조·에너지·설비보전 관련 경험과 자격은 직무 연계 가능",
+      "location": "울산 울주군 온산읍",
+      "major_connection": "설비 경력자는 가동률, 예방보전, 고장시간, 안전사고 감소를 수치로 정리하세요.",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
     {
       "id": "LSMNM-268747",
       "company": "LS MnM",
@@ -16,7 +43,7 @@
         "소재·설비",
         "10.25 마감"
       ],
-      "status_note": "[신규] 10.12 등록 · 10.14 공식 채용페이지 모집중과 직무별 조건 확인",
+      "status_note": "[접수 중·재안내] 10.15 공식 채용페이지의 모집중 상태와 지원 경로 재확인",
       "deadline_display": "10.25 23:59",
       "url": "https://lsmnm.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=268747",
       "duties": "원료 구매·기획, 설비엔지니어 기계·계기, 사업전략, 인사 중 직무별 수행",
@@ -25,7 +52,115 @@
       "location": "울산 온산제련소 또는 서울 LS용산타워",
       "major_connection": "경력자는 공정설비·원료구매·사업전략 중 한 축을 골라 비용·가동률·안전·수익성 지표로 성과를 보여 주세요.",
       "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
+      "last_seen": "2026-10-15",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55273667",
+      "company": "고려아연 온산제련소·계열사",
+      "company_meta": "매출 1000대 기업 · 이차전지 원료·재활용 밸류체인",
+      "title": "2026년 4분기 온산제련소 및 계열사 생산직",
+      "career_group": "entry",
+      "tags": [
+        "정규직·계약직 1년(정규직 전환 가능)",
+        "경력무관·신입 포함",
+        "학력무관",
+        "졸업예정 가능",
+        "10.20 마감"
+      ],
+      "status_note": "[신규] 10.13 게시 · 10.15 상세 원문과 홈페이지 지원 경로 확인",
+      "deadline_display": "10.20 23:59",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55273667",
+      "duties": "생산, 연구지원, 정비, 유틸리티 설비 운영·관리 등 모집부문별 업무",
+      "qualifications": "경력무관·신입 포함, 학력무관, 졸업예정자 지원 가능. 세부 전공·자격은 모집부문별 원문 확인",
+      "preferences": "전기·기계·화학·화공·금속·재료 관련 전공 및 안전·에너지·위험물 관련 자격은 세부 직무에서 활용 가능",
+      "location": "울산 울주군 온산읍 이진로 139 및 계열사 근무지",
+      "major_connection": "화학·신소재 전공자는 공정·분석·안전 경험을 생산 또는 연구지원 직무의 품질·수율·안전 지표와 연결해 보세요.",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50170238",
+      "company": "동일기연",
+      "company_meta": "코스닥 상장 전기·전자·제어기업 · 이차전지 소부장",
+      "title": "머신비전 검사 설비 기구 설계 개발자",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "신입·경력",
+        "대졸 이상",
+        "검사설비 기구설계",
+        "상시채용"
+      ],
+      "status_note": "[접수 중·재안내] 10.15 이차전지 하이테크관·상세 원문의 상시 지원 상태 재확인",
+      "deadline_display": "상시채용",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50170238",
+      "duties": "머신비전 검사 설비의 기구 설계·개발",
+      "qualifications": "신입 또는 경력, 4년제 대학 졸업 이상",
+      "preferences": "운전 가능, 관련 학과 전공, 유관업무 경험",
+      "location": "경기 안양시 동안구 학의로 282",
+      "major_connection": "기계·자동차·조선 전공자는 SolidWorks 등 3D 설계, 공차, 조립·검증 경험을 검사 정밀도와 장비 안정성으로 연결해 보세요.",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50169262",
+      "company": "제이앤엘테크",
+      "company_meta": "이차전지·수소연료전지 소재·부품·계측 장비기업 · 사원 150명",
+      "title": "기계·기구설계 엔지니어",
+      "career_group": "entry",
+      "tags": [
+        "정규직",
+        "경력무관",
+        "대졸 이상",
+        "기계·기구설계",
+        "11.13 마감"
+      ],
+      "status_note": "[신규] 10.15 기업별 진행 공고와 활성 지원 버튼 확인",
+      "deadline_display": "11.13 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50169262",
+      "duties": "이차전지·연료전지 계측 장비의 기계·기구 설계",
+      "qualifications": "경력무관, 4년제 대학 졸업 이상",
+      "preferences": "AutoCAD 등 설계 도구 활용 역량, 세부 우대조건은 원문 확인",
+      "location": "경기 안산시 단원구 성곡동 676-2",
+      "major_connection": "기계·신소재 전공자는 설계 요구사항, 공차·재질 선정, 조립성 검토, 검증 결과를 하나의 사례로 정리하세요.",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50168485",
+      "company": "제이앤엘테크",
+      "company_meta": "이차전지·수소연료전지 소재·부품·계측 장비기업 · 사원 150명",
+      "title": "전장·제어 시스템 설계 엔지니어",
+      "career_group": "entry",
+      "tags": [
+        "정규직",
+        "경력무관",
+        "대졸 이상",
+        "전장·제어",
+        "11.13 마감"
+      ],
+      "status_note": "[신규] 10.15 기업별 진행 공고와 활성 지원 버튼 확인",
+      "deadline_display": "11.13 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50168485",
+      "duties": "이차전지·연료전지 계측 장비의 전장·제어 시스템 설계",
+      "qualifications": "경력무관, 4년제 대학 졸업 이상",
+      "preferences": "C#, S/W, AutoCAD, PLC 관련 역량. 세부 우대조건은 원문 확인",
+      "location": "경기 안산시 단원구 성곡동 676-2",
+      "major_connection": "전기·전자·제어 전공자는 I/O 구성, PLC 로직, 인터록, 시운전 트러블슈팅을 결과 수치와 함께 보여 주세요.",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
       "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
@@ -54,8 +189,8 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50154270",
@@ -81,8 +216,8 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50160476",
@@ -108,8 +243,8 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50143960",
@@ -135,8 +270,8 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-49994532",
@@ -162,8 +297,8 @@
       "first_seen": "2026-09-29",
       "last_seen": "2026-10-14",
       "appearances": 9,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50127600",
@@ -213,33 +348,6 @@
       "preferences": "상세 원문에 별도 우대사항 미표기",
       "location": "경기 안산시 단원구 별망로 152",
       "major_connection": "전기·전자·제어 전공자는 회로도 해독, I/O 맵, PLC 시퀀스, 서보 튜닝과 시운전 경험을 장비 동작 기준으로 정리하세요.",
-      "first_seen": "2026-10-13",
-      "last_seen": "2026-10-13",
-      "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "JOBKOREA-50118474",
-      "company": "피케이씨",
-      "company_meta": "코스피 상장 중견기업 · 신소재·무기화학 소재",
-      "title": "화학·환경안전 분야 신입·경력사원",
-      "career_group": "entry",
-      "tags": [
-        "정규직·신입 수습 6개월",
-        "신입 포함",
-        "대졸 이상",
-        "화학·환경안전",
-        "10.14 마감"
-      ],
-      "status_note": "[접수 중·재안내] 10.13 상세 원문·신입 포함·10.14 23:00 마감과 활성 지원경로 재확인",
-      "deadline_display": "10.14 23:00",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50118474",
-      "duties": "화학 관련 및 환경안전 분야 직무별 모집",
-      "qualifications": "신입 또는 경력 4~8년, 대졸 이상, 화학·환경안전 관련 학과",
-      "preferences": "관련 자격증, 유관업무 경력, 장애인·보훈대상자",
-      "location": "전북 군산시 임해로 494-16 등 직무별 사업장",
-      "major_connection": "화학·신소재·환경 전공자는 공정물질 이해와 환경안전 법규, 자격증, 실험·현장 경험을 직무별 요구조건에 맞춰 분리해 적으세요.",
       "first_seen": "2026-10-13",
       "last_seen": "2026-10-13",
       "appearances": 1,
