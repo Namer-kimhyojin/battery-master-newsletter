@@ -1,7 +1,7 @@
 {
-  "latest_issue_date": "2026-10-15",
-  "unique_jobs": 43,
-  "excluded_past_deadline": 36,
+  "latest_issue_date": "2026-10-16",
+  "unique_jobs": 45,
+  "excluded_past_deadline": 38,
   "jobs": [
     {
       "id": "JOBKOREA-50168253",
@@ -16,7 +16,7 @@
         "설비 운영·관리",
         "10.20 마감"
       ],
-      "status_note": "[신규] 10.15 상세 목록에서 경력·정규직·고졸 이상·10.20 마감 확인",
+      "status_note": "[접수 중·재안내] 10.16 기업 진행 공고에서 경력·정규직·10.20 마감 상태 재확인",
       "deadline_display": "10.20 23:59",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50168253",
       "duties": "온산제련소 유틸리티 산소공장 설비 운영·관리, 교대근무",
@@ -25,7 +25,115 @@
       "location": "울산 울주군 온산읍",
       "major_connection": "설비 경력자는 가동률, 예방보전, 고장시간, 안전사고 감소를 수치로 정리하세요.",
       "first_seen": "2026-10-15",
-      "last_seen": "2026-10-15",
+      "last_seen": "2026-10-16",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50168123",
+      "company": "고려아연",
+      "company_meta": "코스피 상장 대기업 · 배터리 원료·재활용 밸류체인",
+      "title": "2026년 4분기 온산제련소 기능직 — 연구지원부문",
+      "career_group": "entry",
+      "tags": [
+        "계약직·정규직 전환 가능",
+        "신입",
+        "고졸 이상",
+        "연구지원",
+        "10.20 마감"
+      ],
+      "status_note": "[신규] 10.16 기업 진행 공고와 활성 지원 경로 재확인",
+      "deadline_display": "10.20 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50168123",
+      "duties": "온산제련소 연구지원부문 업무",
+      "qualifications": "신입, 고등학교 졸업 이상",
+      "preferences": "세부 전공·자격·우대조건은 기업 모집요강 확인",
+      "location": "울산 울주군 온산읍 이진로 139",
+      "major_connection": "화학·신소재 전공자는 시료 전처리, 분석 장비, 데이터 기록, 안전수칙 경험을 연구지원 업무와 연결해 보세요.",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50065185",
+      "company": "세일정기",
+      "company_meta": "자동화 플랜트 설비기업 · 이차전지 소부장·리사이클 공정 연계",
+      "title": "김포공장 자동화 플랜트설비 생산관리 및 품질관리",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력직",
+        "학력무관",
+        "생산·품질",
+        "10.28 마감"
+      ],
+      "status_note": "[신규] 10.16 진행 공고 목록과 상세 원문의 정규직·경력·마감 확인",
+      "deadline_display": "10.28 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50065185",
+      "duties": "자동화 플랜트설비 생산관리 및 품질관리",
+      "qualifications": "경력자, 학력무관. 모집 세부 직무별 요구경력은 원문 확인",
+      "preferences": "인근 거주자, 차량 소지자 우대",
+      "location": "경기 김포시 대곶면 대곶북로 331-2",
+      "major_connection": "생산·품질 경력자는 납기, 공정 불량, 검사 기준, 협력사 관리 성과를 수치로 정리하세요.",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50144080",
+      "company": "유니테크",
+      "company_meta": "정밀화학 접착제 기업 · 잡코리아 이차전지 소부장 분류",
+      "title": "[생산] 현장직원 상시 모집",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력무관",
+        "고졸 이상",
+        "생산팀",
+        "10.21 마감"
+      ],
+      "status_note": "[신규] 10.16 상세 원문의 경력무관·정규직·10.21 마감과 즉시지원 상태 확인",
+      "deadline_display": "10.21 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50144080",
+      "duties": "생산팀 현장근무",
+      "qualifications": "경력무관, 고등학교 졸업 이상",
+      "preferences": "인근 거주자 우대",
+      "location": "경기 안산시 단원구 별망로459번길 45",
+      "major_connection": "화학·신소재 전공자는 배합, 점도·경화, 공정조건, 불량 예방 경험을 접착제 생산의 품질·안전 관점으로 연결해 보세요.",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50152015",
+      "company": "포스코MC머티리얼즈",
+      "company_meta": "포스코그룹 계열 · 이차전지 음극재 핵심원료 탄소소재 기업",
+      "title": "2026년 수시채용 — 엔지니어(설비투자)",
+      "career_group": "entry",
+      "tags": [
+        "정규직",
+        "신입",
+        "대졸 이상",
+        "설비투자",
+        "10.22 마감"
+      ],
+      "status_note": "[신규] 10.16 기업별 진행 공고와 상세 원문의 신입·정규직·접수 상태 확인",
+      "deadline_display": "10.22 14:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50152015",
+      "duties": "엔지니어 설비투자 직무",
+      "qualifications": "신입, 4년제 대학 졸업 이상",
+      "preferences": "세부 전공·자격·우대조건은 상세 모집요강 확인",
+      "location": "전남 광양시 제철로 2408",
+      "major_connection": "기계·전기·화공·신소재 전공자는 설비 투자 검토, 공정 조건, 안전·품질 개선 경험을 수치로 연결해 보세요.",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
       "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
@@ -54,8 +162,8 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-15",
       "appearances": 2,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55273667",
@@ -81,8 +189,8 @@
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-15",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50170238",
@@ -108,8 +216,8 @@
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-15",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50169262",
@@ -135,8 +243,8 @@
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-15",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50168485",
@@ -162,8 +270,8 @@
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-15",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "ANP-RND-24",
@@ -270,33 +378,6 @@
       "first_seen": "2026-10-14",
       "last_seen": "2026-10-14",
       "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "JOBKOREA-49994532",
-      "company": "자비스",
-      "company_meta": "코스닥 상장사 · X-ray·AI 배터리 검사장비",
-      "title": "배터리검사장비 해외영업 경력직",
-      "career_group": "career",
-      "tags": [
-        "정규직",
-        "경력 5년 이상",
-        "초대졸 이상",
-        "검사장비",
-        "10.15 마감"
-      ],
-      "status_note": "[접수 중·재안내] 10.14 상세 원문·10.15 마감과 활성 지원경로 재확인",
-      "deadline_display": "10.15 23:59",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49994532",
-      "duties": "이차전지 검사장비 해외영업, 고객관리, 기술미팅·제안·견적과 수출계약 지원",
-      "qualifications": "해외영업 경력 5년 이상, 전문대 졸업 이상",
-      "preferences": "차량 보유, 영어 능통, 해외근무 가능, 유관업무·대기업 근무 경험",
-      "location": "경기 화성시 동탄구 동탄산단9길 9-7",
-      "major_connection": "장비영업 경력자는 고객 요구→검사사양→기술협의→견적·계약→설치·클레임의 책임과 성과를 구분하세요.",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-10-14",
-      "appearances": 9,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
     },
@@ -618,33 +699,6 @@
       "major_connection": "전공과 학력에 맞춰 BMS 개발, 기술영업, 품질, 생산, R&D 중 한 부문만 고른 뒤 관련 프로젝트를 해당 업무 흐름에 맞추세요.",
       "first_seen": "2026-10-01",
       "last_seen": "2026-10-02",
-      "appearances": 2,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "SARAMIN-55037328",
-      "company": "나노인텍",
-      "company_meta": "배터리관리시스템 연구개발기업 · 전기차 배터리 기술지원",
-      "title": "전기차 배터리 기술지원(CS) 엔지니어 신입",
-      "career_group": "entry",
-      "tags": [
-        "정규직·수습 2개월",
-        "신입",
-        "전문대 이상",
-        "기술지원",
-        "운전 필수"
-      ],
-      "status_note": "[접수 중·재안내] 10.01 상세 원문과 온라인지원 상태 재확인",
-      "deadline_display": "10.15 23:59",
-      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55037328",
-      "duties": "전기차 배터리 기술지원과 고객 대응, 현장 문제 해결, 유지보수·고장 진단",
-      "qualifications": "전문대 이상 또는 졸업예정자, 신입, 운전 가능, 현장 기술지원 업무 수행 가능",
-      "preferences": "전기·전자·기계 관련 전공, 배터리·전기차 경험, 데이터 분석, CS·현장실습·인턴, 1종 대형면허",
-      "location": "서울 동작구 동작대로 137 서송타워 10층 · 주 5일 08:30~17:30",
-      "major_connection": "전기전자·기계 전공자는 고장현상 확인→데이터 점검→원인분석→조치→고객설명의 흐름으로 현장 문제해결 경험을 정리하세요.",
-      "first_seen": "2026-09-30",
-      "last_seen": "2026-10-01",
       "appearances": 2,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
