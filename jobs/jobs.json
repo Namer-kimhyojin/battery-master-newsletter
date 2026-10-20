@@ -1,6 +1,6 @@
 {
-  "latest_issue_date": "2026-10-19",
-  "unique_jobs": 47,
+  "latest_issue_date": "2026-10-20",
+  "unique_jobs": 50,
   "excluded_past_deadline": 39,
   "jobs": [
     {
@@ -16,16 +16,150 @@
         "생산직",
         "상시채용"
       ],
-      "status_note": "[신규] 10.19 상세 원문에서 경력무관·학력무관·정규직·상시채용·즉시지원 확인",
+      "status_note": "[접수 중·재안내] 10.20 기업 진행 공고에서 경력무관·학력무관·정규직·상시채용 상태 재확인",
       "deadline_display": "상시채용",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50183956",
-      "duties": "배터리 제조 생산업무. 세부 공정·교대 조건은 공고 이미지에서 확인",
+      "duties": "배터리 제조 생산업무. 세부 공정·교대 조건은 공고 이미지 확인",
       "qualifications": "경력무관, 학력무관",
       "preferences": "세부 우대사항은 상세 공고 이미지 확인",
       "location": "충남 논산시 가야곡면 가야공단길 24-8",
       "major_connection": "생산 지원자는 표준작업, 설비점검, 품질 이상 감지, 안전수칙 준수 경험을 중심으로 정리하세요.",
       "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50154284",
+      "company": "나노신소재",
+      "company_meta": "코스닥 소재기업 · 이차전지용 나노소재 사업",
+      "title": "첨단소재 R&D 연구원 상시 채용",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력무관",
+        "대졸 이상",
+        "신소재 R&D",
+        "10.27 마감"
+      ],
+      "status_note": "[신규] 10.20 상세 원문에서 경력무관·정규직·대졸·10.27 마감과 즉시지원·홈페이지 지원 경로 확인",
+      "deadline_display": "10.27 14:59",
+      "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/50154284?sc=640",
+      "duties": "신소재 R&D 연구원 업무",
+      "qualifications": "경력무관, 4년제 대학 졸업 이상",
+      "preferences": "계획성·성실성·꼼꼼함·적응성·창의성·협동심을 핵심역량으로 제시",
+      "location": "대전 유성구 테크노중앙로 243-2",
+      "major_connection": "화학·신소재·재료 전공자는 합성·분산·코팅·분석 장비 경험과 결과 해석을 신소재 R&D 흐름으로 연결하세요.",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50176411",
+      "company": "삼성SDI",
+      "company_meta": "대기업 · 중대형 배터리·ESS 제조",
+      "title": "ESS AC System SI 설계",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력직",
+        "ESS 시스템 설계",
+        "10.23 마감"
+      ],
+      "status_note": "[신규] 10.20 상세 원문에서 경력직·정규직·용인 근무·10.23 08:00 마감과 홈페이지 지원 확인",
+      "deadline_display": "10.23 08:00",
+      "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/50176411?sc=640",
+      "duties": "ESS AC System SI 설계",
+      "qualifications": "경력직. 세부 전공·경력연수·필수요건은 삼성채용 홈페이지 모집요강 확인",
+      "preferences": "전력계통·전기설계·ESS 시스템 통합 프로젝트 경험은 직무 연결 가능",
+      "location": "경기 용인시 기흥구 공세로 150-20",
+      "major_connection": "전기전자 전공 경력자는 단선도, 계통연계, PCS·변압기·보호계전 협업 경험을 시스템 통합 관점으로 정리하세요.",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50028090",
+      "company": "에이비알",
+      "company_meta": "중소 소재기업 · 이차전지 소재·리사이클링 연구",
+      "title": "이차전지·연료전지·수처리 파트 연구개발",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "신입 가능",
+        "석사 이상",
+        "소재 R&D",
+        "10.21 마감"
+      ],
+      "status_note": "[접수 중·재안내] 10.20 상세 원문에서 신입 지원·석사 졸업예정·정규직·10.21 마감과 즉시지원 상태 재확인",
+      "deadline_display": "10.21 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50028090",
+      "duties": "이차전지 소재 연구·실험·기술과 이차전지·연료전지·수처리 파트 연구",
+      "qualifications": "신입 또는 경력 3년 이상, 대학원 석사 이상, 졸업예정자 지원 가능",
+      "preferences": "인근거주·차량소지·관련학과·유관업무·즉시출근·장기근무 가능자",
+      "location": "인천 서구 정서진로 410",
+      "major_connection": "화학·신소재 석사 지원자는 연구 주제, 분석법, 실험 오차 관리, 결과 해석을 한 문단으로 정리하세요.",
+      "first_seen": "2026-09-29",
+      "last_seen": "2026-10-20",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50181859",
+      "company": "엔에이치케미칼",
+      "company_meta": "중소 화학기업 · 이차전지 음극소재 연구개발",
+      "title": "이차전지 음극소재 연구개발 임원",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력 10년 이상",
+        "석사 이상",
+        "음극소재 R&D",
+        "11.15 마감"
+      ],
+      "status_note": "[접수 중·재안내] 10.20 상세 원문에서 이차전지 음극소재 R&D·경력 10년·석사 이상·11.15 마감 재확인",
+      "deadline_display": "11.15 23:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50181859",
+      "duties": "이차전지 음극소재 연구개발 총괄",
+      "qualifications": "경력 10년 이상, 대학원 석사 이상",
+      "preferences": "인근 거주·지방근무 가능, 석·박사, 유관업무 10년, 대기업·공공기관 경력 우대",
+      "location": "충남 천안시 서북구 직산읍 삼은리 503",
+      "major_connection": "음극소재 연구 경력자는 소재 조성, 분석법, 스케일업, 특허·과제, 고객 검증 성과를 수치로 정리하세요.",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-20",
+      "appearances": 2,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "JOBKOREA-50040047",
+      "company": "재세능원",
+      "company_meta": "중견 축전지 제조기업 · 2차전지 양극재공장",
+      "title": "2차전지 양극재공장 환경안전팀 환경시설 운용직",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력무관",
+        "학력무관",
+        "환경시설관리",
+        "11.21 마감"
+      ],
+      "status_note": "[신규] 10.20 상세 원문에서 경력·학력무관·정규직·환경시설관리·11.21 마감과 즉시지원 확인",
+      "deadline_display": "11.21 14:59",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50040047",
+      "duties": "양극재공장 환경시설관리, 3조 2교대 근무",
+      "qualifications": "경력무관, 학력무관",
+      "preferences": "세부 환경 관련 자격·우대조건은 상세 공고 이미지에서 확인",
+      "location": "충북 충주시 대소원면 메가폴리스1로 115",
+      "major_connection": "환경·화공 전공자는 폐수·대기·폐기물·유해화학물질 관리 경험과 교대근무 적합성을 분리해 점검하세요.",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
       "appearances": 1,
       "board_state": "current",
       "board_state_label": "최신호 재확인"
@@ -54,8 +188,8 @@
       "first_seen": "2026-10-15",
       "last_seen": "2026-10-19",
       "appearances": 3,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50168123",
@@ -81,8 +215,8 @@
       "first_seen": "2026-10-16",
       "last_seen": "2026-10-19",
       "appearances": 2,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50182647",
@@ -108,35 +242,8 @@
       "first_seen": "2026-10-19",
       "last_seen": "2026-10-19",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
-    },
-    {
-      "id": "JOBKOREA-50181859",
-      "company": "엔에이치케미칼",
-      "company_meta": "중소 화학기업 · 이차전지 음극소재 연구개발",
-      "title": "이차전지 음극소재 연구개발 임원",
-      "career_group": "career",
-      "tags": [
-        "정규직",
-        "경력 10년 이상",
-        "석사 이상",
-        "음극소재 R&D",
-        "11.15 마감"
-      ],
-      "status_note": "[신규] 10.19 상세 원문에서 이차전지 음극소재 R&D·정규직·경력 10년·석사 이상·11.15 마감 확인",
-      "deadline_display": "11.15 23:59",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50181859",
-      "duties": "이차전지 음극소재 연구개발 총괄",
-      "qualifications": "경력 10년 이상, 대학원 석사 이상",
-      "preferences": "인근 거주·지방근무 가능, 석·박사, 유관업무 10년, 대기업·공공기관 경력 우대",
-      "location": "충남 천안시 서북구 직산읍 삼은리 503 충남테크노파크 천안밸리",
-      "major_connection": "음극소재 연구 경력자는 소재 조성, 분석법, 스케일업, 특허·과제, 고객 검증 성과를 수치와 함께 정리하세요.",
-      "first_seen": "2026-10-19",
-      "last_seen": "2026-10-19",
-      "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50152015",
@@ -162,8 +269,8 @@
       "first_seen": "2026-10-16",
       "last_seen": "2026-10-19",
       "appearances": 2,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50065185",
@@ -807,33 +914,6 @@
       "major_connection": "전기전자·컴퓨터 전공자는 회로설계, 펌웨어 연동, 시험·인증, 불량원인 분석 중 본인의 프로젝트 근거를 BMS 안전기능과 연결하세요.",
       "first_seen": "2026-09-30",
       "last_seen": "2026-09-30",
-      "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "JOBKOREA-50028090",
-      "company": "에이비알",
-      "company_meta": "중소 소재기업 · 이차전지·연료전지·수처리 소재",
-      "title": "(인천) 이차전지 소재 파트 신입 및 경력 채용",
-      "career_group": "entry",
-      "tags": [
-        "정규직·수습 3개월",
-        "신입 가능",
-        "석사 이상",
-        "소재 연구개발",
-        "졸업예정 가능"
-      ],
-      "status_note": "[신규] 09.29 상세 원문과 홈페이지 지원 경로 확인 · 기존 발행본 미안내",
-      "deadline_display": "10.21 · 마감시간 미확인",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50028090",
-      "duties": "이차전지 소재 관련 연구개발",
-      "qualifications": "석사 이상 또는 졸업예정자, 관련 전공, 신입 또는 관련 경력 3년 이상",
-      "preferences": "인근 거주, 차량 보유, 관련 전공·경험, 즉시 출근과 장기근무 가능",
-      "location": "인천 서구 정서진로 410 창업·벤처 녹색융합클러스터",
-      "major_connection": "화학·신소재 전공자는 합성·분석·전기화학 평가 중 본인의 연구주제와 공고의 소재개발 접점을 구체화하세요.",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
       "appearances": 1,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
