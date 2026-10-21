@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="최신 이차전지 산업동향과 현재 지원 가능한 채용정보를 정리한 배터리 마스터 뉴스레터">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="오늘의 배터리 산업·채용 브리핑 · 2026-10-21">
+  <meta property="og:description" content="검증된 배터리 산업동향, 신입·경력무관 및 경력직 채용, 교육·행사 정보를 한 번에 확인하세요.">
+  <meta property="og:url" content="https://batterybrief.pages.dev/archive/2026-10-21.html">
+  <title>오늘의 배터리 산업·채용 브리핑</title>
+  <style>
+    :root {
+      --navy: #111111;
+      --teal: #2563EB;
+      --ink: #111111;
+      --muted: #555555;
+      --line: #d6d6d6;
+      --paper: #ffffff;
+      --canvas: #f5f5f5;
+      --soft: #f5f5f5;
+      --accent: #E53935;
+      --mobile-body-size: 16px;
+      --mobile-meta-size: 14px;
+    }
+
+    @page { size: A4 portrait; margin: 10mm; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.45;
+      font-size: 16px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .newsletter {
+      width: min(calc(100% - 24px), 920px);
+      margin: 24px auto;
+      padding: 28px;
+      background: var(--paper);
+    }
+
+    .newsletter-header {
+      position: relative;
+      padding: 12px 0 18px;
+      border-bottom: 1px solid var(--ink);
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .newsletter-header::before { content: ""; position: absolute; inset: 0 0 auto; height: 8px; background: linear-gradient(to right, var(--ink) 0 72%, var(--teal) 72% 94%, var(--accent) 94% 100%); }
+
+    .eyebrow, .meta { margin: 0; font-size: 0.84rem; letter-spacing: 0.06em; }
+    h1 { margin: 6px 0 8px; font-size: clamp(1.7rem, 5vw, 2.5rem); line-height: 1.18; word-break: keep-all; }
+    h2 { margin: 20px 0 10px; color: var(--navy); font-size: 1.15rem; letter-spacing: -.025em; }
+    h2 { padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; line-height: 1.4; }
+    [id] { scroll-margin-top: 12px; }
+    p { margin: 6px 0; }
+
+    .content-grid, .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      grid-column: span 6;
+      background: var(--paper);
+      break-inside: avoid;
+    }
+
+    .trend-card, .day-card { background: var(--soft); }
+    .badge { display: inline-block; margin: 0 0 7px; padding: 4px 8px; background: var(--soft); color: var(--navy); font-size: 0.8rem; font-weight: 800; }
+    .trend-card > .badge { padding: 0; background: transparent; color: var(--teal); }
+    .job-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
+    .job-card { border-top: 3px solid var(--ink); background: #fafafa; }
+    .job-card:nth-child(2n) { border-top-color: var(--teal); }
+    .company { display: block; font-size: 1.28rem; font-weight: 850; letter-spacing: -.045em; }
+    .company-meta, .status-note, .job-note { display: block; color: var(--muted); font-size: .78rem; }
+    .status-note { margin-bottom: 4px; color: var(--teal); font-weight: 800; }
+    .job-title { margin-top: 5px; }
+    .deadline-badge { display: inline-flex; min-width: 108px; flex-direction: column; justify-content: center; min-height: 78px; padding: 9px 10px; background: #c62828; color: #FFFFFF; text-align: center; text-decoration: none; font-weight: 800; }
+    .deadline-badge small, .deadline-badge span { font-size: .72rem; }
+    .deadline-badge span { margin-top: 4px; padding-top: 4px; border-top: 1px solid #ffffff99; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0 8px; }
+    .tag { padding: 3px 7px; background: #e7e7e7; font-size: .75rem; font-weight: 750; }
+    .content-grid > *, .jobs-grid > * { grid-column: span 6; min-width: 0; }
+    dl { margin: 0; }
+    dl div { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 6px; padding: 3px 0; border-top: 1px solid var(--line); }
+    dt { color: var(--muted); font-weight: 700; }
+    dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    .card > ul li + li { margin-top: 5px; }
+
+    a { color: var(--teal); overflow-wrap: anywhere; }
+    .source-link {
+      display: inline-flex;
+      min-height: 44px;
+      margin-top: 9px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border: 1px solid currentColor;
+      background: var(--paper);
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+    .utility-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+    .utility-actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--teal); background: #FFFFFF; color: var(--teal); font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; }
+    .utility-actions .jobs-board-link { border-width: 2px; background: var(--teal); color: #FFFFFF; }
+    .utility-actions .pdf-download { background: var(--teal); color: #FFFFFF; }
+    .schedule-list { display: grid; gap: 12px; }
+    .schedule-item { padding: 13px 14px 12px; border: 1px solid var(--line); border-left: 5px solid var(--teal); background: var(--paper); break-inside: avoid; }
+    .schedule-item + .schedule-item { margin-top: 0; }
+    .schedule-item > .badge { margin-bottom: 9px; background: var(--ink); color: #FFFFFF; }
+    .deadline-list, .analysis-list { margin: 0; padding: 0; list-style: none; }
+    .deadline-list li, .analysis-list li { display: grid; grid-template-columns: 150px minmax(0, 1fr) 100px; gap: 10px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); }
+    .deadline-list a, .analysis-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 7px 9px; border: 1px solid var(--teal); font-weight: 800; line-height: 1.35; text-align: center; text-decoration: none; }
+    .quick-nav { display: flex; gap: 6px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .quick-nav li { display: flex; align-self: stretch; margin-top: 0; }
+    .quick-nav li + li { margin-top: 0; }
+    .quick-nav a { display: flex; height: 100%; align-items: center; justify-content: center; min-height: 44px; padding: 7px 10px; border: 1px solid var(--line); color: var(--ink); font-weight: 750; line-height: 1.35; text-align: center; text-decoration: none; }
+    .mobile-priority { display: none; }
+    .mobile-priority small { display: block; color: var(--muted); }
+    .job-group-heading { display: flex; align-items: center; gap: 8px; margin: 18px 0 10px; padding: 10px 12px; border-bottom: 2px solid var(--ink); border-left: 7px solid var(--teal); background: #eef3ff; }
+    .job-group-heading.career-group { margin-top: 24px; border-left-color: var(--accent); background: #fff1f0; }
+    .section-count { display: inline-flex; min-width: 42px; min-height: 28px; margin-left: auto; align-items: center; justify-content: center; padding: 3px 8px; background: var(--teal); color: #FFFFFF; font-size: .76em; font-weight: 800; }
+    .career-group .section-count { background: var(--accent); }
+    footer { display: grid; grid-template-columns: 5fr 7fr; gap: 18px; margin-top: 16px; padding-top: 12px; border-top: 5px solid var(--ink); color: var(--muted); font-size: 0.84rem; }
+    .community-link { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 9px 12px; background: var(--teal); color: #fff; font-size: 1rem; font-weight: 800; text-align: center; text-decoration: none; }
+    .community-url { display: block; margin-top: 6px; overflow-wrap: anywhere; }
+
+    @media (max-width: 720px) {
+      body { background: var(--paper); font-size: 16px; line-height: 1.65; }
+      .newsletter { width: 100%; min-height: 0; margin: 0; padding: 18px 16px 28px; box-shadow: none; }
+      .newsletter-header { padding: 12px 0 16px; }
+      h1 { font-size: 1.62rem; letter-spacing: -.045em; }
+      .content-grid, .jobs-grid { grid-template-columns: 1fr; }
+      .content-grid > *, .jobs-grid > * { grid-column: 1; }
+      .card { padding: 16px; font-size: var(--mobile-body-size); line-height: 1.62; }
+      h2 { font-size: 1.28rem; }
+      h3 { font-size: 1.12rem; }
+      .badge, .company-meta, .status-note, .job-note, .tag, .deadline-badge small, .deadline-badge span, .mobile-priority small { font-size: var(--mobile-meta-size); }
+      .source-link { width: 100%; min-height: 44px; justify-content: center; }
+      .utility-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .utility-actions > * { width: 100%; }
+      .quick-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 5px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+      .quick-nav li { flex: 0 0 auto; scroll-snap-align: start; }
+      .quick-nav a { white-space: nowrap; }
+      .job-group-heading { min-height: 48px; margin-top: 20px; padding: 10px 11px; }
+      .mobile-priority { display: block; margin-top: 24px; border-top: 4px solid var(--teal); }
+      .mobile-priority ol { margin: 0; padding: 0; list-style: none; }
+      .mobile-priority li { border-bottom: 1px solid var(--line); }
+      .mobile-priority a { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 8px; min-height: 58px; padding: 10px 0; color: var(--ink); text-decoration: none; }
+      .job-top { grid-template-columns: 1fr; }
+      .deadline-badge { width: 100%; min-height: 52px; flex-direction: row; align-items: center; justify-content: space-between; }
+      .deadline-list li, .analysis-list li { grid-template-columns: minmax(0, 1fr) 98px; }
+      .deadline-list time, .analysis-list strong { grid-column: 1 / -1; }
+      footer { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      html, body { width: auto; min-height: 0; height: auto; background: #ffffff; }
+      body { font-size: 9.2pt; line-height: 1.32; }
+      .newsletter { width: auto; min-height: 0; height: auto; margin: 0; padding: 0; border-radius: 0; box-shadow: none; }
+      .newsletter-header { padding: 2mm 0 3mm; }
+      h1 { font-size: 19pt; }
+      h2 { margin: 2.4mm 0 1.4mm; font-size: 11.5pt; }
+      h3 { margin-bottom: 1.2mm; }
+      .content-grid, .jobs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5mm; }
+      .content-grid > *, .jobs-grid > * { grid-column: span 1; }
+      .card { padding: 2.4mm; }
+      .deadline-badge { min-height: 0; padding: 2mm; }
+      .source-link { min-height: 0; margin-top: 1.5mm; padding: 1.5mm 2.5mm; }
+      .deadline-list li, .analysis-list li { gap: 2mm; padding: 1.5mm 0; }
+      .deadline-list a, .analysis-list a { min-height: 0; padding: 1.5mm 2mm; }
+      footer { gap: 3mm; margin-top: 2mm; padding-top: 1.5mm; border-top-width: 3px; font-size: 8pt; }
+      .community-link { min-height: 0; padding: 1.5mm 2mm; font-size: 9pt; }
+      h2, h3 { break-after: avoid; }
+      .job-group-heading { break-inside: avoid; }
+      .card, .job-card, .deadline-list li, .analysis-list li { break-inside: avoid; }
+      footer { break-inside: auto; }
+      section[aria-labelledby="deadline-title"] { break-inside: avoid; page-break-inside: avoid; }
+      .utility-actions, .quick-nav, .mobile-priority { display: none !important; }
+      .schedule-list { gap: 1.5mm; }
+      .schedule-item { padding: 2mm; border-top-width: 1.5px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="newsletter theme-swiss">
+    <header class="newsletter-header">
+      <p class="eyebrow">한국배터리아카데미 남부권캠퍼스 · (재)포항테크노파크</p>
+      <h1>오늘의 배터리 산업·채용 브리핑</h1>
+      <p class="meta"><time datetime="2026-10-21">2026년 10월 21일 수요일</time> · 수요일 · 직무·기업·취업자료 · 최종 검증 2026.10.21. 12:32 KST</p>
+      <nav class="utility-actions" aria-label="뉴스레터와 채용정보 이동"><a href="https://batterybrief.pages.dev/" target="_blank" rel="noopener noreferrer">최신 뉴스레터</a><a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터</a><a class="jobs-board-link" href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a><a class="pdf-download" href="https://batterybrief.pages.dev/pdf/2026-10-21.pdf" download="battery_master_newsletter_2026-10-21.pdf" aria-label="오늘자 뉴스레터 PDF 저장">PDF 저장</a></nav>
+    </header>
+
+    <nav aria-label="본문 빠른 이동"><ul class="quick-nav"><li><a href="#trend-title">산업·기업동향</a></li><li><a href="#entry-jobs">신입·경력무관</a></li><li><a href="#career-jobs">경력직</a></li><li><a href="#deadline-title">마감 임박</a></li><li><a href="#resource-title">교육·행사</a></li></ul></nav>
+
+    <section class="mobile-priority" aria-labelledby="mobile-priority-title"><h2 id="mobile-priority-title">오늘 먼저 볼 공고 3건</h2><ol><li><a href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55285566" target="_blank" rel="noopener noreferrer"><strong>우선 1</strong><span>세방리튬배터리 · 2026년 세방리튬배터리 상시채용<small>10.25 23:59 · 여러 배터리 기술직을 경력무관으로 모집하며 10월 25일 마감하는 신규 확인 공고예요.</small></span></a></li><li><a href="https://m.jobkorea.co.kr/Recruit/GI_Read/50154284?sc=640" target="_blank" rel="noopener noreferrer"><strong>우선 2</strong><span>나노신소재 · 첨단소재 R&amp;D 연구원 상시 채용<small>10.27 14:59 · 화학·신소재 전공이 직접 연결되는 경력무관 소재 R&amp;D 공고로 10월 27일 마감이에요.</small></span></a></li><li><a href="https://www.jobkorea.co.kr/Recruit/GI_Read/50040047" target="_blank" rel="noopener noreferrer"><strong>우선 3</strong><span>재세능원 · 2차전지 양극재공장 환경안전팀 환경시설 운용직<small>11.21 14:59 · 배터리 양극재공장의 환경시설 운영을 경력·학력무관으로 지원할 수 있는 정규직 공고예요.</small></span></a></li></ol></section>
+
+    <section aria-labelledby="trend-title">
+      <h2 id="trend-title">주요 산업·기업동향</h2>
+      <div class="content-grid">
+        <article class="card trend-card" data-trend-id="SAMSUNGSDI|numbers-rnd-patents|2026-10-20"><span class="badge">10.20 공개 · 연구개발 지표</span><h3>삼성SDI — 특허 2만2,322건으로 본 배터리 연구개발 축적</h3><p><strong>확인된 사실</strong> 삼성SDI는 2026년 2분기 기준 누적 특허 등록이 2만2,322건이라고 공개했어요. 각형 배터리는 지난해 말 미국 특허 약 1,200건을 보유했고, 적층 기술을 바탕으로 EV와 ESS 적용을 넓히고 있다고 설명했어요.</p><p><strong>취업 준비 관점</strong> 취업 준비 관점(제안): 연구개발 경험을 쓸 때 실험 결과만 나열하지 말고 문제 정의, 설계 변경, 검증 데이터, 지식재산 또는 표준화 가능성까지 이어 보세요.</p><a class="source-link" href="https://news.samsungsdi.com/global/click?seq=465" target="_blank" rel="noopener noreferrer">삼성SDI 공식 뉴스룸</a></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="jobs-title">
+      <h2 id="jobs-title">오늘의 채용정보</h2>
+      <h3 id="entry-jobs" class="job-group-heading entry-group">신입·경력무관 <span class="section-count">4건</span></h3>
+      <div class="jobs-grid">
+        <!-- Each job card: company name first; .job-top contains one linked .deadline-badge with the exact deadline and 원문 보기. No duplicate bottom link. -->
+        <article class="card job-card" data-job-id="SARAMIN-55285566"><div class="job-top"><div><span class="status-note">[신규] 10.21 사람인 상세 원문에서 경력무관·정규직·대졸 이상·10.25 마감과 홈페이지 지원 경로 확인</span><strong class="company">세방리튬배터리</strong><span class="company-meta">세방그룹 중견기업 · 차량용 배터리팩·모듈 제조</span><h3 class="job-title">2026년 세방리튬배터리 상시채용</h3></div><a class="deadline-badge" href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55285566" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>10.25 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">경력무관</span><span class="tag">대졸 이상</span><span class="tag">직무별 모집</span><span class="tag">10.25 마감</span></div><dl><div><dt>업무</dt><dd>시스템·소프트웨어·전기전자·기계·설계·설비·공정·R&amp;D·생산·품질 등 직무별 업무</dd></div><div><dt>자격</dt><dd>경력무관(신입 포함), 4년제 대학 졸업 이상. 세부 조건은 직무별 상세요강 확인</dd></div><div><dt>우대</dt><dd>국가유공자·장애인·영어·일본어 가능자·관련 전공·유관업무 경험 등 직무별 우대</dd></div><div><dt>근무지</dt><dd>경기 안양 R&amp;D센터·전남 광주공장·충북 음성공장 등 직무별 상이</dd></div><div><dt>전공연결</dt><dd>기계·전기전자·화학·신소재 전공자는 희망 직무 하나를 먼저 고르고 프로젝트를 설계·공정·품질 지표로 맞춰 보세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-50154284"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 10.21 상세 원문에서 경력무관·정규직·대졸 이상·10.27 마감과 활성 지원 경로 재확인</span><strong class="company">나노신소재</strong><span class="company-meta">코스닥 소재기업 · 이차전지용 나노소재 사업</span><h3 class="job-title">첨단소재 R&amp;D 연구원 상시 채용</h3></div><a class="deadline-badge" href="https://m.jobkorea.co.kr/Recruit/GI_Read/50154284?sc=640" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>10.27 14:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력무관</span><span class="tag">대졸 이상</span><span class="tag">신소재 R&amp;D</span><span class="tag">10.27 마감</span></div><dl><div><dt>업무</dt><dd>신소재 R&amp;D 연구원 업무</dd></div><div><dt>자격</dt><dd>경력무관, 4년제 대학 졸업 이상</dd></div><div><dt>우대</dt><dd>계획성·성실성·꼼꼼함·적응성·창의성·협동심을 핵심역량으로 제시</dd></div><div><dt>근무지</dt><dd>대전 유성구 테크노중앙로 243-2</dd></div><div><dt>전공연결</dt><dd>화학·신소재·재료 전공자는 합성·분산·코팅·분석 장비 경험과 결과 해석을 신소재 R&amp;D 흐름으로 연결하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 상세 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-50040047"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 10.21 상세 원문에서 경력·학력무관·정규직·환경시설관리·11.21 마감과 활성 지원 경로 재확인</span><strong class="company">재세능원</strong><span class="company-meta">중견 축전지 제조기업 · 2차전지 양극재공장</span><h3 class="job-title">2차전지 양극재공장 환경안전팀 환경시설 운용직</h3></div><a class="deadline-badge" href="https://www.jobkorea.co.kr/Recruit/GI_Read/50040047" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.21 14:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력무관</span><span class="tag">학력무관</span><span class="tag">환경시설관리</span><span class="tag">11.21 마감</span></div><dl><div><dt>업무</dt><dd>양극재공장 환경시설관리, 3조 2교대 근무</dd></div><div><dt>자격</dt><dd>경력무관, 학력무관</dd></div><div><dt>우대</dt><dd>세부 환경 관련 자격·우대조건은 상세 공고 이미지에서 확인</dd></div><div><dt>근무지</dt><dd>충북 충주시 대소원면 메가폴리스1로 115</dd></div><div><dt>전공연결</dt><dd>환경·화공 전공자는 폐수·대기·폐기물·유해화학물질 관리 경험과 교대근무 적합성을 분리해 점검하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 상세 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-50183956"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 10.21 기업 진행 공고에서 경력무관·학력무관·정규직·상시채용과 지원 경로 재확인</span><strong class="company">Enovix Korea</strong><span class="company-meta">중견 축전지 제조기업 · 차세대 배터리 제조</span><h3 class="job-title">배터리 제조생산직</h3></div><a class="deadline-badge" href="https://www.jobkorea.co.kr/Recruit/GI_Read/50183956" target="_blank" rel="noopener noreferrer"><small>접수상태</small><strong>상시채용</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">경력무관</span><span class="tag">학력무관</span><span class="tag">생산직</span><span class="tag">상시채용</span></div><dl><div><dt>업무</dt><dd>배터리 제조 생산업무. 세부 공정·교대 조건은 공고 이미지 확인</dd></div><div><dt>자격</dt><dd>경력무관, 학력무관</dd></div><div><dt>우대</dt><dd>세부 우대사항은 상세 공고 이미지 확인</dd></div><div><dt>근무지</dt><dd>충남 논산시 가야곡면 가야공단길 24-8</dd></div><div><dt>전공연결</dt><dd>생산 지원자는 표준작업, 설비점검, 품질 이상 감지, 안전수칙 준수 경험을 중심으로 정리하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 상세 원문</p></article>
+      </div>
+      <h3 id="career-jobs" class="job-group-heading career-group">경력직 <span class="section-count">2건</span></h3>
+      <div class="jobs-grid"><article class="card job-card" data-job-id="JOBKOREA-50176411"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 10.21 상세 원문에서 경력직·정규직·용인 근무·10.23 08:00 마감과 홈페이지 지원 재확인</span><strong class="company">삼성SDI</strong><span class="company-meta">대기업 · 중대형 배터리·ESS 제조</span><h3 class="job-title">ESS AC System SI 설계</h3></div><a class="deadline-badge" href="https://m.jobkorea.co.kr/Recruit/GI_Read/50176411?sc=640" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>10.23 08:00</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">경력직</span><span class="tag">ESS 시스템 설계</span><span class="tag">10.23 마감</span></div><dl><div><dt>업무</dt><dd>ESS AC System SI 설계</dd></div><div><dt>자격</dt><dd>경력직. 세부 전공·경력연수·필수요건은 삼성채용 홈페이지 모집요강 확인</dd></div><div><dt>우대</dt><dd>전력계통·전기설계·ESS 시스템 통합 프로젝트 경험은 직무 연결 가능</dd></div><div><dt>근무지</dt><dd>경기 용인시 기흥구 공세로 150-20</dd></div><div><dt>전공연결</dt><dd>전기전자 전공 경력자는 단선도, 계통연계, PCS·변압기·보호계전 협업 경험을 시스템 통합 관점으로 정리하세요.</dd></div></dl><p class="job-note">출처: 잡코리아 기업 게시 상세 원문</p></article><article class="card job-card" data-job-id="SARAMIN-54842246"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 10.21 사람인 상세 원문에서 경력 3~20년·정규직·초대졸 이상·10.24 마감과 입사지원 경로 재확인</span><strong class="company">이노메트리</strong><span class="company-meta">코스닥 검사장비기업 · 2차전지 X-ray·CT AI 검사</span><h3 class="job-title">2차전지 AI솔루션 자동화장비 전장설계</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=54842246" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>10.24 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직·수습 3개월</span><span class="tag">경력 3~20년</span><span class="tag">초대졸 이상</span><span class="tag">전장설계</span><span class="tag">10.24 마감</span></div><dl><div><dt>업무</dt><dd>2차전지 AI 검사 자동화장비 전장설계</dd></div><div><dt>자격</dt><dd>경력 3~20년, 전문대 졸업 이상</dd></div><div><dt>우대</dt><dd>세부 전장설계 도구·제어·장비 경험 우대조건은 상세 원문 확인</dd></div><div><dt>근무지</dt><dd>경기 화성시 효행구</dd></div><div><dt>전공연결</dt><dd>전기전자·제어 전공 경력자는 회로·판넬 설계, PLC·센서 연동, 시운전과 트러블슈팅을 장비 수율 관점으로 정리하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문</p></article></div>
+    </section>
+
+    <section aria-labelledby="deadline-title"><h2 id="deadline-title">마감 임박 공고</h2><ul class="deadline-list"><li><time datetime="2026-10-22T14:59:00+09:00">10.22 14:59</time><span><strong>포스코MC머티리얼즈</strong><br>엔지니어(설비투자) · 신입 · 대졸 이상</span><a class="" href="https://www.jobkorea.co.kr/Recruit/GI_Read/50152015" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-10-23T08:00:00+09:00">10.23 08:00</time><span><strong>삼성SDI</strong><br>ESS AC System SI 설계 · 경력직 · 정규직</span><a class="" href="https://m.jobkorea.co.kr/Recruit/GI_Read/50176411?sc=640" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-10-24T23:59:00+09:00">10.24 23:59</time><span><strong>이노메트리</strong><br>2차전지 AI솔루션 자동화장비 전장설계 · 경력 3~20년 · 초대졸 이상</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=54842246" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-10-25T23:59:00+09:00">10.25 23:59</time><span><strong>세방리튬배터리</strong><br>2026년 세방리튬배터리 상시채용 · 경력무관 · 대졸 이상</span><a class="" href="https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55285566" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-10-25T23:59:00+09:00">10.25 23:59</time><span><strong>LS MnM</strong><br>원료구매·설비엔지니어·사업전략 경력 · 경력직 · 직무별 요건 상이</span><a class="" href="https://lsmnm.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&amp;jobnoticeSn=268747" target="_blank" rel="noopener noreferrer">원문 보기</a></li></ul></section>
+
+    <section aria-labelledby="weekday-section-title"><h2 id="weekday-section-title">직무·기업·취업자료</h2><p class="company-meta">수요일 · 공개자료 1건</p><ul class="analysis-list"><li><strong>NCS 공정채용 로드맵 — 직무기술서에서 지원 증거 찾기</strong><span>NCS 공식 페이지는 직무탐색, 현황분석, 취업준비 순서와 기업 직무기술서·평가샘플을 제공합니다. 공고의 업무를 지식·기술·태도로 나눠 자기소개서 사례를 점검해 보세요.</span><a class="" href="https://www.ncs.go.kr/unity/th03/ncsSearchMain.do?tabNo=2" target="_blank" rel="noopener noreferrer">NCS 공식 자료 보기</a></li></ul></section>
+
+    <section class="content-grid" aria-label="지원 전략과 취업자료">
+      <article class="card">
+        <h2>배터리 마스터의 지원 포인트</h2>
+        <ul>
+          <li><strong>우선 추천:</strong> 오늘 신규 우선 추천은 세방리튬배터리의 경력무관 부문별 기술직 채용이에요.</li>
+          <li><strong>전공·학력 연결:</strong> 화학·신소재 전공자는 나노신소재 R&amp;D와 재세능원 환경시설 중 실험·분석형과 현장·환경형을 구분해 지원하세요.</li>
+          <li><strong>오늘 할 일:</strong> 10월 22일 포스코MC머티리얼즈부터 26일 한솔케미칼까지 마감 시각이 달라 오늘 일정표에 먼저 등록하세요.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2 id="resource-title">교육·자격·행사 마감 일정</h2>
+        <div class="schedule-list"><div class="schedule-item"><span class="badge">행사</span><h3>FIX 2026 · 미래혁신기술박람회</h3><p><strong>운영기관</strong> 대구광역시·EXCO</p><p><strong>대상</strong> 미래 모빌리티·배터리·산업AI 기술과 기업 동향을 확인하려는 취업준비생</p><p><strong>방식·장소</strong> 2026.10.21~10.24 · 대구 EXCO · 전시 10.21~23, 컨퍼런스 10.21~24</p><p><strong>비용</strong> 등록 유형별 비용은 공식 페이지 확인</p><p><strong>접수마감</strong> 오늘 개막 · 방문 가능</p><a class="source-link" href="https://fixkorea.or.kr/" target="_blank" rel="noopener noreferrer">공식 신청·상세 안내</a></div></div>
+      </article>
+    </section>
+
+    
+
+    <footer>
+      <div><p><strong>발행 안내</strong> 본 자료는 (재)포항테크노파크가 한국배터리아카데미 남부권캠퍼스 운영의 일환으로 작성했어요.</p><p>공고 상태와 마감 시각은 변동될 수 있으므로 지원 직전에 공식 페이지를 다시 확인해 주세요.</p><p><a href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a> · <a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터 보기</a></p></div>
+      <div><a class="community-link" href="https://open.kakao.com/o/pVd3CfEi" target="_blank" rel="noopener noreferrer">이차전지 취업 정보공유 · 오픈채팅방 참여하기</a><p>주변 취준생에게 뉴스레터와 오픈채팅방을 소개해 주세요.</p><span class="community-url">https://open.kakao.com/o/pVd3CfEi</span></div>
+    </footer>
+  </main>
+</body>
+</html>
