@@ -131,7 +131,18 @@ try {
         Copy-Item -Path (Join-Path $jobsDirectory '*') -Destination $deploymentJobs -Force
     }
 
-    $npxCommand = (Get-Command npx -ErrorAction Stop).Source
+    $npxCommand = (Get-Command npx -ErrorAction SilentlyContinue).Source
+    if (-not $npxCommand) {
+        $workspaceRoot = Split-Path -Parent $repositoryRoot
+        $portableNpx = Get-ChildItem -LiteralPath (Join-Path $workspaceRoot 'tmp') -Recurse -File -Filter 'npx.cmd' -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -match 'node-v[0-9.]+-win-x64' } |
+            Sort-Object LastWriteTime -Descending |
+            Select-Object -First 1
+        if (-not $portableNpx) {
+            throw 'npx를 찾을 수 없습니다. PATH 또는 작업공간 tmp의 공식 Node.js 배포본을 확인하세요.'
+        }
+        $npxCommand = $portableNpx.FullName
+    }
     $commitHash = git rev-parse HEAD
     & $npxCommand --yes wrangler@4.128.0 pages deploy $deploymentDirectory --project-name batterybrief --branch main --commit-hash $commitHash
     if ($LASTEXITCODE -ne 0) {
