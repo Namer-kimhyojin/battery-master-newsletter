@@ -131,7 +131,8 @@ try {
         Copy-Item -Path (Join-Path $jobsDirectory '*') -Destination $deploymentJobs -Force
     }
 
-    $npxCommand = (Get-Command npx -ErrorAction SilentlyContinue).Source
+    $npxInfo = Get-Command npx -ErrorAction SilentlyContinue
+    $npxCommand = if ($npxInfo) { $npxInfo.Source } else { $null }
     if (-not $npxCommand) {
         $workspaceRoot = Split-Path -Parent $repositoryRoot
         $portableNpx = Get-ChildItem -LiteralPath (Join-Path $workspaceRoot 'tmp') -Recurse -File -Filter 'npx.cmd' -ErrorAction SilentlyContinue |
