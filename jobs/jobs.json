@@ -1,8 +1,170 @@
 {
-  "latest_issue_date": "2026-11-06",
-  "unique_jobs": 52,
-  "excluded_past_deadline": 70,
+  "latest_issue_date": "2026-11-09",
+  "unique_jobs": 55,
+  "excluded_past_deadline": 73,
   "jobs": [
+    {
+      "id": "SARAMIN-55493432",
+      "company": "롯데에너지머티리얼즈",
+      "company_meta": "배터리 소재기업 · 익산1공장 생산",
+      "title": "익산1공장 생산직 OP",
+      "career_group": "entry",
+      "tags": [
+        "계약직 1년·정규직 전환 가능",
+        "신입 가능",
+        "고졸 이상",
+        "생산 OP",
+        "11.13 마감"
+      ],
+      "status_note": "[신규] 11.05 접수 시작 · 11.09 사람인 상세에서 경력무관·신입 포함, 1년 기간제, 익산 근무, 11.13 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.13 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55493432",
+      "duties": "익산1공장 생산설비 운전과 기계조작, 생산 작업 및 현장 품질·안전 기준 준수",
+      "qualifications": "경력무관, 고졸 이상, 생산 현장 근무 가능",
+      "preferences": "공고 상세에 별도 우대사항이 표시되지 않음",
+      "location": "전북 익산시 석암로3길 63-25",
+      "major_connection": "화학·신소재·기계 전공자는 공정실습, 설비점검, 안전수칙과 생산기록 경험을 현장 OP 업무에 연결하세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55501792",
+      "company": "롯데에너지머티리얼즈",
+      "company_meta": "배터리 소재기업 · 익산2공장 생산",
+      "title": "익산2공장 Operator",
+      "career_group": "entry",
+      "tags": [
+        "계약직 1년·정규직 전환 가능",
+        "신입 가능",
+        "고졸 이상",
+        "기계조작",
+        "11.16 마감"
+      ],
+      "status_note": "[신규] 11.06 접수 시작 · 11.09 사람인 상세에서 경력무관·신입 포함, 1년 기간제, 익산 근무, 11.16 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.16 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55501792",
+      "duties": "익산2공장 생산설비 운전과 기계조작, 생산 작업 및 현장 품질·안전 기준 준수",
+      "qualifications": "경력무관, 고졸 이상, 생산 현장 근무 가능",
+      "preferences": "공고 상세에 별도 우대사항이 표시되지 않음",
+      "location": "전북 익산시 삼기면 산단구평길 11",
+      "major_connection": "화학·신소재·기계 전공자는 설비 운전, 공정조건 기록, 이상발견과 안전조치 경험을 생산 OP 직무로 보여주세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55268565",
+      "company": "피엔티머티리얼즈",
+      "company_meta": "축전지 제조기업 · BMS 펌웨어",
+      "title": "BMS F/W 개발",
+      "career_group": "career",
+      "tags": [
+        "정규직",
+        "경력 5~15년",
+        "학력무관",
+        "BMS 펌웨어",
+        "11.12 마감"
+      ],
+      "status_note": "[신규] 10.13 접수 시작 · 11.09 사람인 상세에서 경력 5~15년, 정규직, 구리 근무, 11.12 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.12 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55268565",
+      "duties": "BMS 임베디드 펌웨어와 배터리 모니터링 IC 제어, SOC·SOH 알고리즘 적용, 시제품 시험과 양산이관·인증 대응",
+      "qualifications": "관련 경력 5~15년, STM32·ARM Cortex-M·RTOS와 C·C++ 기반 펌웨어 개발 역량",
+      "preferences": "ESS·차량용 BMS, LTC68xx, LFP OCV·전류적산·온도보정, KC·IEC 62619, 시험보고서 작성",
+      "location": "경기 구리시",
+      "major_connection": "전기전자·컴퓨터 경력자는 센싱-진단-보호제어-검증의 흐름과 SOC·SOH 오차 개선 결과를 제시하세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55255910",
+      "company": "피엔티머티리얼즈",
+      "company_meta": "축전지 제조기업 · 양극재 설비·유틸리티",
+      "title": "양극재 생산 설비·유틸리티 전문가",
+      "career_group": "career",
+      "tags": [
+        "정규직·수습 3개월",
+        "경력 3년 이상",
+        "전문대 이상",
+        "설비·공무",
+        "11.11 마감"
+      ],
+      "status_note": "[신규] 10.12 접수 시작 · 11.09 사람인 상세에서 경력 3년 이상, 정규직, 구미 근무, 11.11 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.11 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55255910",
+      "duties": "이차전지 양극재 생산설비와 유틸리티 유지관리, 설비 이상 대응, 예방정비와 공무 업무",
+      "qualifications": "전문대 이상 기계·전기전자·시설관리 관련 전공, 제조업 설비관리 또는 공무 경력 3년 이상",
+      "preferences": "이차전지 소재·화학·제련 분체공정 설비, 관련 기사자격, 중국어, CAD 도면·전기 회로도 이해",
+      "location": "경북 구미시",
+      "major_connection": "기계·전기 경력자는 고장원인-정비조치-재발방지-가동률 개선을 양극재 분체공정 관점으로 수치화하세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55437940",
+      "company": "피엔티머티리얼즈",
+      "company_meta": "축전지 제조기업 · 이차전지 소재·셀 R&D",
+      "title": "이차전지 소재·셀 개발팀",
+      "career_group": "entry",
+      "tags": [
+        "정규직·수습 3개월",
+        "신입 가능",
+        "대졸 이상",
+        "소재·셀 개발",
+        "11.29 마감"
+      ],
+      "status_note": "[신규] 10.30 접수 시작 · 11.09 사람인 상세에서 경력무관·신입 포함, 정규직, 구리 근무, 11.29 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.29 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55437940",
+      "duties": "양극활물질 합성·물성·화학 분석, 소성·분쇄·코팅 조건 최적화와 수율 개선, 각형·원통형 셀 성능·전극·전해액 설계와 차세대 전지 개발",
+      "qualifications": "경력무관, 4년제 대학 졸업 이상 또는 졸업예정, 배터리·재료·화학·화공 등 관련 분야 이해",
+      "preferences": "직무 경력 3년 이상 또는 석·박사, 소재 양산기술, SEM·XRD·ICP 분석, AutoCAD, 중국어",
+      "location": "경기 구리시",
+      "major_connection": "화학·신소재·화공 전공자는 합성 조건-분석 결과-전지 성능의 상관관계를 하나의 프로젝트로 정리하세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
+    {
+      "id": "SARAMIN-55393803",
+      "company": "한국화학융합시험연구원(KTR)",
+      "company_meta": "시험·인증기관 · 이차전지에너지본부",
+      "title": "정부 R&D과제 위촉연구원",
+      "career_group": "entry",
+      "tags": [
+        "계약직·위촉직",
+        "신입 가능",
+        "대졸 이상",
+        "시험·R&D",
+        "11.16 마감"
+      ],
+      "status_note": "[신규] 10.26 접수 시작 · 11.09 사람인 상세에서 신입 포함 경력무관, 위촉직, 구미 근무, 11.16 23:59 마감과 입사지원 확인",
+      "deadline_display": "11.16 23:59",
+      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55393803",
+      "duties": "정부 R&D 과제 운영 지원, 참여기관 연락·대응, 예산집행·정산과 리튬 이차전지·전지시스템 시험 지원",
+      "qualifications": "경력무관, 4년제 대학 졸업 이상 또는 졸업예정, 기계·전기전자 등 유관 분야 전공",
+      "preferences": "리튬 이차전지·전지시스템 시험, 정부과제 행정·관리·예산·정산, 참여기관 대응 경험",
+      "location": "경북 구미시 수출대로 137",
+      "major_connection": "화학·신소재·전기전자 전공자는 시험계획, 측정 데이터, 성적서·보고서와 과제 일정관리 경험을 함께 제시하세요.",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-09",
+      "appearances": 1,
+      "board_state": "current",
+      "board_state_label": "최신호 재확인"
+    },
     {
       "id": "JOBKOREA-50254461",
       "company": "더블유스코프코리아",
@@ -27,8 +189,8 @@
       "first_seen": "2026-11-04",
       "last_seen": "2026-11-06",
       "appearances": 2,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55471680",
@@ -54,8 +216,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55354127",
@@ -81,8 +243,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55478956",
@@ -108,8 +270,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55424473",
@@ -135,8 +297,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55481746",
@@ -162,8 +324,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-55481772",
@@ -189,8 +351,8 @@
       "first_seen": "2026-11-06",
       "last_seen": "2026-11-06",
       "appearances": 1,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "JOBKOREA-50271870",
@@ -216,8 +378,8 @@
       "first_seen": "2026-11-02",
       "last_seen": "2026-11-06",
       "appearances": 5,
-      "board_state": "current",
-      "board_state_label": "최신호 재확인"
+      "board_state": "archive",
+      "board_state_label": "이전호 기록·재확인 필요"
     },
     {
       "id": "SARAMIN-54896965",
@@ -459,33 +621,6 @@
       "first_seen": "2026-11-02",
       "last_seen": "2026-11-04",
       "appearances": 3,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "SARAMIN-55234883",
-      "company": "비에스테크",
-      "company_meta": "축전지 제조기업 · 산업용 배터리 설치",
-      "title": "산업용 배터리 설치 기사·금형팀 채용",
-      "career_group": "entry",
-      "tags": [
-        "정규직·계약직",
-        "신입 지원 가능",
-        "고졸 이상",
-        "배터리 설치",
-        "11.06 마감"
-      ],
-      "status_note": "[접수 중·재안내] 기존 발행본 미안내 · 11.03 사람인 상세 원문에서 신입 포함 경력무관, 정규·계약직, 이천 근무, 11.06 23:59 마감과 입사지원 확인",
-      "deadline_display": "11.06 23:59",
-      "url": "https://m.saramin.co.kr/job-search/view?rec_idx=55234883",
-      "duties": "산업용 배터리 설치 기사 또는 금형팀 업무",
-      "qualifications": "신입 포함 경력무관, 고등학교 졸업 이상, 운전 가능자",
-      "preferences": "인근 거주자, 전기기능사·전기산업기사 등 전기 자격증 소지자",
-      "location": "경기 이천시 장호원읍 어석로 239-17",
-      "major_connection": "전기전자·기계 전공자는 배선·전기안전, 공구 사용, 현장 설치, 점검 경험을 산업용 축전지 설치 업무와 연결하세요.",
-      "first_seen": "2026-11-02",
-      "last_seen": "2026-11-03",
-      "appearances": 2,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
     },
@@ -895,33 +1030,6 @@
       "board_state_label": "이전호 기록·재확인 필요"
     },
     {
-      "id": "JOBKOREA-50143960",
-      "company": "유니테크",
-      "company_meta": "2차전지·EV용 접착제 솔루션 소재기업",
-      "title": "연구개발 국책과제 담당 신입·경력",
-      "career_group": "entry",
-      "tags": [
-        "정규직·수습 3개월",
-        "신입 가능",
-        "대졸 이상",
-        "국책과제 R&D",
-        "11.08 마감"
-      ],
-      "status_note": "[신규] 10.12 등록 · 10.14 상세 원문과 활성 지원경로 확인",
-      "deadline_display": "11.08 23:59",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50143960",
-      "duties": "연구개발 국책과제 담당 업무",
-      "qualifications": "신입 또는 경력 3년 이상, 4년제 대학 졸업 이상",
-      "preferences": "장기근무·즉시출근·유관업무 경험 등 공고 우대조건 확인",
-      "location": "경기 안산시 단원구 별망로459번길 45",
-      "major_connection": "화학·신소재 전공자는 실험 경험뿐 아니라 과제 목표, 일정·예산, 데이터 정리, 보고서 산출물을 함께 제시해 보세요.",
-      "first_seen": "2026-10-14",
-      "last_seen": "2026-10-14",
-      "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
       "id": "JOBKOREA-50030154",
       "company": "로보스타",
       "company_meta": "코스닥 상장 대기업 · 산업용 로봇·자동화장비",
@@ -999,33 +1107,6 @@
       "first_seen": "2026-10-07",
       "last_seen": "2026-10-07",
       "appearances": 1,
-      "board_state": "archive",
-      "board_state_label": "이전호 기록·재확인 필요"
-    },
-    {
-      "id": "WORK24-KJ21652609080011",
-      "company": "네오배터리머티리얼즈코리아 자유무역지점",
-      "company_meta": "중소 이차전지 제조기업 · 드론·무인기·로봇용 리튬이온배터리",
-      "title": "김제공장 제조 생산 — 이차전지·배터리 제품 조립",
-      "career_group": "entry",
-      "tags": [
-        "기간제 6개월·정규직 전환 검토",
-        "경력무관",
-        "고졸",
-        "생산·조립",
-        "10명 채용"
-      ],
-      "status_note": "[접수 중·재안내] 09.30 고용24 인증 상세와 온라인 입사지원 상태 재확인",
-      "deadline_display": "11.07 24:00",
-      "url": "https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&infoTypeGroup=tb_workinfoworknet&wantedAuthNo=KJ21652609080011",
-      "duties": "이차전지와 배터리 제품 제조·조립, 생산현장 업무",
-      "qualifications": "고졸 이상, 경력무관, 주 5일 09:00~18:00 근무 가능",
-      "preferences": "차량 보유, 자동차운전면허, 제조·조립 경험",
-      "location": "전북 김제시 백산면 자유무역길 170",
-      "major_connection": "생산직 지원자는 조립 정확도, 표준작업 준수, 중량물 취급과 안전, 불량 발견·보고 경험을 수치와 사례로 정리하세요.",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-30",
-      "appearances": 2,
       "board_state": "archive",
       "board_state_label": "이전호 기록·재확인 필요"
     },
