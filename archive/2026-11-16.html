@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="최신 이차전지 산업동향과 현재 지원 가능한 채용정보를 정리한 배터리 마스터 뉴스레터">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="오늘의 배터리 산업·채용 브리핑 · 2026-11-16">
+  <meta property="og:description" content="검증된 배터리 산업동향, 신입·경력무관 및 경력직 채용, 교육·행사 정보를 한 번에 확인하세요.">
+  <meta property="og:url" content="https://batterybrief.pages.dev/archive/2026-11-16.html">
+  <title>오늘의 배터리 산업·채용 브리핑</title>
+  <style>
+    :root {
+      --navy: #111111;
+      --teal: #2563EB;
+      --ink: #111111;
+      --muted: #555555;
+      --line: #d6d6d6;
+      --paper: #ffffff;
+      --canvas: #f5f5f5;
+      --soft: #f5f5f5;
+      --accent: #E53935;
+      --mobile-body-size: 16px;
+      --mobile-meta-size: 14px;
+    }
+
+    @page { size: A4 portrait; margin: 10mm; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      line-height: 1.45;
+      font-size: 16px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .newsletter {
+      width: min(calc(100% - 24px), 920px);
+      margin: 24px auto;
+      padding: 28px;
+      background: var(--paper);
+    }
+
+    .newsletter-header {
+      position: relative;
+      padding: 12px 0 18px;
+      border-bottom: 1px solid var(--ink);
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .newsletter-header::before { content: ""; position: absolute; inset: 0 0 auto; height: 8px; background: linear-gradient(to right, var(--ink) 0 72%, var(--teal) 72% 94%, var(--accent) 94% 100%); }
+
+    .eyebrow, .meta { margin: 0; font-size: 0.84rem; letter-spacing: 0.06em; }
+    h1 { margin: 6px 0 8px; font-size: clamp(1.7rem, 5vw, 2.5rem); line-height: 1.18; word-break: keep-all; }
+    h2 { margin: 20px 0 10px; color: var(--navy); font-size: 1.15rem; letter-spacing: -.025em; }
+    h2 { padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    h3 { margin: 0 0 8px; font-size: 1.08rem; line-height: 1.4; }
+    [id] { scroll-margin-top: 12px; }
+    p { margin: 6px 0; }
+
+    .content-grid, .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      grid-column: span 6;
+      background: var(--paper);
+      break-inside: avoid;
+    }
+
+    .trend-card, .day-card { background: var(--soft); }
+    .badge { display: inline-block; margin: 0 0 7px; padding: 4px 8px; background: var(--soft); color: var(--navy); font-size: 0.8rem; font-weight: 800; }
+    .trend-card > .badge { padding: 0; background: transparent; color: var(--teal); }
+    .job-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
+    .job-card { border-top: 3px solid var(--ink); background: #fafafa; }
+    .job-card:nth-child(2n) { border-top-color: var(--teal); }
+    .company { display: block; font-size: 1.28rem; font-weight: 850; letter-spacing: -.045em; }
+    .company-meta, .status-note, .job-note { display: block; color: var(--muted); font-size: .78rem; }
+    .status-note { margin-bottom: 4px; color: var(--teal); font-weight: 800; }
+    .job-title { margin-top: 5px; }
+    .deadline-badge { display: inline-flex; min-width: 108px; flex-direction: column; justify-content: center; min-height: 78px; padding: 9px 10px; background: #c62828; color: #FFFFFF; text-align: center; text-decoration: none; font-weight: 800; }
+    .deadline-badge small, .deadline-badge span { font-size: .72rem; }
+    .deadline-badge span { margin-top: 4px; padding-top: 4px; border-top: 1px solid #ffffff99; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0 8px; }
+    .tag { padding: 3px 7px; background: #e7e7e7; font-size: .75rem; font-weight: 750; }
+    .content-grid > *, .jobs-grid > * { grid-column: span 6; min-width: 0; }
+    dl { margin: 0; }
+    dl div { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 6px; padding: 3px 0; border-top: 1px solid var(--line); }
+    dt { color: var(--muted); font-weight: 700; }
+    dd { min-width: 0; margin: 0; overflow-wrap: anywhere; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    .card > ul li + li { margin-top: 5px; }
+
+    a { color: var(--teal); overflow-wrap: anywhere; }
+    .source-link {
+      display: inline-flex;
+      min-height: 44px;
+      margin-top: 9px;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border: 1px solid currentColor;
+      background: var(--paper);
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:focus-visible { outline: 3px solid var(--teal); outline-offset: 3px; }
+    .utility-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+    .utility-actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--teal); background: #FFFFFF; color: var(--teal); font: inherit; font-weight: 800; text-decoration: none; cursor: pointer; }
+    .utility-actions .jobs-board-link { border-width: 2px; background: var(--teal); color: #FFFFFF; }
+    .utility-actions .pdf-download { background: var(--teal); color: #FFFFFF; }
+    .schedule-list { display: grid; gap: 12px; }
+    .schedule-item { padding: 13px 14px 12px; border: 1px solid var(--line); border-left: 5px solid var(--teal); background: var(--paper); break-inside: avoid; }
+    .schedule-item + .schedule-item { margin-top: 0; }
+    .schedule-item > .badge { margin-bottom: 9px; background: var(--ink); color: #FFFFFF; }
+    .deadline-list, .analysis-list { margin: 0; padding: 0; list-style: none; }
+    .deadline-list li, .analysis-list li { display: grid; grid-template-columns: 150px minmax(0, 1fr) 100px; gap: 10px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); }
+    .deadline-list a, .analysis-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 7px 9px; border: 1px solid var(--teal); font-weight: 800; line-height: 1.35; text-align: center; text-decoration: none; }
+    .quick-nav { display: flex; gap: 6px; margin: 12px 0 0; padding: 0; list-style: none; }
+    .quick-nav li { display: flex; align-self: stretch; margin-top: 0; }
+    .quick-nav li + li { margin-top: 0; }
+    .quick-nav a { display: flex; height: 100%; align-items: center; justify-content: center; min-height: 44px; padding: 7px 10px; border: 1px solid var(--line); color: var(--ink); font-weight: 750; line-height: 1.35; text-align: center; text-decoration: none; }
+    .mobile-priority { display: none; }
+    .mobile-priority small { display: block; color: var(--muted); }
+    .job-group-heading { display: flex; align-items: center; gap: 8px; margin: 18px 0 10px; padding: 10px 12px; border-bottom: 2px solid var(--ink); border-left: 7px solid var(--teal); background: #eef3ff; }
+    .job-group-heading.career-group { margin-top: 24px; border-left-color: var(--accent); background: #fff1f0; }
+    .section-count { display: inline-flex; min-width: 42px; min-height: 28px; margin-left: auto; align-items: center; justify-content: center; padding: 3px 8px; background: var(--teal); color: #FFFFFF; font-size: .76em; font-weight: 800; }
+    .career-group .section-count { background: var(--accent); }
+    footer { display: grid; grid-template-columns: 5fr 7fr; gap: 18px; margin-top: 16px; padding-top: 12px; border-top: 5px solid var(--ink); color: var(--muted); font-size: 0.84rem; }
+    .community-link { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 9px 12px; background: var(--teal); color: #fff; font-size: 1rem; font-weight: 800; text-align: center; text-decoration: none; }
+    .community-url { display: block; margin-top: 6px; overflow-wrap: anywhere; }
+
+    @media (max-width: 720px) {
+      body { background: var(--paper); font-size: 16px; line-height: 1.65; }
+      .newsletter { width: 100%; min-height: 0; margin: 0; padding: 18px 16px 28px; box-shadow: none; }
+      .newsletter-header { padding: 12px 0 16px; }
+      h1 { font-size: 1.62rem; letter-spacing: -.045em; }
+      .content-grid, .jobs-grid { grid-template-columns: 1fr; }
+      .content-grid > *, .jobs-grid > * { grid-column: 1; }
+      .card { padding: 16px; font-size: var(--mobile-body-size); line-height: 1.62; }
+      h2 { font-size: 1.28rem; }
+      h3 { font-size: 1.12rem; }
+      .badge, .company-meta, .status-note, .job-note, .tag, .deadline-badge small, .deadline-badge span, .mobile-priority small { font-size: var(--mobile-meta-size); }
+      .source-link { width: 100%; min-height: 44px; justify-content: center; }
+      .utility-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .utility-actions > * { width: 100%; }
+      .quick-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 5px; scroll-snap-type: x proximity; scrollbar-width: thin; }
+      .quick-nav li { flex: 0 0 auto; scroll-snap-align: start; }
+      .quick-nav a { white-space: nowrap; }
+      .job-group-heading { min-height: 48px; margin-top: 20px; padding: 10px 11px; }
+      .mobile-priority { display: block; margin-top: 24px; border-top: 4px solid var(--teal); }
+      .mobile-priority ol { margin: 0; padding: 0; list-style: none; }
+      .mobile-priority li { border-bottom: 1px solid var(--line); }
+      .mobile-priority a { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 8px; min-height: 58px; padding: 10px 0; color: var(--ink); text-decoration: none; }
+      .job-top { grid-template-columns: 1fr; }
+      .deadline-badge { width: 100%; min-height: 52px; flex-direction: row; align-items: center; justify-content: space-between; }
+      .deadline-list li, .analysis-list li { grid-template-columns: minmax(0, 1fr) 98px; }
+      .deadline-list time, .analysis-list strong { grid-column: 1 / -1; }
+      footer { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      html, body { width: auto; min-height: 0; height: auto; background: #ffffff; }
+      body { font-size: 9.2pt; line-height: 1.32; }
+      .newsletter { width: auto; min-height: 0; height: auto; margin: 0; padding: 0; border-radius: 0; box-shadow: none; }
+      .newsletter-header { padding: 2mm 0 3mm; }
+      h1 { font-size: 19pt; }
+      h2 { margin: 2.4mm 0 1.4mm; font-size: 11.5pt; }
+      h3 { margin-bottom: 1.2mm; }
+      .content-grid, .jobs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5mm; }
+      .content-grid > *, .jobs-grid > * { grid-column: span 1; }
+      .card { padding: 2.4mm; }
+      .deadline-badge { min-height: 0; padding: 2mm; }
+      .source-link { min-height: 0; margin-top: 1.5mm; padding: 1.5mm 2.5mm; }
+      .deadline-list li, .analysis-list li { gap: 2mm; padding: 1.5mm 0; }
+      .deadline-list a, .analysis-list a { min-height: 0; padding: 1.5mm 2mm; }
+      footer { gap: 3mm; margin-top: 2mm; padding-top: 1.5mm; border-top-width: 3px; font-size: 8pt; }
+      .community-link { min-height: 0; padding: 1.5mm 2mm; font-size: 9pt; }
+      h2, h3 { break-after: avoid; }
+      .job-group-heading { break-inside: avoid; }
+      .card, .job-card, .deadline-list li, .analysis-list li { break-inside: avoid; }
+      footer { break-inside: auto; }
+      section[aria-labelledby="deadline-title"] { break-inside: avoid; page-break-inside: avoid; }
+      .utility-actions, .quick-nav, .mobile-priority { display: none !important; }
+      .schedule-list { gap: 1.5mm; }
+      .schedule-item { padding: 2mm; border-top-width: 1.5px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="newsletter theme-swiss">
+    <header class="newsletter-header">
+      <p class="eyebrow">한국배터리아카데미 남부권캠퍼스 · (재)포항테크노파크</p>
+      <h1>오늘의 배터리 산업·채용 브리핑</h1>
+      <p class="meta"><time datetime="2026-11-16">2026년 11월 16일 월요일</time> · MONDAY BRIEF · 최종 검증 2026.11.16. 12:11 KST</p>
+      <nav class="utility-actions" aria-label="뉴스레터와 채용정보 이동"><a href="https://batterybrief.pages.dev/" target="_blank" rel="noopener noreferrer">최신 뉴스레터</a><a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터</a><a class="jobs-board-link" href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a><a class="pdf-download" href="https://batterybrief.pages.dev/pdf/2026-11-16.pdf" download="battery_master_newsletter_2026-11-16.pdf" aria-label="오늘자 뉴스레터 PDF 저장">PDF 저장</a></nav>
+    </header>
+
+    <nav aria-label="본문 빠른 이동"><ul class="quick-nav"><li><a href="#trend-title">산업·기업동향</a></li><li><a href="#entry-jobs">신입·경력무관</a></li><li><a href="#career-jobs">경력직</a></li><li><a href="#deadline-title">마감 임박</a></li><li><a href="#resource-title">교육·행사</a></li></ul></nav>
+
+    <section class="mobile-priority" aria-labelledby="mobile-priority-title"><h2 id="mobile-priority-title">오늘 먼저 볼 공고 3건</h2><ol><li><a href="https://m.saramin.co.kr/job-search/view?rec_idx=55568562" target="_blank" rel="noopener noreferrer"><strong>우선 1</strong><span>에코앤드림 · 이차전지 소재 생산 Operator<small>11.30 23:59 · 11월 13일 접수가 열린 전구체 소재 생산 직무로 신입과 고졸 지원자도 배터리 소재 양산 공정에 진입할 수 있어요.</small></span></a></li><li><a href="https://m.saramin.co.kr/job-search/view?rec_idx=55575809" target="_blank" rel="noopener noreferrer"><strong>우선 2</strong><span>다츠에너지 · ESS 배터리 모듈·시스템 개발자<small>01.13 23:59 · 11월 14일 새로 열린 공고로 신입도 ESS 모듈·시스템 개발과 시험·인증을 함께 경험할 수 있어요.</small></span></a></li><li><a href="https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJND002611060002" target="_blank" rel="noopener noreferrer"><strong>우선 3</strong><span>에노빅스코리아·루트제이드 · 리튬이온 배터리 Production Technician<small>채용 시까지 · 경력무관 30명 채용으로 11월 18일 현장에서 인사담당자와 바로 면접할 수 있고 고용24 지원도 열려 있어요.</small></span></a></li></ol></section>
+
+    <section aria-labelledby="trend-title">
+      <h2 id="trend-title">주요 산업·기업동향</h2>
+      <div class="content-grid">
+        <article class="card trend-card" data-trend-id="SEOUL-FIRE|battery-soc-safety-test|2026-11-16"><span class="badge">11.16 발표 · 유통·보관 안전</span><h3>서울시, 충전율별 리튬이온배터리 열폭주 실험 결과 공개</h3><p><strong>확인된 사실</strong> 서울시 소방재난본부는 원통형·파우치형 배터리를 충전율 30·50·70·100%로 나눠 외부 압력을 가한 실험을 공개했어요. 충전율 100%에서는 두 종류 모두 5개 중 4개가 열폭주·발화했고 70%에서도 위험 현상이 관찰돼, 관계 부처와 유통·보관 단계 안전기준 마련을 협의합니다.</p><p><strong>취업 준비 관점</strong> 안전·품질·물류 지원자는 SOC와 외부 충격을 위험성평가 변수로 정의하고, 입고-보관-운송-비상대응 단계별 관리기준과 기록 항목을 제안해 보세요.</p><a class="source-link" href="https://www.seoul.go.kr/news/news_report.do?nttNo=470405" target="_blank" rel="noopener noreferrer">서울특별시 공식 보도자료</a></article><article class="card trend-card" data-trend-id="LGES|replus-integrated-energy-solution|2026-11-16"><span class="badge">11.16 발표 · ESS·AI 전력인프라</span><h3>LG에너지솔루션, RE+ 2026서 AI 산업 통합 에너지 솔루션 공개</h3><p><strong>확인된 사실</strong> LG에너지솔루션은 11월 17~19일 미국 라스베이거스 RE+ 2026에서 BESS·UPS·BBU·EMS를 연결한 통합 전력 인프라를 선보여요. 소듐이온 배터리와 차세대 전력변환장치 결합, 고출력 UPS 랙, 고밀도 BBU 등 AI 데이터센터의 저장·공급·운영을 한 흐름으로 제시합니다.</p><p><strong>취업 준비 관점</strong> ESS·전기·제어 지원자는 셀 사양만 말하기보다 BMS·PCS·EMS와 계통 요구를 연결하고, 순간 부하변화·안전·가용성·공간효율을 시험지표로 바꿔 설명해 보세요.</p><a class="source-link" href="https://www.lg.co.kr/media/release/30785" target="_blank" rel="noopener noreferrer">LG 공식 보도자료</a></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="jobs-title">
+      <h2 id="jobs-title">오늘의 채용정보</h2>
+      <h3 id="entry-jobs" class="job-group-heading entry-group">신입·경력무관 <span class="section-count">5건</span></h3>
+      <div class="jobs-grid">
+        <!-- Each job card: company name first; .job-top contains one linked .deadline-badge with the exact deadline and 원문 보기. No duplicate bottom link. -->
+        <article class="card job-card" data-job-id="SARAMIN-55568562"><div class="job-top"><div><span class="status-note">[신규] 11.13 접수 시작 · 11.16 사람인 진행 공고에서 신입/경력, 정규직, 군산 새만금 근무, 11.30 마감과 활성 지원 경로 확인</span><strong class="company">에코앤드림</strong><span class="company-meta">이차전지 전구체 소재기업 · 코스닥</span><h3 class="job-title">이차전지 소재 생산 Operator</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55568562" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.30 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직(수습 3개월)</span><span class="tag">신입·경력무관</span><span class="tag">고졸 이상</span><span class="tag">소재 생산·포장</span><span class="tag">11.30 23:59</span></div><dl><div><dt>업무</dt><dd>이차전지 소재 제품 생산과 포장, 생산설비 운전 및 교대조 공정 운영</dd></div><div><dt>자격</dt><dd>신입 또는 경력연수 무관, 고졸 이상, 2교대 근무 가능</dd></div><div><dt>우대</dt><dd>화학공학·신소재/재료공학·공학계열 전공, 지게차·에너지관리·보일러 관련 자격, 유관 생산 경험, 인근 거주</dd></div><div><dt>근무지</dt><dd>전북 군산시 새만금산단2로 356</dd></div><div><dt>전공연결</dt><dd>화학·화공·신소재 전공자는 원료 투입-공정조건-제품 포장까지의 흐름과 교대근무 안전·품질기록 경험을 정리하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문 · 진행 공고 목록 교차확인</p></article><article class="card job-card" data-job-id="SARAMIN-55575809"><div class="job-top"><div><span class="status-note">[신규] 11.14 접수 시작 · 11.16 사람인과 고용24 민간연계 상세에서 신입 가능, 정규직, 김포 근무, 2027.01.13 마감과 활성 지원 경로 확인</span><strong class="company">다츠에너지</strong><span class="company-meta">ESS 배터리 모듈·시스템 개발기업</span><h3 class="job-title">ESS 배터리 모듈·시스템 개발자</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55575809" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>01.13 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직(수습 3개월)</span><span class="tag">신입 지원 가능</span><span class="tag">학력무관</span><span class="tag">모듈·팩·랙</span><span class="tag">01.13 23:59</span></div><dl><div><dt>업무</dt><dd>ESS 배터리 모듈·팩·랙의 설계·제작, 시험장비 운용과 시험·평가·인증 대응, BMS 연동</dd></div><div><dt>자격</dt><dd>전기·전자공학 또는 관련 전공, 이차전지·ESS 분야에 관심 있는 신입 지원 가능, MS Office 활용</dd></div><div><dt>우대</dt><dd>관련 경력 2년 이상, 모듈·팩·랙 설계·제작, 충방전기·챔버 운용, KC 62619·UL 1973·UL 9540A 대응, CAN 통신과 CAD</dd></div><div><dt>근무지</dt><dd>경기 김포시 양촌읍 황금로273번길 14</dd></div><div><dt>전공연결</dt><dd>전기전자·기계·신소재 전공자는 CAD 설계-부품선정-조립-시험-인증의 연결과 BMS·CAN 이해를 프로젝트로 보여주세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문 · 고용24 민간연계 교차확인</p></article><article class="card job-card" data-job-id="WORK24-KJND002611060002"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 11.16 고용24 상세에서 경력무관, 무기계약, 논산 근무, 고용24 지원과 11.18 논산시 현장면접이 모두 활성 상태임을 확인</span><strong class="company">에노빅스코리아·루트제이드</strong><span class="company-meta">리튬이온 배터리 제조기업</span><h3 class="job-title">리튬이온 배터리 Production Technician</h3></div><a class="deadline-badge" href="https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJND002611060002" target="_blank" rel="noopener noreferrer"><small>접수상태</small><strong>채용 시까지</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">기간의 정함이 없는 근로계약(수습 3개월)</span><span class="tag">경력무관</span><span class="tag">고졸 이상</span><span class="tag">생산·조립·검사</span><span class="tag">11.18 현장면접</span></div><dl><div><dt>업무</dt><dd>SOP에 따른 생산설비 운영·모니터링, 리튬이온 배터리와 부품 조립·시험·검사, 생산이력·EHS·품질 관리, 기본 트러블슈팅</dd></div><div><dt>자격</dt><dd>고졸 이상 또는 공학·제조 관련 전문학사 이상, 2조 2교대 가능, SOP 준수와 팀 협업 가능</dd></div><div><dt>우대</dt><dd>제조·생산 환경 경험, 생산설비 운영과 기본 트러블슈팅 이해, 품질 기준 이해와 세심한 업무 수행</dd></div><div><dt>근무지</dt><dd>충남 논산시 가야곡면 가야공단길 24-8</dd></div><div><dt>전공연결</dt><dd>생산·기계·전기 전공자는 설비점검-이상보고-검사기록-개선활동을 실제 행동과 결과 중심으로 준비하세요.</dd></div></dl><p class="job-note">출처: 고용24 인증 채용 상세 원문</p></article><article class="card job-card" data-job-id="JOBKOREA-50339157"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 11.16 삼성채용 공식 상세에서 신입, 단기계약직, 기흥·수원·천안 근무, 11.17 17:00 마감과 활성 지원 경로 재확인</span><strong class="company">삼성SDI</strong><span class="company-meta">배터리 제조기업 · 중대형사업부</span><h3 class="job-title">중대형사업부 5급 단기계약직</h3></div><a class="deadline-badge" href="https://www.samsungcareers.com/hr/?no=23431" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.17 17:00</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">단기계약직</span><span class="tag">신입</span><span class="tag">고졸 이상</span><span class="tag">제조·생산 교대</span><span class="tag">11.17 17:00</span></div><dl><div><dt>업무</dt><dd>중대형 배터리 제조 및 생산, 교대 공정 운영과 품질·안전 기준 준수</dd></div><div><dt>자격</dt><dd>신입, 고졸 이상, 기흥·수원·천안 사업장 교대 근무 가능</dd></div><div><dt>우대</dt><dd>국가등록장애인과 국가보훈 대상자는 관련 법령과 내부규정에 따라 우대</dd></div><div><dt>근무지</dt><dd>경기 용인시 기흥·수원시·충남 천안시</dd></div><div><dt>전공연결</dt><dd>화학·신소재·기계·전기 전공자는 공정실습, 설비점검, 품질기록, 안전수칙 중 실제 행동과 결과가 있는 경험을 앞세우세요.</dd></div></dl><p class="job-note">출처: 삼성채용 공식 상세 원문</p></article><article class="card job-card" data-job-id="SARAMIN-55338819"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 11.16 사람인 상세에서 신입/경력무관, 정규직, 서울 금천 근무, 11.19 마감과 활성 입사지원 확인</span><strong class="company">에이블웍스</strong><span class="company-meta">배터리 시험·계측 장비 기술기업</span><h3 class="job-title">배터리 기술지원 담당자</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55338819" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.19 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직(수습 3개월)</span><span class="tag">신입·경력무관</span><span class="tag">4년제 대졸 이상</span><span class="tag">기술지원·기술영업</span><span class="tag">11.19 23:59</span></div><dl><div><dt>업무</dt><dd>배터리 관련 장비의 기술지원, 고객 요구 파악과 장비·솔루션 안내, 거래처 기술 커뮤니케이션</dd></div><div><dt>자격</dt><dd>신입 또는 경력연수 무관, 4년제 대학 졸업 이상</dd></div><div><dt>우대</dt><dd>전기·전자공학 전공, 운전면허, 영어 능통 또는 중국어 가능</dd></div><div><dt>근무지</dt><dd>서울 금천구 가산동 대성디폴리스 A동 1506~1507호</dd></div><div><dt>전공연결</dt><dd>전기전자 전공자는 계측 원리와 문제진단 과정을, 이공계 지원자는 기술 내용을 고객 언어로 바꾼 경험을 준비하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문</p></article>
+      </div>
+      <h3 id="career-jobs" class="job-group-heading career-group">경력직 <span class="section-count">3건</span></h3>
+      <div class="jobs-grid"><article class="card job-card" data-job-id="SARAMIN-55570446"><div class="job-top"><div><span class="status-note">[신규] 11.13 접수 시작 · 11.16 사람인·잡코리아·캐치 상세에서 경력 10년 이상, 정규직, 성남 근무, 11.19 마감과 홈페이지 지원 확인</span><strong class="company">유라코퍼레이션</strong><span class="company-meta">자동차 전장·배터리 시스템 기업</span><h3 class="job-title">배터리 모듈·팩 시스템설계 팀장</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55570446" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.19 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직(수습 3개월)</span><span class="tag">경력 10년 이상</span><span class="tag">전문대졸 이상</span><span class="tag">모듈·팩 시스템설계</span><span class="tag">11.19 23:59</span></div><dl><div><dt>업무</dt><dd>배터리 모듈·팩 시스템설계 조직의 기술 방향과 설계 검토, 개발 일정·협업·품질 이슈 관리</dd></div><div><dt>자격</dt><dd>배터리 모듈·팩 시스템설계 관련 경력 10년 이상, 전문대학 졸업 이상</dd></div><div><dt>우대</dt><dd>자동차용 배터리 시스템 설계·양산 경험, 설계검증과 부서간 협업·조직 리딩 역량</dd></div><div><dt>근무지</dt><dd>경기 성남시 분당구 판교로 308</dd></div><div><dt>전공연결</dt><dd>기계·전기전자 경력자는 요구사항-열·구조·전장 설계-검증-양산 변경관리의 의사결정 사례를 준비하세요.</dd></div></dl><p class="job-note">출처: 사람인 상세 · 잡코리아·캐치 교차확인 · 기업 홈페이지 지원</p></article><article class="card job-card" data-job-id="SARAMIN-55566363"><div class="job-top"><div><span class="status-note">[신규] 11.13 접수 시작 · 11.16 사람인 상세에서 경력 3년 이상, 정규직, 세종 근무, 12.13 마감과 활성 지원 경로 확인</span><strong class="company">에이치비테크놀러지</strong><span class="company-meta">디스플레이·이차전지 검사장비 기업</span><h3 class="job-title">2차전지 기구설계 경력직</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55566363" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>12.13 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직</span><span class="tag">경력 3년 이상</span><span class="tag">전문대졸 이상</span><span class="tag">장비 기구설계</span><span class="tag">12.13 23:59</span></div><dl><div><dt>업무</dt><dd>2차전지 공정·검사 장비의 기구 구조 설계와 도면 작성, 부품 선정·제작 대응과 장비 조립·개선</dd></div><div><dt>자격</dt><dd>기구설계 관련 경력 3년 이상, 전문대학 졸업 이상</dd></div><div><dt>우대</dt><dd>2차전지·자동화 장비 설계, 3D CAD와 도면 해독, 공차·가공·조립성 검토 경험</dd></div><div><dt>근무지</dt><dd>세종특별자치시</dd></div><div><dt>전공연결</dt><dd>기계·메카트로닉스 경력자는 3D 설계-공차-가공-조립-시운전에서 발생한 문제와 개선 결과를 수치로 설명하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문</p></article><article class="card job-card" data-job-id="SARAMIN-55366513"><div class="job-top"><div><span class="status-note">[접수 중·재안내] 11.16 사람인 상세에서 경력 3년 이상, 정규직, 당진 근무, 11.21 마감과 활성 지원 경로 확인</span><strong class="company">베바스토배터리테크놀로지스코리아</strong><span class="company-meta">자동차용 배터리 시스템 연구개발기업</span><h3 class="job-title">배터리 프로토타입 제작·검증 엔지니어</h3></div><a class="deadline-badge" href="https://m.saramin.co.kr/job-search/view?rec_idx=55366513" target="_blank" rel="noopener noreferrer"><small>접수마감</small><strong>11.21 23:59</strong><span>원문 보기</span></a></div><div class="tags"><span class="tag">정규직(수습 3개월)</span><span class="tag">경력 3년 이상</span><span class="tag">전문대졸 이상</span><span class="tag">프로토타입·시험</span><span class="tag">11.21 23:59</span></div><dl><div><dt>업무</dt><dd>배터리 프로토타입 제작과 검증, 시험·제작 장비 운용, 설계·시험 결과 기록과 개선</dd></div><div><dt>자격</dt><dd>경력 3년 이상, 전문대학 졸업 이상, 배터리 또는 자동차부품 프로토타입·시험 업무 수행 가능</dd></div><div><dt>우대</dt><dd>영어 토익 750 또는 OPIC IM2 이상, 배터리 업무, 자동차부품 시험·프로토 장비 운용, CATIA 활용</dd></div><div><dt>근무지</dt><dd>충남 당진시 송산면 동곡로 21</dd></div><div><dt>전공연결</dt><dd>기계·전기전자·신소재 경력자는 시제품 제작조건-시험기준-불량원인-설계변경의 폐쇄고리를 사례로 준비하세요.</dd></div></dl><p class="job-note">출처: 사람인 기업 게시 상세 원문</p></article></div>
+    </section>
+
+    <section aria-labelledby="deadline-title"><h2 id="deadline-title">마감 임박 공고</h2><ul class="deadline-list"><li><time datetime="2026-11-17T17:00:00+09:00">11.17 17:00</time><span><strong>삼성SDI</strong><br>중대형사업부 5급 단기계약직 · 신입 · 고졸 이상</span><a class="" href="https://www.samsungcareers.com/hr/?no=23431" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-11-18T23:59:00+09:00">11.18 23:59</time><span><strong>제이알배터리시스템</strong><br>품질팀 경력직 · 경력 1년 이상 · 학력무관</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55329974" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-11-19T23:59:00+09:00">11.19 23:59</time><span><strong>에이블웍스</strong><br>배터리 기술지원 담당자 · 신입·경력무관 · 대졸 이상</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55338819" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-11-20T23:59:00+09:00">11.20 23:59</time><span><strong>비츠로</strong><br>배터리 기술영업부 정규직 · 신입 포함 · 대졸 이상</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55351885" target="_blank" rel="noopener noreferrer">원문 보기</a></li><li><time datetime="2026-11-21T23:59:00+09:00">11.21 23:59</time><span><strong>베바스토배터리테크놀로지스코리아</strong><br>배터리 프로토타입 제작·검증 엔지니어 · 경력 3년 이상 · 전문대졸 이상</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55366513" target="_blank" rel="noopener noreferrer">원문 보기</a></li></ul></section>
+
+    <section aria-labelledby="weekday-section-title"><h2 id="weekday-section-title">이번 주 채용 일정</h2><p class="company-meta">월요일 · 11월 17~21일 제출 우선순위</p><ul class="analysis-list"><li><strong>11.17(화) · 삼성SDI 17:00 / 율촌화학 23:00</strong><span>배터리 마스터의 제안 · 삼성SDI는 제조·교대근무 경험을, 율촌화학은 위험성평가·환경 인허가 실적을 오늘 안에 최종 점검하세요.</span><a class="" href="https://www.samsungcareers.com/hr/?no=23431" target="_blank" rel="noopener noreferrer">삼성SDI 공고 보기</a></li><li><strong>11.18(수) · 제이알배터리시스템 23:59 / 에노빅스 현장면접 14:00</strong><span>배터리 마스터의 제안 · 품질 경력자는 제조 품질 개선사례를 수치로, 생산 지원자는 이력서와 자기소개서를 준비해 논산시청 일자리버스 현장면접에 참여하세요.</span><a class="" href="https://m.work24.go.kr/wk/a/b/1500/empDetailAuthView.do?infoTypeCd=VALIDATION&amp;infoTypeGroup=tb_workinfoworknet&amp;wantedAuthNo=KJND002611060002" target="_blank" rel="noopener noreferrer">현장면접 안내 보기</a></li><li><strong>11.19(목) · 에이블웍스 23:59</strong><span>배터리 마스터의 제안 · 전기전자 전공과 운전·외국어 역량을 확인하고, 배터리 장비 문제를 진단해 고객에게 설명한 경험을 정리하세요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55338819" target="_blank" rel="noopener noreferrer">에이블웍스 공고 보기</a></li><li><strong>11.20(금) · 비츠로 23:59</strong><span>배터리 마스터의 제안 · 배터리 기술영업은 제품 사양-고객 요구-견적·납기-기술 대응을 한 흐름으로 연결한 사례를 준비하세요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55351885" target="_blank" rel="noopener noreferrer">비츠로 공고 보기</a></li><li><strong>11.21(토) · 베바스토 배터리 프로토타입 23:59</strong><span>배터리 마스터의 제안 · 시제품 제작·시험장비 운용·CAD 경험과 영어 인터뷰 대비를 금요일까지 마무리하세요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55366513" target="_blank" rel="noopener noreferrer">베바스토 공고 보기</a></li></ul></section>
+
+    <section class="content-grid" aria-label="지원 전략과 취업자료">
+      <article class="card">
+        <h2>배터리 마스터의 지원 포인트</h2>
+        <ul>
+          <li><strong>우선 추천:</strong> 신규 공고는 에코앤드림 소재 생산, 다츠에너지 ESS 개발, 유라코퍼레이션 시스템설계, 에이치비테크놀러지 기구설계를 우선 선정했어요.</li>
+          <li><strong>전공·학력 연결:</strong> 신입 지원자는 생산·현장형, ESS 개발형, 기술지원형으로 나눠 자격과 준비 포인트를 비교하세요.</li>
+          <li><strong>오늘 할 일:</strong> 11월 17일부터 21일까지 매일 마감 공고가 있어 오늘부터 제출 순서를 정하고, 11월 18일 에노빅스 현장면접도 함께 준비하세요.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h2 id="resource-title">교육·자격·행사 마감 일정</h2>
+        <div class="schedule-list"><div class="schedule-item"><span class="badge">행사</span><h3>전고체 배터리 및 차세대 배터리 시스템 세미나</h3><p><strong>운영기관</strong> 한국자동차공학회</p><p><strong>대상</strong> 전고체·차세대 배터리 기술에 관심 있는 학생·취업준비생·산업 관계자</p><p><strong>방식·장소</strong> 11.20 여수엑스포컨벤션센터 · 공식 페이지 사전등록</p><p><strong>비용</strong> 무료 등록</p><p><strong>접수마감</strong> <time datetime="2026-11-19T23:59:00+09:00">11.19 사전등록 마감</time> · 신청 가능</p><a class="source-link" href="https://www.ksae.org/seminar/registration/index.php?sid=315" target="_blank" rel="noopener noreferrer">공식 신청·상세 안내</a></div><div class="schedule-item"><span class="badge">행사</span><h3>LG에너지솔루션 BIC 2026</h3><p><strong>운영기관</strong> LG에너지솔루션</p><p><strong>대상</strong> 배터리 소재·셀·BMS·AI 분야 대학·연구기관 연구자</p><p><strong>방식·장소</strong> BRIDGE 온라인 과제 제안 접수 · 선정 과제 공동연구</p><p><strong>비용</strong> 공식 안내 확인</p><p><strong>접수마감</strong> <time datetime="2026-12-06T23:59:00+09:00">12.06 접수 마감</time> · 과제 제안 가능</p><a class="source-link" href="https://www.lg.co.kr/media/release/30729" target="_blank" rel="noopener noreferrer">공식 신청·상세 안내</a></div></div>
+      </article>
+    </section>
+
+    <section aria-labelledby="rotation-section-title"><h2 id="rotation-section-title">지원자격 한눈에</h2><p class="company-meta">신입 진입경로를 업무 환경별로 비교</p><ul class="analysis-list"><li><strong>고졸·교대 가능 · 에코앤드림 / 에노빅스 / 삼성SDI</strong><span>생산설비, SOP, 품질기록과 안전수칙을 실제 실습·아르바이트·현장경험으로 증명하는 지원자에게 적합해요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55568562" target="_blank" rel="noopener noreferrer">소재 생산 공고 보기</a></li><li><strong>전기전자·개발 지향 · 다츠에너지</strong><span>학력 제한은 없지만 모듈·팩·랙, 시험·인증, BMS·CAN·CAD를 연결해 설명할 준비가 필요해요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55575809" target="_blank" rel="noopener noreferrer">ESS 개발 공고 보기</a></li><li><strong>4년제·고객 대응 · 에이블웍스</strong><span>배터리 장비 기술을 고객 문제와 연결하는 기술지원 직무라 전기전자 전공, 운전과 외국어 역량이 강점이 돼요.</span><a class="" href="https://m.saramin.co.kr/job-search/view?rec_idx=55338819" target="_blank" rel="noopener noreferrer">기술지원 공고 보기</a></li></ul></section>
+
+    <footer>
+      <div><p><strong>발행 안내</strong> 본 자료는 (재)포항테크노파크가 한국배터리아카데미 남부권캠퍼스 운영의 일환으로 작성했어요.</p><p>공고 상태와 마감 시각은 변동될 수 있으므로 지원 직전에 공식 페이지를 다시 확인해 주세요.</p><p><a href="https://batterybrief.pages.dev/jobs/" target="_blank" rel="noopener noreferrer">누적 채용정보 게시판</a> · <a href="https://batterybrief.pages.dev/archive/" target="_blank" rel="noopener noreferrer">지난 뉴스레터 보기</a></p></div>
+      <div><a class="community-link" href="https://open.kakao.com/o/pVd3CfEi" target="_blank" rel="noopener noreferrer">이차전지 취업 정보공유 · 오픈채팅방 참여하기</a><p>주변 취준생에게 뉴스레터와 오픈채팅방을 소개해 주세요.</p><span class="community-url">https://open.kakao.com/o/pVd3CfEi</span></div>
+    </footer>
+  </main>
+</body>
+</html>
